@@ -13,7 +13,7 @@ require to include the copyright notice and *blah blah blah*:
 
 ## Overview
 
-Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) for more acurate and up to date informations. Please make sure you have 'Stared' [the original Nest Project](https://github.com/nestjs/nest/stargazers). The information used to compile this documentation comme from inside the [nestjs/docs.nestjs.com/content](https://github.com/nestjs/docs.nestjs.com/tree/58e409ba73974842d5a956cdeccdb89b382eccfc/content) the most recent version is available here: [docs.nestjs.com/.../master/content](https://github.com/nestjs/docs.nestjs.com/tree/master/content)
+Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) for more acurate and up to date informations. Please make sure you have 'Stared🌟' [the original Nest Project](https://github.com/nestjs/nest/stargazers). The information used to compile this documentation comme from inside the [nestjs/docs.nestjs.com/content](https://github.com/nestjs/docs.nestjs.com/tree/58e409ba73974842d5a956cdeccdb89b382eccfc/content) the most recent version is available here: [docs.nestjs.com/.../master/content](https://github.com/nestjs/docs.nestjs.com/tree/master/content)
 
 
 `[-- Script kiddies cut here -- ]`
