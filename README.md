@@ -1,18 +1,19 @@
 # Nest Js
 
- - This document is written by a proud *script kiddy* using the `cat` command so all the power and all the merit is going to the [Cat Person](https://github.com/kamilmysliwiec)!!! Tanks to the MIT License I have been able to write all this document by myself without even copy-pasting code or scripts in fact I have used my own script: [`foreachfile  "cat" " >> Overview.md"`](https://github.com/Luxcium/ahmyzsh/blob/cddf79d3f5269066a85568d2c1649e7a6387bab1/core/bin/foreachfile)
+ - This document is ´written´ by a proud *script kiddy* using the `cat` command so all the power and all the merit is going to the [Cat Person](https://github.com/kamilmysliwiec)!!! Tanks to the MIT License I have been able to ´write´ all this document by myself without even copy-pasting code or scripts in fact I have used my own script: [`foreachfile  "cat" " >> Overview.md"`](https://github.com/Luxcium/ahmyzsh/blob/cddf79d3f5269066a85568d2c1649e7a6387bab1/core/bin/foreachfile)
 
- - The document itself is MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)* but all I did was using the `cat` command **(Don't Repeat Yourself)** (and renaming the files so they are concatenated in order) we all know Luxcium is a cute little Script Kiddy but we also all know that the MIT License
-require to include the copyright notice and blah blah blah:
+ - The document itself is MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)* but all I did was using the `cat` command **(Don't Repeat Yourself** you said it twice **)** (and renaming the files so they are concatenated in order) we all know Luxcium is a cute little *Script Kiddy* but we also all know that the MIT License
+require to include the copyright notice and *blah blah blah*:
 
 **So without further ado let me tell you that the text contained in this document is the work of Kamil Myśliwiec**
 
-*Copyright © 2017 Kamil Myśliwiec <http://kamilmysliwiec.com>*
+*Copyright © 2017-2020 MIT by [Kamil Mysliwiec](http://kamilmysliwiec.com)*
 
-> Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos(at)yabbs (Wed Jun 1 22:30:55 1994)
+> ***Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos(at)yabbs (Wed Jun 1 22:30:55 1994)***
 
 ## Overview
 
+Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) for more acurate and up to date informations. Please make sure you have 'Stared' [the original Nest Project](https://github.com/nestjs/nest/stargazers). The information used to compile this documentation comme from inside the [nestjs/docs.nestjs.com/content](https://github.com/nestjs/docs.nestjs.com/tree/58e409ba73974842d5a956cdeccdb89b382eccfc/content) the most recent version is available here: [docs.nestjs.com/.../master/content](https://github.com/nestjs/docs.nestjs.com/tree/master/content)
 
 ### Introduction
 
