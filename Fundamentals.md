@@ -32,16 +32,16 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 ## Fundamentals
- - <a href="https://docs.nestjs.com/fundamentals/custom-providers">Custom providers</a>
- - <a href="https://docs.nestjs.com/fundamentals/async-providers">Asynchronous providers</a>
- - <a href="https://docs.nestjs.com/fundamentals/dynamic-modules">Dynamic modules</a>
- - <a href="https://docs.nestjs.com/fundamentals/injection-scopes">Injection scopes</a>
- - <a href="https://docs.nestjs.com/fundamentals/circular-dependency">Circular dependency</a>
- - <a href="https://docs.nestjs.com/fundamentals/module-ref">Module reference</a>
- - <a href="https://docs.nestjs.com/fundamentals/execution-context">Execution context</a>
- - <a href="https://docs.nestjs.com/fundamentals/lifecycle-events">Lifecycle events</a>
- - <a href="https://docs.nestjs.com/fundamentals/platform-agnosticism">Platform agnosticism</a>
- - <a href="https://docs.nestjs.com/fundamentals/testing">Testing</a>
+ - <a href="#custom-providers">Custom providers</a>
+ - <a href="#async-providers">Asynchronous providers</a>
+ - <a href="#dynamic-modules">Dynamic modules</a>
+ - <a href="#injection-scopes">Injection scopes</a>
+ - <a href="#circular-dependency">Circular dependency</a>
+ - <a href="#module-ref">Module reference</a>
+ - <a href="#execution-context">Execution context</a>
+ - <a href="#lifecycle-events">Lifecycle events</a>
+ - <a href="#platform-agnosticism">Platform agnosticism</a>
+ - <a href="#testing">Testing</a>
 
 
 
