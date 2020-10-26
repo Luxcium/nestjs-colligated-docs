@@ -32,7 +32,32 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### Authentication
+## Techniques
+ - <a href="#authentication">Authentication</a>
+ - <a href="#database">Database</a>
+ - <a href="#mongodb">Mongo</a>
+ - <a href="#configuration">Configuration</a>
+ - <a href="#validation">Validation</a>
+ - <a href="#caching">Caching</a>
+ - <a href="#serialization">Serialization</a>
+ - <a href="#task-scheduling">Task scheduling</a>
+ - <a href="#compression">Compression</a>
+ - <a href="#security">Security</a>
+ - <a href="#queues">Queues</a>
+ - <a href="#logger">Logger</a>
+ - <a href="#file-upload">File upload</a>
+ - <a href="#http-module">HTTP module</a>
+ - <a href="#mvc">Model-View-Controller</a>
+ - <a href="#performance">Performance (Fastify)</a>
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+### Authentication <a href="https://docs.nestjs.com/techniques/authentication"><img src="https://nestjs.com/img/logo-small.svg" id="authentication" width="20" alt="Nest Logo" /></a>
 
 Authentication is an **essential** part of most applications. There are many different approaches and strategies to handle authentication. The approach taken for any project depends on its particular application requirements. This chapter presents several approaches to authentication that can be adapted to a variety of different requirements.
 
@@ -1000,7 +1025,7 @@ whoAmI(@CurrentUser() user: User) {
   return this.usersService.findById(user.id);
 }
 ```
-### Database
+### Database <a href="https://docs.nestjs.com/techniques/database"><img src="https://nestjs.com/img/logo-small.svg" id="database" width="20" alt="Nest Logo" /></a>
 
 Nest is database agnostic, allowing you to easily integrate with any SQL or NoSQL database. You have a number of options available to you, depending on your preferences. At the most general level, connecting Nest to a database is simply a matter of loading an appropriate Node.js driver for the database, just as you would with [Express](https://expressjs.com/en/guide/database-integration.html) or Fastify.
 
@@ -1008,7 +1033,7 @@ You can also directly use any general purpose Node.js database integration **lib
 
 For convenience, Nest provides tight integration with TypeORM and Sequelize out-of-the-box with the `@nestjs/typeorm` and `@nestjs/sequelize` packages respectively, which we'll cover in the current chapter, and Mongoose with `@nestjs/mongoose`, which is covered in [this chapter](/techniques/mongodb). These integrations provide additional NestJS-specific features, such as model/repository injection, testability, and asynchronous configuration to make accessing your chosen database even easier.
 
-### TypeORM Integration
+#### TypeORM Integration
 
 For integrating with SQL and NoSQL databases, Nest provides the `@nestjs/typeorm` package. Nest uses [TypeORM](https://github.com/typeorm/typeorm) because it's the most mature Object Relational Mapper (ORM) available for TypeScript. Since it's written in TypeScript, it integrates well with the Nest framework.
 
@@ -1123,7 +1148,7 @@ export class AppModule {
 }
 ```
 
-#### Repository pattern
+##### Repository pattern
 
 [TypeORM](https://github.com/typeorm/typeorm) supports the **repository design pattern**, so each entity has its own repository. These repositories can be obtained from the database connection.
 
@@ -1285,7 +1310,7 @@ import { UsersController } from './users.controller';
 export class UserHttpModule {}
 ```
 
-### Relations
+#### Relations
 
 Relations are associations established between two or more tables. Relations are based on common fields from each table, often involving primary and foreign keys.
 
@@ -1334,7 +1359,7 @@ export class User {
 
 > info **Hint** To learn more about relations in TypeORM, visit the [TypeORM documentation](https://typeorm.io/#/relations).
 
-#### Auto-load entities
+##### Auto-load entities
 
 Manually adding entities to the `entities` array of the connection options can be tedious. In addition, referencing entities from the root module breaks application domain boundaries and causes leaking implementation details to other parts of the application. To solve this issue, static glob paths can be used (e.g., `dist/**/*.entity{{ '{' }} .ts,.js{{ '}' }}`).
 
@@ -1360,7 +1385,7 @@ With that option specified, every entity registered through the `forFeature()` m
 
 > warning **Warning** Note that entities that aren't registered through the `forFeature()` method, but are only referenced from the entity (via a relationship), won't be included by way of the `autoLoadEntities` setting.
 
-#### Separating entity definition
+##### Separating entity definition
 
 You can define an entity and its columns right in the model, using decorators. But some people prefer to define entities and their columns inside separate files using the ["entity schemas"](https://typeorm.io/#/separating-entity-definition).
 
@@ -1417,7 +1442,7 @@ import { UsersService } from './users.service';
 export class UsersModule {}
 ```
 
-#### Transactions
+##### Transactions
 
 A database transaction symbolizes a unit of work performed within a database management system against a database, and treated in a coherent and reliable way independent of other transactions. A transaction generally represents any change in a database ([learn more](https://en.wikipedia.org/wiki/Database_transaction)).
 
@@ -1474,7 +1499,7 @@ Using decorators to control the transaction (`@Transaction()` and `@TransactionM
 
 <app-banner-shop></app-banner-shop>
 
-#### Subscribers
+##### Subscribers
 
 With TypeORM [subscribers](https://typeorm.io/#/listeners-and-subscribers/what-is-a-subscriber), you can listen to specific entity events.
 
@@ -1525,13 +1550,13 @@ export class UsersModule {}
 
 > info **Hint** Learn more about entity subscribers [here](https://typeorm.io/#/listeners-and-subscribers/what-is-a-subscriber).
 
-#### Migrations
+##### Migrations
 
 [Migrations](https://typeorm.io/#/migrations) provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database. To generate, run, and revert migrations, TypeORM provides a dedicated [CLI](https://typeorm.io/#/migrations/creating-a-new-migration).
 
 Migration classes are separate from the Nest application source code. Their lifecycle is maintained by the TypeORM CLI. Therefore, you are not able to leverage dependency injection and other Nest specific features with migrations. To learn more about migrations, follow the guide in the [TypeORM documentation](https://typeorm.io/#/migrations/creating-a-new-migration).
 
-#### Multiple databases
+##### Multiple databases
 
 Some projects require multiple database connections. This can also be achieved with this module. To work with multiple connections, first create the connections. In this case, connection naming becomes **mandatory**.
 
@@ -1593,7 +1618,7 @@ export class AlbumsService {
 }
 ```
 
-#### Testing
+##### Testing
 
 When it comes to unit testing an application, we usually want to avoid making a database connection, keeping our test suites independent and their execution process as fast as possible. But our classes might depend on repositories that are pulled from the connection instance. How do we handle that? The solution is to create mock repositories. In order to achieve that, we set up [custom providers](/fundamentals/custom-providers). Each registered repository is automatically represented by an `<EntityName>Repository` token, where `EntityName` is the name of your entity class.
 
@@ -1614,7 +1639,7 @@ export class UsersModule {}
 
 Now a substitute `mockRepository` will be used as the `UsersRepository`. Whenever any class asks for `UsersRepository` using an `@InjectRepository()` decorator, Nest will use the registered `mockRepository` object.
 
-#### Custom repository
+##### Custom repository
 
 TypeORM provides a feature called **custom repositories**. Custom repositories allow you to extend a base repository class, and enrich it with several special methods. To learn more about this feature, visit [this page](https://typeorm.io/#/custom-repository).
 
@@ -1647,7 +1672,7 @@ export class AuthorService {
 }
 ```
 
-#### Async configuration
+##### Async configuration
 
 You may want to pass your repository module options asynchronously instead of statically. In this case, use the `forRootAsync()` method, which provides several ways to deal with async configuration.
 
@@ -1726,13 +1751,13 @@ TypeOrmModule.forRootAsync({
 
 This construction works the same as `useClass` with one critical difference - `TypeOrmModule` will lookup imported modules to reuse an existing `ConfigService` instead of instantiating a new one.
 
-#### Example
+##### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/05-sql-typeorm).
 
 <app-banner-enterprise></app-banner-enterprise>
 
-### Sequelize Integration
+#### Sequelize Integration
 
 An alternative to using TypeORM is to use the [Sequelize](https://sequelize.org/) ORM with the `@nestjs/sequelize` package. In addition, we leverage the [sequelize-typescript](https://github.com/RobinBuschmann/sequelize-typescript) package which provides a set of additional decorators to declaratively define entities.
 
@@ -1815,7 +1840,7 @@ export class AppService {
 }
 ```
 
-#### Models
+##### Models
 
 Sequelize implements the Active Record pattern. With this pattern, you use model classes directly to interact with the database. To continue the example, we need at least one model. Let's define the `User` model.
 
@@ -1980,7 +2005,7 @@ import { UsersController } from './users.controller';
 export class UserHttpModule {}
 ```
 
-### Relations
+#### Relations
 
 Relations are associations established between two or more tables. Relations are based on common fields from each table, often involving primary and foreign keys.
 
@@ -2026,7 +2051,7 @@ export class User extends Model<User> {
 
 > info **Hint** To learn more about associations in Sequelize, read [this](https://github.com/RobinBuschmann/sequelize-typescript#model-association) chapter.
 
-#### Auto-load models
+##### Auto-load models
 
 Manually adding models to the `models` array of the connection options can be tedious. In addition, referencing models from the root module breaks application domain boundaries and causes leaking implementation details to other parts of the application. To solve this issue, automatically load models by setting both `autoLoadModels` and `synchronize` properties of the configuration object (passed into the `forRoot()` method) to `true`, as shown below:
 
@@ -2051,7 +2076,7 @@ With that option specified, every model registered through the `forFeature()` me
 
 > warning **Warning** Note that models that aren't registered through the `forFeature()` method, but are only referenced from the model (via an association), won't be included.
 
-#### Transactions
+##### Transactions
 
 A database transaction symbolizes a unit of work performed within a database management system against a database, and treated in a coherent and reliable way independent of other transactions. A transaction generally represents any change in a database ([learn more](https://en.wikipedia.org/wiki/Database_transaction)).
 
@@ -2094,7 +2119,7 @@ async createMany() {
 
 > info **Hint** Note that the `Sequelize` instance is used only to start the transaction. However, to test this class would require mocking the entire `Sequelize` object (which exposes several methods). Thus, we recommend using a helper factory class (e.g., `TransactionRunner`) and defining an interface with a limited set of methods required to maintain transactions. This technique makes mocking these methods pretty straightforward.
 
-#### Migrations
+##### Migrations
 
 [Migrations](https://sequelize.org/v5/manual/migrations.html) provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database. To generate, run, and revert migrations, Sequelize provides a dedicated [CLI](https://sequelize.org/v5/manual/migrations.html#the-cli).
 
@@ -2102,7 +2127,7 @@ Migration classes are separate from the Nest application source code. Their life
 
 <app-banner-courses></app-banner-courses>
 
-#### Multiple databases
+##### Multiple databases
 
 Some projects require multiple database connections. This can also be achieved with this module. To work with multiple connections, first create the connections. In this case, connection naming becomes **mandatory**.
 
@@ -2162,7 +2187,7 @@ export class AlbumsService {
 }
 ```
 
-#### Testing
+##### Testing
 
 When it comes to unit testing an application, we usually want to avoid making a database connection, keeping our test suites independent and their execution process as fast as possible. But our classes might depend on models that are pulled from the connection instance. How do we handle that? The solution is to create mock models. In order to achieve that, we set up [custom providers](/fundamentals/custom-providers). Each registered model is automatically represented by a `<ModelName>Model` token, where `ModelName` is the name of your model class.
 
@@ -2183,7 +2208,7 @@ export class UsersModule {}
 
 Now a substitute `mockModel` will be used as the `UserModel`. Whenever any class asks for `UserModel` using an `@InjectModel()` decorator, Nest will use the registered `mockModel` object.
 
-#### Async configuration
+##### Async configuration
 
 You may want to pass your `SequelizeModule` options asynchronously instead of statically. In this case, use the `forRootAsync()` method, which provides several ways to deal with async configuration.
 
@@ -2259,10 +2284,12 @@ SequelizeModule.forRootAsync({
 
 This construction works the same as `useClass` with one critical difference - `SequelizeModule` will lookup imported modules to reuse an existing `ConfigService` instead of instantiating a new one.
 
-#### Example
+##### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/07-sequelize).
-### Mongo
+
+
+### Mongo <a href="https://docs.nestjs.com/techniques/mongodb"><img src="https://nestjs.com/img/logo-small.svg" id="mongodb" width="20" alt="Nest Logo" /></a>
 
 Nest supports two methods for integrating with the [MongoDB](https://www.mongodb.com/) database. You can either use the built-in [TypeORM](https://github.com/typeorm/typeorm) module described [here](/techniques/database), which has a connector for MongoDB, or use [Mongoose](https://mongoosejs.com), the most popular MongoDB object modeling tool. In this chapter we'll describe the latter, using the dedicated `@nestjs/mongoose` package.
 
@@ -2660,7 +2687,7 @@ MongooseModule.forRootAsync({
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/06-mongoose).
-### Configuration
+### Configuration <a href="https://docs.nestjs.com/techniques/configuration"><img src="https://nestjs.com/img/logo-small.svg" id="configuration" width="20" alt="Nest Logo" /></a>
 
 Applications often run in different **environments**. Depending on the environment, different configuration settings should be used. For example, usually the local environment relies on specific database credentials, valid only for the local DB instance. The production environment would use a separate set of DB credentials. Since configuration variables change, best practice is to [store configuration variables](https://12factor.net/config) in the environment.
 
@@ -3079,7 +3106,7 @@ You can then use it as usual, by calling the `get` method with the configuration
 ```typescript
 const port = configService.get('PORT');
 ```
-### Validation
+### Validation <a href="https://docs.nestjs.com/techniques/validation"><img src="https://nestjs.com/img/logo-small.svg" id="validation" width="20" alt="Nest Logo" /></a>
 
 It is best practice to validate the correctness of any data sent into a web application. To automatically validate incoming requests, Nest provides several pipes available right out-of-the-box:
 
@@ -3381,7 +3408,7 @@ While this chapter shows examples using HTTP style applications (e.g., Express o
 #### Learn more
 
 Read more about custom validators, error messages, and available decorators as provided by the `class-validator` package [here](https://github.com/typestack/class-validator).
-### Caching
+### Caching <a href="https://docs.nestjs.com/techniques/caching"><img src="https://nestjs.com/img/logo-small.svg" id="caching" width="20" alt="Nest Logo" /></a>
 
 Caching is a great and simple **technique** that helps improve your app's performance. It acts as a temporary data store providing high performance data access.
 
@@ -3616,7 +3643,7 @@ CacheModule.registerAsync({
 ```
 
 This works the same as `useClass` with one critical difference - `CacheModule` will lookup imported modules to reuse any already-created `ConfigService`, instead of instantiating its own.
-### Serialization
+### Serialization <a href="https://docs.nestjs.com/techniques/serialization"><img src="https://nestjs.com/img/logo-small.svg" id="serialization" width="20" alt="Nest Logo" /></a>
 
 Serialization is a process that happens before objects are returned in a network response. This is an appropriate place to provide rules for transforming and sanitizing the data to be returned to the client. For example, sensitive data like passwords should always be excluded from the response. Or, certain properties might require additional transformation, such as sending only a subset of properties of an entity. Performing these transformations manually can be tedious and error prone, and can leave you uncertain that all cases have been covered.
 
@@ -3721,7 +3748,7 @@ While this chapter shows examples using HTTP style applications (e.g., Express o
 #### Learn more
 
 Read more about available decorators and options as provided by the `class-transformer` package [here](https://github.com/typestack/class-transformer).
-### Task Scheduling
+### Task Scheduling <a href="https://docs.nestjs.com/techniques/task-scheduling"><img src="https://nestjs.com/img/logo-small.svg" id="task-scheduling" width="20" alt="Nest Logo" /></a>
 
 Task scheduling allows you to schedule arbitrary code (methods/functions) to execute at a fixed date/time, at recurring intervals, or once after a specified interval. In the Linux world, this is often handled by packages like [cron](https://en.wikipedia.org/wiki/Cron) at the OS level. For Node.js apps, there are several packages that emulate cron-like functionality. Nest provides the `@nestjs/schedule` package, which integrates with the popular Node.js [node-cron](https://github.com/kelektiv/node-cron) package. We'll cover this package in the current chapter.
 
@@ -4092,7 +4119,7 @@ getTimeouts() {
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/27-scheduling).
-### Compression
+### Compression <a href="https://docs.nestjs.com/techniques/compression"><img src="https://nestjs.com/img/logo-small.svg" id="compression" width="20" alt="Nest Logo" /></a>
 
 Compression can greatly decrease the size of the response body, thereby increasing the speed of a web app.
 
@@ -4141,7 +4168,7 @@ app.register(compression, { encodings: ['gzip', 'deflate'] });
 ```
 
 The above tells `fastify-compress` to only use gzip and deflate encodings, preferring gzip if the client supports both.
-### Security
+### Security <a href="https://docs.nestjs.com/techniques/security"><img src="https://nestjs.com/img/logo-small.svg" id="security" width="20" alt="Nest Logo" /></a>
 
 In this chapter we cover various techniques that help you to increase the security of your applications.
 
@@ -4252,7 +4279,7 @@ app.set('trust proxy', 1);
 ```
 
 > info **Hint** If you use the `FastifyAdapter`, consider using [fastify-rate-limit](https://github.com/fastify/fastify-rate-limit) instead.
-### Queues
+### Queues <a href="https://docs.nestjs.com/techniques/queues"><img src="https://nestjs.com/img/logo-small.svg" id="queues" width="20" alt="Nest Logo" /></a>
 
 Queues are a powerful design pattern that help you deal with common application scaling and performance challenges. Some examples of problems that Queues can help you solve are:
 
@@ -4627,7 +4654,7 @@ This construction works the same as `useClass` with one critical difference - `B
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/26-queues).
-### Logger
+### Logger <a href="https://docs.nestjs.com/techniques/logger"><img src="https://nestjs.com/img/logo-small.svg" id="logger" width="20" alt="Nest Logo" /></a>
 
 Nest comes with a built-in text-based logger which is used during application bootstrapping and several other circumstances such as displaying caught exceptions (i.e., system logging). This functionality is provided via the `Logger` class in the `@nestjs/common` package. You can fully control the behavior of the logging system, including any of the following:
 
@@ -4835,7 +4862,7 @@ await app.listen(3000);
 #### Use external logger
 
 Production applications often have specific logging requirements, including advanced filtering, formatting and centralized logging. Nest's built-in logger is used for monitoring Nest system behavior, and can also be useful for basic formatted text logging in your feature modules while in development, but production applications often take advantage of dedicated logging modules like [Winston](https://github.com/winstonjs/winston). As with any standard Node.js application, you can take full advantage of such modules in Nest.
-### File upload
+### File upload <a href="https://docs.nestjs.com/techniques/file-upload"><img src="https://nestjs.com/img/logo-small.svg" id="file-upload" width="20" alt="Nest Logo" /></a>
 
 To handle file uploading, Nest provides a built-in module based on the [multer](https://github.com/expressjs/multer) middleware package for Express. Multer handles data posted in the `multipart/form-data` format, which is primarily used for uploading files via an HTTP `POST` request. This module is fully configurable and you can adjust its behavior to your application requirements.
 
@@ -5016,7 +5043,7 @@ MulterModule.registerAsync({
   useExisting: ConfigService,
 });
 ```
-### HTTP module
+### HTTP module <a href="https://docs.nestjs.com/techniques/http-module"><img src="https://nestjs.com/img/logo-small.svg" id="http-module" width="20" alt="Nest Logo" /></a>
 
 [Axios](https://github.com/axios/axios) is richly featured HTTP client package that is widely used. Nest wraps Axios and exposes it via the built-in `HttpModule`. The `HttpModule` exports the `HttpService` class, which exposes Axios-based methods to perform HTTP requests. The library also transforms the resulting HTTP responses into `Observables`.
 
@@ -5135,7 +5162,7 @@ HttpModule.registerAsync({
   useExisting: ConfigService,
 });
 ```
-### Model-View-Controller
+### Model-View-Controller <a href="https://docs.nestjs.com/techniques/mvc"><img src="https://nestjs.com/img/logo-small.svg" id="mvc" width="20" alt="Nest Logo" /></a>
 
 Nest, by default, makes use of the [Express](https://github.com/expressjs/express) library under the hood. Hence, every technique for using the MVC (Model-View-Controller) pattern in Express applies to Nest as well.
 
@@ -5340,7 +5367,7 @@ While the application is running, open your browser and navigate to `http://loca
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/17-mvc-fastify).
-### Performance (Fastify)
+### Performance (Fastify) <a href="https://docs.nestjs.com/techniques/performance"><img src="https://nestjs.com/img/logo-small.svg" id="performance" width="20" alt="Nest Logo" /></a>
 
 By default, Nest makes use of the [Express](https://expressjs.com/) framework. As mentioned earlier, Nest also provides compatibility with other libraries such as, for example, [Fastify](https://github.com/fastify/fastify). Nest achieves this framework independence by implementing a framework adapter whose primary function is to proxy middleware and handlers to appropriate library-specific implementations.
 
@@ -5418,3 +5445,5 @@ new FastifyAdapter({ logger: true });
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/10-fastify).
+
+----------

@@ -55,7 +55,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 ---|---
   [OVERVIEW ✔️](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
   [FUNDAMENTALS ✔️](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
-  [TECHNIQUES](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
+  [TECHNIQUES ✔️](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
   [GRAPHQL ✔️](./Graphql.md) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
   [WEBSOCKETS](./Websockets.md) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
   [MICROSERVICES](./Microservices.md) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
@@ -70,6 +70,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 
 
 > ✔️ Indicate navigation enhancement within the documentation page and to the official web site.
+> <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> Indicate link to the official web site.
 
 
 

@@ -23,7 +23,7 @@
  - <a href="https://docs.nestjs.com/fundamentals/platform-agnosticism">Platform agnosticism</a>
  - <a href="https://docs.nestjs.com/fundamentals/testing">Testing</a>
 
-### Techniques
+### Techniques ✔️
  - <a href="https://docs.nestjs.com/techniques/authentication">Authentication</a>
  - <a href="https://docs.nestjs.com/techniques/database">Database</a>
  - <a href="https://docs.nestjs.com/techniques/mongodb">Mongo</a>
