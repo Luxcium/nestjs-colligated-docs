@@ -98,7 +98,7 @@ echo "" >>${FILENAME_}
 echo "<!-- END SECTION More -->" >>${FILENAME_}
 echo "<!-- START LICENSE SECTION -->" >>${FILENAME_}
 echo "" >>${FILENAME_}
-cat ./LICENSE >>${FILENAME_}
+cat ../LICENSE >>${FILENAME_}
 echo "" >>${FILENAME_}
 echo "<!-- END LICENSE SECTION -->" >>${FILENAME_}
 
