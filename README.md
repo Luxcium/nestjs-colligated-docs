@@ -1,7 +1,7 @@
 <!--
 This document is ´written´ by a proud Script Kiddy
 
-This document itself is under MIT License
+The document itself is under MIT License
 Copyright © 2020 Benjamin Vincent (Luxcium)
 
 The documentation text contained in this document is
