@@ -53,17 +53,17 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 
 *Colligated Documentation* |  **docs.nestjs.com**
 ---|---
-  [✔️OVERVIEW](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
-  [✔️FUNDAMENTALS](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
-  [✔️TECHNIQUES](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
-  [✔️GRAPHQL](./Graphql.md) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
-  [✔️WEBSOCKETS](./Websockets.md) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
-  [✔️MICROSERVICES](./Microservices.md) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
+  [✔️ OVERVIEW](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
+  [✔️ FUNDAMENTALS](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
+  [✔️ TECHNIQUES](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
+  [✔️ GRAPHQL](./Graphql.md) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
+  [✔️ WEBSOCKETS](./Websockets.md) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
+  [✔️ MICROSERVICES](./Microservices.md) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
   [<img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> STANDALONE APPS](https://docs.nestjs.com/standalone-applications) |
-  [✔️CLI](./Cli.md) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
-  [✔️OPENAPI](./Openapi.md) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
-  [✔️RECIPES](./Recipes.md) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
-  [✔️FAQ](./Faq.md) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
+  [✔️ CLI](./Cli.md) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
+  [✔️ OPENAPI](./Openapi.md) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
+  [✔️ RECIPES](./Recipes.md) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
+  [✔️ FAQ](./Faq.md) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
   [<img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> MIGRATION GUIDE](https://docs.nestjs.com/migration-guide) |
   [<img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> DISCOVER](https://docs.nestjs.com/discover/companies) |
 
