@@ -101,7 +101,7 @@ Colligated Documentation |  NestjS Official Docs
 
 
 
-### Introduction <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" id="intro-ov" width="20" alt="Nest Logo" /></a> <a href="README.md#bookmark-ov"><img src="content/assets/svg/caret-up.svg"  width="20" alt="caret up" id="bookmark-ov" /></a>
+### <a href="README.md#bookmark-ov"><img src="content/assets/svg/caret-up.svg"  width="20" alt="caret up" id="bookmark-ov" /></a> Introduction <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" id="intro-ov" width="20" alt="Nest Logo" /></a>
 
 
 Nest (NestJS) is a framework for building efficient, scalable [Node.js](https://nodejs.org/) server-side applications. It uses progressive JavaScript, is built with and fully supports [TypeScript](http://www.typescriptlang.org/) (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
