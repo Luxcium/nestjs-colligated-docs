@@ -4,9 +4,7 @@ This document is ´written´ by a proud *Script Kiddy* using the **`cat`** comma
 
 > *†Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos@yabbs (Wed Jun 1 22:30:55 1994)*
 
-This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know (or your just learning now), Luxcium is a cute and nice little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*:
-
-So without further ado let me tell you the truth, the text contained in this document is the result of the hard work of *[Kamil Myśliwiec](http://kamilmysliwiec.com)*
+This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know (or your just learning now), [@Luxcium](https://github.com/Luxcium) is a cute and nice little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*, so without further ado let me tell you the truth, the text contained in this document is the result of the hard work of *[Kamil Myśliwiec](http://kamilmysliwiec.com)*
 
 
 ## Conspectus
