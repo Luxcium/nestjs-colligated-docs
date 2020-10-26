@@ -1,20 +1,7 @@
-# Nest Js
-
- - This document is written by a proud *script kiddy* using the `cat` command so all the power and all the merit is going to the [Cat Person](https://github.com/kamilmysliwiec)!!! Tanks to the MIT License I have been able to write all this document by myself without even copy-pasting code or scripts in fact I have used my own script: [`foreachfile  "cat" " >> Overview.md"`](https://github.com/Luxcium/ahmyzsh/blob/cddf79d3f5269066a85568d2c1649e7a6387bab1/core/bin/foreachfile)
-
- - The document itself is MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)* but all I did was using the `cat` command **(Don't Repeat Yourself)** (and renaming the files so they are concatenated in order) we all know Luxcium is a cute little Script Kiddy but we also all know that the MIT License
-require to include the copyright notice and blah blah blah:
-
-**So without further ado let me tell you that the text contained in this document is the work of Kamil Myśliwiec**
-
-*Copyright © 2017 Kamil Myśliwiec <http://kamilmysliwiec.com>*
-
-> Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos(at)yabbs (Wed Jun 1 22:30:55 1994)
-
-## Overview
+# Overview
 
 
-### Introduction
+## Introduction
 
 
 Nest (NestJS) is a framework for building efficient, scalable [Node.js](https://nodejs.org/) server-side applications. It uses progressive JavaScript, is built with and fully supports [TypeScript](http://www.typescriptlang.org/) (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
