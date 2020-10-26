@@ -59,12 +59,12 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
   [GRAPHQL ✔️](./Graphql.md) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
   [WEBSOCKETS ✔️](./Websockets.md) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
   [MICROSERVICES ✔️](./Microservices.md) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
-  [STANDALONE APPS](./Application-context.md) |  [Standalone Apps (standalone-applications)](https://docs.nestjs.com/standalone-applications)
+  [STANDALONE APPS <img src="https://nestjs.com/img/logo-small.svg"  width="15" alt="Nest Logo" />](https://docs.nestjs.com/standalone-applications) |
   [CLI ✔️](./Cli.md) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
   [OPENAPI ✔️](./Openapi.md) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
   [RECIPES ✔️](./Recipes.md) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
   [FAQ ✔️](./Faq.md) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
-  [MIGRATION GUIDE](./Migration.md) |  [Migration Guide (migration-guide)](https://docs.nestjs.com/migration-guide)
+  [MIGRATION GUIDE <img src="https://nestjs.com/img/logo-small.svg"  width="15" alt="Nest Logo" />](https://docs.nestjs.com/migration-guide) |
   [DISCOVER <img src="https://nestjs.com/img/logo-small.svg"  width="15" alt="Nest Logo" />](https://docs.nestjs.com/discover/companies) |
 
 
