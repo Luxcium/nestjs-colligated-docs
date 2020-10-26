@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILENAME_="./README.md"
+FILENAME_="../README.md"
 
 echo "<!--" >${FILENAME_}
 echo "This document is ´written´ by a proud Script Kiddy" >>${FILENAME_}
