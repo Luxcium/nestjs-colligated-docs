@@ -124,3 +124,18 @@
  - <a href="https://github.com/nestjs/nest/tree/master/sample">Examples</a>
  - <a href="https://docs.nestjs.com/migration-guide"> Migration guide </a>
  - <a href="https://docs.nestjs.com/discover/companies">Who is using Nest?</a>
+
+ <!--
+ <a href="HHHHHHHH"><img src="https://nestjs.com/img/logo-small.svg" id="DDDDDDDDDDDDDD" width="20" alt="Nest Logo" /></a>
+ -->
+
+
+<!--
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+-->

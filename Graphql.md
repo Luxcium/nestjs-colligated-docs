@@ -31,8 +31,32 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
+## Graphql
+ - <a href="#quick-start">Quick start</a>
+ - <a href="#resolvers">Resolvers</a>
+ - <a href="#mutations">Mutations</a>
+ - <a href="#subscriptions">Subscriptions</a>
+ - <a href="#scalars">Scalars</a>
+ - <a href="#directives">Directives</a>
+ - <a href="#plugins">Plugins</a>
+ - <a href="#interfaces">Interfaces</a>
+ - <a href="#unions">Unions</a>
+ - <a href="#enums">Enums</a>
+ - <a href="#mapped-types">Mapped types</a>
+ - <a href="#complexity">Complexity</a>
+ - <a href="#extensions">Extensions</a>
+ - <a href="#cli-plugin">CLI Plugin</a>
+ - <a href="#generating-sdl">Generating SDL</a>
+ - <a href="#other-features">Other features</a>
+ - <a href="#federation">Federation</a>
 
-## Harnessing the power of TypeScript & GraphQL
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+### Harnessing the power of TypeScript & GraphQL <a href="https://docs.nestjs.com/graphql/quick-start"><img src="https://nestjs.com/img/logo-small.svg" id="quick-start" width="20" alt="Nest Logo" /></a>
 
 [GraphQL](https://graphql.org/) is a powerful query language for APIs and a runtime for fulfilling those queries with your existing data. It's an elegant approach that solves many problems typically found with REST APIs. For background, we suggest reading this [comparison](https://dev-blog.apollodata.com/graphql-vs-rest-5d425123e34b) between GraphQL and REST. GraphQL combined with [TypeScript](https://www.typescriptlang.org/) helps you develop better type safety with your GraphQL queries, giving you end-to-end typing.
 
@@ -298,7 +322,7 @@ GraphQLModule.forRootAsync({
   useExisting: ConfigService,
 }),
 ```
-### Resolvers
+### Resolvers <a href="https://docs.nestjs.com/graphql/resolvers"><img src="https://nestjs.com/img/logo-small.svg" id="resolvers" width="20" alt="Nest Logo" /></a>
 
 Resolvers provide the instructions for turning a [GraphQL](https://graphql.org/) operation (a query, mutation, or subscription) into data. They return the same shape of data we specify in our schema -- either synchronously or as a promise that resolves to a result of that shape. Typically, you create a **resolver map** manually. The `@nestjs/graphql` package, on the other hand, generates a resolver map automatically using the metadata provided by decorators you use to annotate classes. To demonstrate the process of using the package features to create a GraphQL API, we'll create a simple authors API.
 
@@ -963,7 +987,7 @@ export class AuthorsModule {}
 ```
 
 > info **Hint** It is helpful to organize your code by your so-called **domain model** (similar to the way you would organize entry points in a REST API). In this approach, keep your models (`ObjectType` classes), resolvers and services together within a Nest module representing the domain model. Keep all of these components in a single folder per module. When you do this, and use the [Nest CLI](/cli/overview) to generate each element, Nest will wire all of these parts together (locating files in appropriate folders, generating entries in `provider` and `imports` arrays, etc.) automatically for you.
-### Mutations
+### Mutations <a href="https://docs.nestjs.com/graphql/mutations"><img src="https://nestjs.com/img/logo-small.svg" id="mutations" width="20" alt="Nest Logo" /></a>
 
 Most discussions of GraphQL focus on data fetching, but any complete data platform needs a way to modify server-side data as well. In REST, any request could end up causing side-effects on the server, but best practice suggests we should not modify data in GET requests. GraphQL is similar - technically any query could be implemented to cause a data write. However, like REST, it's recommended to observe the convention that any operations that cause writes should be sent explicitly via a mutation (read more [here](https://graphql.org/learn/queries/#mutations)).
 
@@ -1054,7 +1078,7 @@ type Mutation {
 ```
 
 The `upvotePost(postId: Int!): Post` mutation is now available to be called as part of our application's GraphQL API.
-### Subscriptions
+### Subscriptions <a href="https://docs.nestjs.com/graphql/subscriptions"><img src="https://nestjs.com/img/logo-small.svg" id="subscriptions" width="20" alt="Nest Logo" /></a>
 
 In addition to fetching data using queries and modifying data using mutations, the GraphQL spec supports a third operation type, called `subscription`. GraphQL subscriptions are a way to push data from the server to the clients that choose to listen to real time messages from the server. Subscriptions are similar to queries in that they specify a set of fields to be delivered to the client, but instead of immediately returning a single answer, a channel is opened and a result is sent to the client every time a particular event happens on the server.
 
@@ -1321,7 +1345,7 @@ GraphQLModule.forRoot({
   }
 }),
 ```
-### Scalars
+### Scalars <a href="https://docs.nestjs.com/graphql/scalars"><img src="https://nestjs.com/img/logo-small.svg" id="scalars" width="20" alt="Nest Logo" /></a>
 
 A GraphQL object type has a name and fields, but at some point those fields have to resolve to some concrete data. That's where the scalar types come in: they represent the leaves of the query (read more [here](https://graphql.org/learn/schema/#scalar-types)). GraphQL includes the following default types: `Int`, `Float`, `String`, `Boolean` and `ID`. In addition to these built-in types, you may need to support custom atomic data types (e.g., `Date`).
 
@@ -1465,7 +1489,7 @@ Now we can use the `Date` scalar in type definitions.
 ```graphql
 scalar Date
 ```
-### Directives
+### Directives <a href="https://docs.nestjs.com/graphql/directives"><img src="https://nestjs.com/img/logo-small.svg" id="directives" width="20" alt="Nest Logo" /></a>
 
 A directive can be attached to a field or fragment inclusion, and can affect execution of the query in any way the server desires (read more [here](https://graphql.org/learn/queries/#directives)). The GraphQL specification provides several default directives:
 
@@ -1549,7 +1573,7 @@ type Post {
   votes: Int
 }
 ```
-### Plugins
+### Plugins <a href="https://docs.nestjs.com/graphql/plugins"><img src="https://nestjs.com/img/logo-small.svg" id="plugins" width="20" alt="Nest Logo" /></a>
 
 Plugins enable you to extend Apollo Server's core functionality by performing custom operations in response to certain events. Currently, these events correspond to individual phases of the GraphQL request lifecycle, and to the startup of Apollo Server itself (read more [here](https://www.apollographql.com/docs/apollo-server/integrations/plugins/)). For example, a basic logging plugin might log the GraphQL query string associated with each request that's sent to Apollo Server.
 
@@ -1600,7 +1624,7 @@ GraphQLModule.forRoot({
 ```
 
 > info **Hint** The `ApolloServerOperationRegistry` plugin is exported from the `apollo-server-plugin-operation-registry` package.
-### Interfaces
+### Interfaces <a href="https://docs.nestjs.com/graphql/interfaces"><img src="https://nestjs.com/img/logo-small.svg" id="interfaces" width="20" alt="Nest Logo" /></a>
 
 Like many type systems, GraphQL supports interfaces. An **Interface** is an abstract type that includes a certain set of fields that a type must include to implement the interface (read more [here](https://graphql.org/learn/schema/#interfaces)).
 
@@ -1704,7 +1728,7 @@ export class CharactersResolver {
 ```
 
 > info **Hint** All decorators are exported from the `@nestjs/graphql` package.
-### Unions
+### Unions <a href="https://docs.nestjs.com/graphql/unions"><img src="https://nestjs.com/img/logo-small.svg" id="unions" width="20" alt="Nest Logo" /></a>
 
 Union types are very similar to interfaces, but they don't get to specify any common fields between the types (read more [here](https://graphql.org/learn/schema/#union-types)). Unions are useful for returning disjoint data types from a single field.
 
@@ -1839,7 +1863,7 @@ export class ResultUnionResolver {
 ```
 
 > info **Hint** All decorators are exported from the `@nestjs/graphql` package.
-### Enums
+### Enums <a href="https://docs.nestjs.com/graphql/enums"><img src="https://nestjs.com/img/logo-small.svg" id="enums" width="20" alt="Nest Logo" /></a>
 
 Enumeration types are a special kind of scalar that is restricted to a particular set of allowed values (read more [here](https://graphql.org/learn/schema/#enumeration-types)). This allows you to:
 
@@ -1924,7 +1948,7 @@ GraphQLModule.forRoot({
   },
 })
 ```
-### Mapped types
+### Mapped types <a href="https://docs.nestjs.com/graphql/mapped-types"><img src="https://nestjs.com/img/logo-small.svg" id="mapped-types" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 
@@ -2065,7 +2089,7 @@ export class UpdateUserInput extends PartialType(
   OmitType(CreateUserInput, ['email'] as const),
 ) {}
 ```
-### Complexity
+### Complexity <a href="https://docs.nestjs.com/graphql/complexity"><img src="https://nestjs.com/img/logo-small.svg" id="complexity" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 
@@ -2151,7 +2175,7 @@ Alternatively, you can define the estimator function:
 @Field({ complexity: (options: ComplexityEstimatorArgs) => ... })
 title: string;
 ```
-### Extensions
+### Extensions <a href="https://docs.nestjs.com/graphql/extensions"><img src="https://nestjs.com/img/logo-small.svg" id="extensions" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 
@@ -2215,7 +2239,7 @@ export class FieldRolesGuard implements CanActivate {
 In the example above, we've used the [graphql-fields](https://github.com/robrichard/graphql-fields) package that turns the `GraphQLResolveInfo` object into an object that consists of the requested fields. We used this specific library to make the presented example somewhat simpler.
 
 With this guard in place, if the return type of any resolver contains a field annotated with the `@Extensions({{ '{' }} role: Role.ADMIN {{ '}' }}})` decorator, this `role` (`Role.ADMIN`) will be logged in the console **if requested** in the GraphQL query.
-### CLI Plugin
+### CLI Plugin <a href="https://docs.nestjs.com/graphql/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 
@@ -2326,7 +2350,7 @@ getCustomTransformers: (program: any) => ({
   before: [require('@nestjs/graphql/plugin').before({}, program)]
 }),
 ```
-### Generating SDL
+### Generating SDL <a href="https://docs.nestjs.com/graphql/generating-sdl"><img src="https://nestjs.com/img/logo-small.svg" id="generating-sdl" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 
@@ -2377,7 +2401,7 @@ const schema = await gqlSchemaFactory.create([RecipesResolver], {
 
 - `skipCheck`: ignore schema validation; boolean, defaults to `false`
 - `orphanedTypes`: list of classes that are not explicitly referenced (not part of the object graph) to be generated. Normally, if a class is declared but isn't otherwise referenced in the graph, it's omitted. The property value is an array of class references.
-### Other features
+### Other features <a href="https://docs.nestjs.com/graphql/other-features"><img src="https://nestjs.com/img/logo-small.svg" id="other-features" width="20" alt="Nest Logo" /></a>
 
 In the GraphQL world, there is a lot of debate about handling issues like **authentication**, or **side-effects** of operations. Should we handle things inside the business logic? Should we use a higher-order function to enhance queries and mutations with authorization logic? Or should we use [schema directives](https://www.apollographql.com/docs/apollo-server/schema/directives/)? There is no single one-size-fits-all answer to these questions.
 
@@ -2488,7 +2512,7 @@ export function isResolvingGraphQLField(context: ExecutionContext): boolean {
   return false;
 }
 ```
-### Federation
+### Federation <a href="https://docs.nestjs.com/graphql/federation"><img src="https://nestjs.com/img/logo-small.svg" id="federation" width="20" alt="Nest Logo" /></a>
 
 [Apollo Federation](https://www.apollographql.com/docs/apollo-server/federation/introduction/) offers a means of splitting your monolithic GraphQL server into independent microservices. It consists of two components: a gateway and one or more federated microservices. Each microservice holds part of the schema and the gateway merges the schemas into a single schema that can be consumed by the client.
 
@@ -2719,3 +2743,6 @@ export class AppModule {}
 #### Async configuration
 
 Both the Federation and Gateway modules support asynchronous initialization using the same `forRootAsync` that's documented in [Quick start](/graphql/quick-start#async-configuration).
+
+
+------
