@@ -20,17 +20,17 @@ This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (L
 
 Colligated Documentation |  NestjS Official Docs
 :---|:---
-  [Overview](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
-  [Fundamentals](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
-  [Techniques](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
-  [Graphql](./Graphql.md) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
-  [Websockets](./Websockets.md) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
-  [Microservices](./Microservices.md) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
+  [Overview](#Overview) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
+  [Fundamentals](#Fundamentals) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
+  [Techniques](#Techniques) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
+  [Graphql](#Graphql) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
+  [Websockets](#Websockets) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
+  [Microservices](#Microservices) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
   [Standalone APPS <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/standalone-applications) |
-  [Cli](./Cli.md) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
-  [Openapi](./Openapi.md) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
-  [Recipes](./Recipes.md) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
-  [Faq](./Faq.md) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
+  [Cli](#Cli) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
+  [Openapi](#Openapi) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
+  [Recipes](#Recipes) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
+  [Faq](#Faq) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
   [Migration GUIDE <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/migration-guide) |
   [Discover <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/discover/companies) |
 
