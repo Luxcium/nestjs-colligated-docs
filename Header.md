@@ -24,7 +24,7 @@ Colligated Documentation |  NestjS Official Docs
   [Fundamentals](#Fundamentals-section) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
   [Techniques](#Techniques-section) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
   [Graphql](#Graphql-section) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
-  [Websockets](#Websockets-section) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
+  [Websockets](#ws-section) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
   [Microservices](#Microservices-section) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
   [Standalone APPS <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/standalone-applications) |
   [Cli](#CLI-section) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)

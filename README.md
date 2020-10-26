@@ -60,7 +60,7 @@ Colligated Documentation |  NestjS Official Docs
   [Fundamentals](#Fundamentals-section) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
   [Techniques](#Techniques-section) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
   [Graphql](#Graphql-section) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
-  [Websockets](#Websockets-section) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
+  [Websockets](#ws-section) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
   [Microservices](#Microservices-section) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
   [Standalone APPS <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/standalone-applications) |
   [Cli](#CLI-section) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
@@ -13229,7 +13229,7 @@ Both the Federation and Gateway modules support asynchronous initialization usin
 <!-- START SECTION Websockets -->
 
 
-## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Websockets-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="ws-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#gateways">Gateways</a>
  - <a href="#exception-filters-ws">Exception filters</a>
  - <a href="#pipes-ws">Pipes</a>

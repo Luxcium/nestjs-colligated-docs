@@ -1,5 +1,5 @@
 
-## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Websockets-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="ws-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#gateways">Gateways</a>
  - <a href="#exception-filters-ws">Exception filters</a>
  - <a href="#pipes-ws">Pipes</a>
