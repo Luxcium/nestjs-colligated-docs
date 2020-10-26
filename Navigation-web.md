@@ -41,7 +41,7 @@
  - <a href="https://docs.nestjs.com/techniques/mvc">Model-View-Controller</a>
  - <a href="https://docs.nestjs.com/techniques/performance">Performance (Fastify)</a>
 
-### Graphql
+### Graphql ✔️
  - <a href="https://docs.nestjs.com/graphql/quick-start">Quick start</a>
  - <a href="https://docs.nestjs.com/graphql/resolvers">Resolvers</a>
  - <a href="https://docs.nestjs.com/graphql/mutations">Mutations</a>

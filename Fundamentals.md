@@ -1,4 +1,4 @@
-<!--
+<!-- ✔️
 This document is ´written´ by a proud Script Kiddy
 
 The document itself is under MIT License
