@@ -33,7 +33,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
 # FAQ
- - <a href="#http-adapter">HTTP adapter</a>
+ - <a href="#http-adapter">HTTP adapter</a> <a href="https://docs.nestjs.com/faq/http-adapter"><img src="https://nestjs.com/img/logo-small.svg" width="20" alt="Nest Logo" /></a>
  - <a href="#global-prefix">Global path prefix</a>
  - <a href="#hybrid-application">Hybrid application</a>
  - <a href="#multiple-servers">HTTPS &amp; multiple servers</a>
@@ -42,7 +42,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-### HTTP adapter <a href="https://docs.nestjs.com/faq/http-adapter"><img src="https://nestjs.com/img/logo-small.svg" id="http-adapter" width="16" alt="Nest Logo" /></a>
+### HTTP adapter <a href="https://docs.nestjs.com/faq/http-adapter"><img src="https://nestjs.com/img/logo-small.svg" id="http-adapter" width="20" alt="Nest Logo" /></a>
 
 Occasionally, you may want to access the underlying HTTP server, either within the Nest application context or from the outside.
 
