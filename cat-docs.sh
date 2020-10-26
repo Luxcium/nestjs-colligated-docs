@@ -36,6 +36,11 @@ echo "TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE" >>${FIL
 echo "SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." >>${FILENAME_}
 echo "-->" >>${FILENAME_}
 echo "" >>${FILENAME_}
+echo "<!-- START HEADER SECTION -->" >>${FILENAME_}
+echo "" >>${FILENAME_}
+cat ./Header.md >>${FILENAME_}
+echo "" >>${FILENAME_}
+echo "<!-- END HEADER SECTION -->" >>${FILENAME_}
 echo "<!-- START SECTION Overview -->" >>${FILENAME_}
 echo "" >>${FILENAME_}
 cat ./Overview.md >>${FILENAME_}
@@ -91,10 +96,10 @@ echo "" >>${FILENAME_}
 cat ./More.md >>${FILENAME_}
 echo "" >>${FILENAME_}
 echo "<!-- END SECTION More -->" >>${FILENAME_}
-echo "<!-- START SECTION LICENSE -->" >>${FILENAME_}
+echo "<!-- START LICENSE SECTION -->" >>${FILENAME_}
 echo "" >>${FILENAME_}
 cat ./LICENSE >>${FILENAME_}
 echo "" >>${FILENAME_}
-echo "<!-- END SECTION LICENSE -->" >>${FILENAME_}
+echo "<!-- END LICENSE SECTION -->" >>${FILENAME_}
 
 exit
