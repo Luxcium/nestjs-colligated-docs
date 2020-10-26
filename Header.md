@@ -7,14 +7,13 @@
 
  - This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know that (or your just learning now) Luxcium is a cute and nice little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*:
 
-**So without further ado let me tell you the truth, the text contained in this document is the result of the hard work of Kamil Myśliwiec**
+**So without further ado let me tell you the truth, the text contained in this document is the result of the hard work of *[Kamil Myśliwiec](http://kamilmysliwiec.com)***
 
-> *Copyright © 2017-2020 MIT by [Kamil Mysliwiec](http://kamilmysliwiec.com)*
 
 
 ## Overview
 
- - Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) for more acurate and up to date informations.
+ - Please refer to [the original NestJS Documentation <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" />](https://docs.nestjs.com/) for more acurate and up to date informations.
  - Please make sure you have 'Stared🌟' [the original Nest Project](https://github.com/nestjs/nest/stargazers).
  - The information used to compile this documentation comme from inside the [nestjs/docs.nestjs.com/content](https://github.com/nestjs/docs.nestjs.com/tree/58e409ba73974842d5a956cdeccdb89b382eccfc/content) the most recent version is available here: [docs.nestjs.com/.../master/content](https://github.com/nestjs/docs.nestjs.com/tree/master/content)
 
