@@ -32,7 +32,23 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### Gateways
+## Websockets
+ - <a href="#gateways">Gateways</a>
+ - <a href="#exception-filters">Exception filters</a>
+ - <a href="#pipes">Pipes</a>
+ - <a href="#guards">Guards</a>
+ - <a href="#interceptors">Interceptors</a>
+ - <a href="#adapter">Adapters</a>
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+
+### Gateways <a href="https://docs.nestjs.com/websockets/gateways"><img src="https://nestjs.com/img/logo-small.svg" id="gateways" width="20" alt="Nest Logo" /></a>
 
 Most of the concepts discussed elsewhere in this documentation, such as dependency injection, decorators, exception filters, pipes, guards and interceptors, apply equally to gateways. Wherever possible, Nest abstracts implementation details so that the same components can run across HTTP-based platforms, WebSockets, and Microservices. This section covers the aspects of Nest that are specific to WebSockets.
 
@@ -252,7 +268,7 @@ Nest will automatically assign the server instance to this property once it is r
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/02-gateways).
-### Exception filters
+### Exception filters <a href="https://docs.nestjs.com/websockets/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters" width="20" alt="Nest Logo" /></a>
 
 The only difference between the HTTP [exception filter](/exception-filters) layer and the corresponding web sockets layer is that instead of throwing `HttpException`, you should use `WsException`.
 
@@ -314,7 +330,7 @@ export class AllExceptionsFilter extends BaseWsExceptionFilter {
 ```
 
 The above implementation is just a shell demonstrating the approach. Your implementation of the extended exception filter would include your tailored **business logic** (e.g., handling various conditions).
-### Pipes
+### Pipes <a href="https://docs.nestjs.com/websockets/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between [regular pipes](/pipes) and microservice pipes. The only difference is that instead of throwing `HttpException`, you should use `WsException`. In addition, all pipes will be only applied to the `data` parameter (because validating or transforming `client` instance is useless).
 
@@ -340,7 +356,7 @@ handleEvent(client, data) {
   return { event, data };
 }
 ```
-### Guards
+### Guards <a href="https://docs.nestjs.com/websockets/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between web sockets guards and [regular HTTP application guards](/guards). The only difference is that instead of throwing `HttpException`, you should use `WsException`.
 
@@ -366,7 +382,7 @@ handleEvent(client, data) {
   return { event, data };
 }
 ```
-### Interceptors
+### Interceptors <a href="https://docs.nestjs.com/websockets/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors" width="20" alt="Nest Logo" /></a>
 
 There is no difference between [regular interceptors](/interceptors) and web sockets interceptors. The following example uses a manually instantiated method-scoped interceptor. Just as with HTTP based applications, you can also use gateway-scoped interceptors (i.e., prefix the gateway class with a `@UseInterceptors()` decorator).
 
@@ -386,7 +402,7 @@ handleEvent(client, data) {
   return { event, data };
 }
 ```
-### Adapters
+### Adapters <a href="https://docs.nestjs.com/websockets/adapter"><img src="https://nestjs.com/img/logo-small.svg" id="adapter" width="20" alt="Nest Logo" /></a>
 
 The WebSockets module is platform-agnostic, hence, you can bring your own library (or even a native implementation) by making use of `WebSocketAdapter` interface. This interface forces to implement few methods described in the following table:
 
@@ -534,3 +550,5 @@ app.useWebSocketAdapter(new WsAdapter(app));
 #### Example
 
 A working example that uses `WsAdapter` is available [here](https://github.com/nestjs/nest/tree/master/sample/16-gateways-ws).
+
+----------

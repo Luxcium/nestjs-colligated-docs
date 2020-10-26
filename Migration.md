@@ -350,3 +350,5 @@ All deprecations (from Nest version 5 to version 6) have been finally removed (e
 #### Node.js
 
 This release drops support for Node v8. We strongly recommend using the latest LTS version.
+
+----------

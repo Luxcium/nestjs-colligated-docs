@@ -32,7 +32,29 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### Overview
+## Microservices
+ - <a href="#basics">Overview</a>
+ - <a href="#redis">Redis</a>
+ - <a href="#mqtt">MQTT</a>
+ - <a href="#nats">NATS</a>
+ - <a href="#rabbitmq">RabbitMQ</a>
+ - <a href="#kafka">Kafka</a>
+ - <a href="#grpc">gRPC</a>
+ - <a href="#exception-filters">Exception filters</a>
+ - <a href="#pipes">Pipes</a>
+ - <a href="#guards">Guards</a>
+ - <a href="#interceptors">Interceptors</a>
+
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+
+### Overview <a href="https://docs.nestjs.com/microservices/basics"><img src="https://nestjs.com/img/logo-small.svg" id="basics" width="20" alt="Nest Logo" /></a>
 
 In addition to traditional (sometimes called monolithic) application architectures, Nest natively supports the microservice architectural style of development. Most of the concepts discussed elsewhere in this documentation, such as dependency injection, decorators, exception filters, pipes, guards and interceptors, apply equally to microservices. Wherever possible, Nest abstracts implementation details so that the same components can run across HTTP-based platforms, WebSockets, and Microservices. This section covers the aspects of Nest that are specific to microservices.
 
@@ -382,7 +404,7 @@ export interface RequestContext<T = any> {
 ```
 
 The `data` property is the message payload sent by the message producer. The `pattern` property is the pattern used to identify an appropriate handler to handle the incoming message.
-### Redis
+### Redis <a href="https://docs.nestjs.com/microservices/redis"><img src="https://nestjs.com/img/logo-small.svg" id="redis" width="20" alt="Nest Logo" /></a>
 
 The [Redis](https://redis.io/) transporter implements the publish/subscribe messaging paradigm and leverages the [Pub/Sub](https://redis.io/topics/pubsub) feature of Redis. Published messages are categorized in channels, without knowing what subscribers (if any) will eventually receive the message. Each microservice can subscribe to any number of channels. In addition, more than one channel can be subscribed to at a time. Messages exchanged through channels are **fire-and-forget**, which means that if a message is published and there are no subscribers interested in it, the message is removed and cannot be recovered. Thus, you don't have a guarantee that either messages or events will be handled by at least one service. A single message can be subscribed to (and received) by multiple subscribers.
 
@@ -482,7 +504,7 @@ getNotifications(data, context) {
 ```
 
 > info **Hint** `@Payload()`, `@Ctx()` and `RedisContext` are imported from the `@nestjs/microservices` package.
-### MQTT
+### MQTT <a href="https://docs.nestjs.com/microservices/mqtt"><img src="https://nestjs.com/img/logo-small.svg" id="mqtt" width="20" alt="Nest Logo" /></a>
 
 [MQTT](https://mqtt.org/) (Message Queuing Telemetry Transport) is an open source, lightweight messaging protocol, optimized for high-latency. This protocol provides a scalable and cost-efficient way to connect devices using a **publish/subscribe** model. A communication system built on MQTT consists of the publishing server, a broker and one or more clients. It is designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
 
@@ -599,7 +621,7 @@ getTemperature(context) {
   console.log(`Topic: ${context.getTopic()}`);
 }
 ```
-### NATS
+### NATS <a href="https://docs.nestjs.com/microservices/nats"><img src="https://nestjs.com/img/logo-small.svg" id="nats" width="20" alt="Nest Logo" /></a>
 
 [NATS](https://nats.io) is a simple, secure and high performance open source messaging system for cloud native applications, IoT messaging, and microservices architectures. The NATS server is written in the Go programming language, but client libraries to interact with the server are available for dozens of major programming languages. NATS supports both **At Most Once** and **At Least Once** delivery. It can run anywhere, from large servers and cloud instances, through edge gateways and even Internet of Things devices.
 
@@ -726,7 +748,7 @@ getDate(data, context) {
   return new Date().toLocaleTimeString(...);
 }
 ```
-### RabbitMQ
+### RabbitMQ <a href="https://docs.nestjs.com/microservices/rabbitmq"><img src="https://nestjs.com/img/logo-small.svg" id="rabbitmq" width="20" alt="Nest Logo" /></a>
 
 [RabbitMQ](https://www.rabbitmq.com/) is an open-source and lightweight message broker which supports multiple messaging protocols. It can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements. In addition, it's the most widely deployed message broker, used worldwide at small startups and large enterprises.
 
@@ -923,7 +945,7 @@ getNotifications(data, context) {
   channel.ack(originalMsg);
 }
 ```
-### Kafka
+### Kafka <a href="https://docs.nestjs.com/microservices/kafka"><img src="https://nestjs.com/img/logo-small.svg" id="kafka" width="20" alt="Nest Logo" /></a>
 
 [Kafka](https://kafka.apache.org/) is an open source, distributed streaming platform which has three key capabilities:
 
@@ -1308,7 +1330,7 @@ onModuleInit() {
 ```
 
 > info **Hint** Kafka reply topic naming conventions can be customized by extending `ClientKafka` in your own custom provider and overriding the `getResponsePatternName` method.
-### gRPC
+### gRPC <a href="https://docs.nestjs.com/microservices/grpc"><img src="https://nestjs.com/img/logo-small.svg" id="grpc" width="20" alt="Nest Logo" /></a>
 
 [gRPC](https://github.com/grpc/grpc-node) is a modern, open source, high performance RPC framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication.
 
@@ -1750,7 +1772,7 @@ lotsOfGreetings(requestStream: any, callback: (err: unknown, value: HelloRespons
 ```
 
 Here we used the `callback` function to send the response once processing of the `requestStream` has been completed.
-### Exception filters
+### Exception filters <a href="https://docs.nestjs.com/microservices/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters" width="20" alt="Nest Logo" /></a>
 
 The only difference between the HTTP [exception filter](/exception-filters) layer and the corresponding microservices layer is that instead of throwing `HttpException`, you should use `RpcException`.
 
@@ -1846,7 +1868,7 @@ export class AllExceptionsFilter extends BaseRpcExceptionFilter {
 ```
 
 The above implementation is just a shell demonstrating the approach. Your implementation of the extended exception filter would include your tailored **business logic** (e.g., handling various conditions).
-### Pipes
+### Pipes <a href="https://docs.nestjs.com/microservices/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between [regular pipes](/pipes) and microservices pipes. The only difference is that instead of throwing `HttpException`, you should use `RpcException`.
 
@@ -1870,7 +1892,7 @@ accumulate(data) {
   return (data || []).reduce((a, b) => a + b);
 }
 ```
-### Guards
+### Guards <a href="https://docs.nestjs.com/microservices/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between microservices guards and [regular HTTP application guards](/guards).
 The only difference is that instead of throwing `HttpException`, you should use `RpcException`.
@@ -1895,7 +1917,7 @@ accumulate(data) {
   return (data || []).reduce((a, b) => a + b);
 }
 ```
-### Interceptors
+### Interceptors <a href="https://docs.nestjs.com/microservices/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors" width="20" alt="Nest Logo" /></a>
 
 There is no difference between [regular interceptors](/interceptors) and microservices interceptors. The following example uses a manually instantiated method-scoped interceptor. Just as with HTTP based applications, you can also use controller-scoped interceptors (i.e., prefix the controller class with a `@UseInterceptors()` decorator).
 
@@ -1913,3 +1935,6 @@ accumulate(data) {
   return (data || []).reduce((a, b) => a + b);
 }
 ```
+
+
+----------

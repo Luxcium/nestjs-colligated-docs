@@ -60,7 +60,7 @@
  - <a href="https://docs.nestjs.com/graphql/other-features">Other features</a>
  - <a href="https://docs.nestjs.com/graphql/federation">Federation</a>
 
-### Websockets
+### Websockets ✔️
  - <a href="https://docs.nestjs.com/websockets/gateways">Gateways</a>
  - <a href="https://docs.nestjs.com/websockets/exception-filters">Exception filters</a>
  - <a href="https://docs.nestjs.com/websockets/pipes">Pipes</a>
@@ -68,7 +68,7 @@
  - <a href="https://docs.nestjs.com/websockets/interceptors">Interceptors</a>
  - <a href="https://docs.nestjs.com/websockets/adapter">Adapters</a>
 
-### Microservices
+### Microservices ✔️
  - <a href="https://docs.nestjs.com/microservices/basics">Overview</a>
  - <a href="https://docs.nestjs.com/microservices/redis">Redis</a>
  - <a href="https://docs.nestjs.com/microservices/mqtt">MQTT</a>
@@ -82,14 +82,14 @@
  - <a href="https://docs.nestjs.com/microservices/interceptors">Interceptors</a>
 
 
-### Cli
+### Cli ✔️
  - <a href="https://docs.nestjs.com/cli/overview">Overview</a>
  - <a href="https://docs.nestjs.com/cli/monorepo">Workspaces</a>
  - <a href="https://docs.nestjs.com/cli/libraries">Libraries</a>
  - <a href="https://docs.nestjs.com/cli/usages">Usage</a>
  - <a href="https://docs.nestjs.com/cli/scripts">Scripts</a>
 
-### Openapi
+### Openapi ✔️
  - <a href="https://docs.nestjs.com/openapi/introduction">Introduction</a>
  - <a href="https://docs.nestjs.com/openapi/types-and-parameters">Types and Parameters</a>
  - <a href="https://docs.nestjs.com/openapi/operations">Operations</a>
@@ -100,11 +100,11 @@
  - <a href="https://docs.nestjs.com/openapi/other-features">Other features</a>
  - <a href="https://docs.nestjs.com/openapi/migration-guide">Migration guide</a>
 
-### Recipes
+### Recipes ✔️
  - <a href="https://docs.nestjs.com/recipes/sql-typeorm">TypeORM</a>
  - <a href="https://docs.nestjs.com/recipes/mongodb">Mongoose</a>
  - <a href="https://docs.nestjs.com/recipes/sql-sequelize">Sequelize</a>
- - <a href="https://docs.nestjs.com/recipes/swagger">OpenAPI (Swagger)</a>
+ - <a href="https://docs.nestjs.com/recipes/swagger"> OpenAPI (Swagger)</a>
  - <a href="https://docs.nestjs.com/recipes/cqrs">CQRS</a>
  - <a href="https://docs.nestjs.com/recipes/prisma">Prisma</a>
  - <a href="https://docs.nestjs.com/recipes/terminus">Health checks (Terminus)</a>

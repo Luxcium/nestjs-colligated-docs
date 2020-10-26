@@ -32,7 +32,26 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### SQL (TypeORM)
+## Recipes
+ - <a href="#sql-typeorm">TypeORM</a>
+ - <a href="#mongodb">Mongoose</a>
+ - <a href="#sql-sequelize">Sequelize</a>
+ - <a href="#swagger">OpenAPI (Swagger)</a>
+ - <a href="#cqrs">CQRS</a>
+ - <a href="#prisma">Prisma</a>
+ - <a href="#terminus">Health checks (Terminus)</a>
+ - <a href="#documentation">Documentation</a>
+ - <a href="#hot-reload">Hot reload</a>
+ - <a href="#serve-static">Serve static</a>
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+### SQL (TypeORM) <a href="https://docs.nestjs.com/recipes/sql-typeorm"><img src="https://nestjs.com/img/logo-small.svg" id="sql-typeorm" width="20" alt="Nest Logo" /></a>
 
 ##### This chapter applies only to TypeScript
 
@@ -184,7 +203,7 @@ export class PhotoModule {}
 ```
 
 > warning **Hint** Do not forget to import the `PhotoModule` into the root `ApplicationModule`.
-### MongoDB (Mongoose)
+### MongoDB (Mongoose) <a href="https://docs.nestjs.com/recipes/mongodb"><img src="https://nestjs.com/img/logo-small.svg" id="mongodb" width="20" alt="Nest Logo" /></a>
 
 > **Warning** In this article, you'll learn how to create a `DatabaseModule` based on the **Mongoose** package from scratch using custom components. As a consequence, this solution contains a lot of overhead that you can omit using ready to use and available out-of-the-box dedicated `@nestjs/mongoose` package. To learn more, see [here](/techniques/mongodb).
 
@@ -371,7 +390,7 @@ export class CatsModule {}
 ```
 
 > warning **Hint** Do not forget to import the `CatsModule` into the root `ApplicationModule`.
-### SQL (Sequelize)
+### SQL (Sequelize) <a href="https://docs.nestjs.com/recipes/sql-sequelize"><img src="https://nestjs.com/img/logo-small.svg" id="sql-sequelize" width="20" alt="Nest Logo" /></a>
 
 ##### This chapter applies only to TypeScript
 
@@ -514,7 +533,14 @@ export class CatsModule {}
 ```
 
 > warning **Hint** Do not forget to import the `CatsModule` into the root `ApplicationModule`.
-### CQRS
+
+
+### OpenAPI (Swagger) <a href="https://docs.nestjs.com/recipes/swagger"><img src="https://nestjs.com/img/logo-small.svg" id="swagger" width="20" alt="Nest Logo" /></a>
+
+[OPENAPI (Swagger)](./Openapi.md)  have is own section in this documentation please look at [Openapi.md](./Openapi.md)
+
+
+### CQRS <a href="https://docs.nestjs.com/recipes/cqrs"><img src="https://nestjs.com/img/logo-small.svg" id="cqrs" width="20" alt="Nest Logo" /></a>
 
 The flow of simple [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create, Read, Update and Delete) applications can be described using the following steps:
 
@@ -807,7 +833,7 @@ export class HeroesGameModule {}
 `CommandBus`, `QueryBus` and `EventBus` are **Observables**. This means that you can easily subscribe to the whole stream and enrich your application with **Event Sourcing**.
 
 A working example is available [here](https://github.com/kamilmysliwiec/nest-cqrs-example).
-### Prisma
+### Prisma <a href="https://docs.nestjs.com/recipes/prisma"><img src="https://nestjs.com/img/logo-small.svg" id="prisma" width="20" alt="Nest Logo" /></a>
 
 [Prisma](https://www.prisma.io) is an [open-source](https://github.com/prisma/prisma) database toolkit. You can use it to query data from a database inside a Node.js or TypeScript application. Prisma and NestJS go great together since you can use Prisma in your services to fulfill the data needs from your controllers.
 
@@ -1347,7 +1373,7 @@ This controller implements the following routes:
 In this recipe, you learned how to use Prisma along with NestJS to implement a REST API. The controller that implements the routes of the API is calling a `PrismaService` which in turn uses Prisma Client to send queries to a database to fulfill the data needs of incoming requests.
 
 If you want to learn more about Prisma, be sure to check out the [documentation](https://www.prisma.io/docs/).
-### Healthchecks (Terminus)
+### Healthchecks (Terminus) <a href="https://docs.nestjs.com/recipes/terminus"><img src="https://nestjs.com/img/logo-small.svg" id="terminus" width="20" alt="Nest Logo" /></a>
 
 The NestJS **Terminus** integration supports you with **readiness / liveness** health checks. Healthchecks are very important when it comes to complex
 backend setups. In a nutshell, a health check in the realm of web development usually consists of a special address, for example, `https://my-website.com/health/readiness`.
@@ -1592,7 +1618,7 @@ export class HealthController {
   }
 }
 ```
-### Documentation
+### Documentation <a href="https://docs.nestjs.com/recipes/documentation"><img src="https://nestjs.com/img/logo-small.svg" id="documentation" width="20" alt="Nest Logo" /></a>
 
 **Compodoc** is a documentation tool for Angular applications. Since Nest and Angular share similar project and code structures, **Compodoc** works with Nest applications as well.
 
@@ -1620,17 +1646,17 @@ Open your browser and navigate to [http://localhost:8080](http://localhost:8080)
 #### Contribute
 
 You can participate and contribute to the Compodoc project [here](https://github.com/compodoc/compodoc).
-### Hot Reload
+### Hot Reload <a href="https://docs.nestjs.com/recipes/hot-reload"><img src="https://nestjs.com/img/logo-small.svg" id="hot-reload" width="20" alt="Nest Logo" /></a>
 
 The highest impact on your application's bootstrapping process is **TypeScript compilation**. Fortunately, with [webpack](https://github.com/webpack/webpack) HMR (Hot-Module Replacement), we don't need to recompile the entire project each time a change occurs. This significantly decreases the amount of time necessary to instantiate your application, and makes iterative development a lot easier.
 
 > warning **Warning** Note that `webpack` won't automatically copy your assets (e.g. `graphql` files) to the `dist` folder. Similarly, `webpack` is not compatible with glob static paths (e.g., the `entities` property in `TypeOrmModule`).
 
-### With CLI
+#### With CLI
 
 If you are using the [Nest CLI](https://docs.nestjs.com/cli/overview), the configuration process is pretty straightforward. The CLI wraps `webpack`, which allows use of the `HotModuleReplacementPlugin`.
 
-#### Installation
+##### Installation
 
 First install the required packages:
 
@@ -1638,7 +1664,7 @@ First install the required packages:
 $ npm i --save-dev webpack-node-externals start-server-webpack-plugin
 ```
 
-#### Configuration
+##### Configuration
 
 Once the installation is complete, create a `webpack-hmr.config.js` file in the root directory of your application.
 
@@ -1669,7 +1695,7 @@ module.exports = function(options) {
 
 This function takes the original object containing the default webpack configuration and returns a modified one with an applied `HotModuleReplacementPlugin` plugin.
 
-#### Hot-Module Replacement
+##### Hot-Module Replacement
 
 To enable **HMR**, open the application entry file (`main.ts`) and add the following webpack-related instructions:
 
@@ -1700,11 +1726,11 @@ Now simply open your command line and run the following command:
 $ npm run start:dev
 ```
 
-### Without CLI
+#### Without CLI
 
 If you are not using the [Nest CLI](https://docs.nestjs.com/cli/overview), the configuration will be slightly more complex (will require more manual steps).
 
-#### Installation
+##### Installation
 
 First install the required packages:
 
@@ -1712,7 +1738,7 @@ First install the required packages:
 $ npm i --save-dev webpack webpack-cli webpack-node-externals ts-loader start-server-webpack-plugin
 ```
 
-#### Configuration
+##### Configuration
 
 Once the installation is complete, create a `webpack.config.js` file in the root directory of your application.
 
@@ -1757,7 +1783,7 @@ module.exports = {
 
 This configuration tells webpack a few essential things about your application: location of the entry file, which directory should be used to hold **compiled** files, and what kind of loader we want to use to compile source files. Generally, you should be able to use this file as-is, even if you don't fully understand all of the options.
 
-#### Hot-Module Replacement
+##### Hot-Module Replacement
 
 To enable **HMR**, open the application entry file (`main.ts`) and add the following webpack-related instructions:
 
@@ -1789,7 +1815,9 @@ $ npm run start:dev
 ```
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/08-webpack).
-### Serve Static
+
+
+### Serve Static <a href="https://docs.nestjs.com/recipes/serve-static"><img src="https://nestjs.com/img/logo-small.svg" id="serve-static" width="20" alt="Nest Logo" /></a>
 
 In order to serve static content like a Single Page Application (SPA) we can use the `ServeStaticModule` from the [`@nestjs/serve-static`](https://www.npmjs.com/package/@nestjs/serve-static) package.
 
@@ -1829,11 +1857,12 @@ With this in place, build the static website and place its content in the locati
 #### Summary
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/24-serve-static).
-### CRUD utilities
+
+#### CRUD utilities
 
 > warning **Notice** This chapter applies only to TypeScript.
 
-#### Overview
+##### Overview
 
 [CRUD](https://github.com/nestjsx/crud) is a **community package** (`@nestjsx/crud`) that helps you create database-centric Create/Read/Update/Delete (CRUD) controllers and services with ease, and provides a rich set of features for your RESTful API out-of-the-box:
 
@@ -1850,7 +1879,7 @@ A working example is available [here](https://github.com/nestjs/nest/tree/master
 
 In this chapter, you'll get an overview of how to create CRUD controllers and services using `TypeORM`. Complete documentation is available at the project's [wiki](https://github.com/nestjsx/crud/wiki/Home). We assume that you have already successfully installed and set up the `@nestjs/typeorm` package. To learn more, see [here](/techniques/sql).
 
-#### Getting started
+##### Getting started
 
 Start by installing all required dependencies:
 
@@ -1945,7 +1974,7 @@ At this point, your application will have these newly created endpoints:
 - `PUT /heroes/:id` - replace one hero.
 - `DELETE /heroes/:id` - delete one hero.
 
-#### Filtering and pagination
+##### Filtering and pagination
 
 [CRUD](https://github.com/nestjsx/crud) provides rich tools for filtering and pagination. Here's a sample HTTP REST request:
 
@@ -1989,7 +2018,7 @@ The response object would look like this:
 
 The complete list of query params and filter operators can be found in the project's [Wiki](https://github.com/nestjsx/crud/wiki/Requests).
 
-#### Relations
+##### Relations
 
 **Relations** is another powerful feature. In your CRUD controller, you can specify the list of an entity's relations which are allowed to fetch within your API calls:
 
@@ -2024,7 +2053,7 @@ The response will also contain a `faction` object with the `name` column selecte
 
 You can find more information about relations in the project's [WiKi](https://github.com/nestjsx/crud/wiki/Controllers#join).
 
-#### Path params validation
+##### Path params validation
 
 By default, [CRUD](https://github.com/nestjsx/crud) creates a slug with the name `id` and validates it as a `number`. You can modify this behavior if desired. Assume, your entity has a primary column `_id` - a UUID string - and you need to use it as a slug for your endpoints. This can be done with the following options:
 
@@ -2049,7 +2078,7 @@ export class HeroesController {
 
 For more params options please see the project's [Wiki](https://github.com/nestjsx/crud/wiki/Controllers#params).
 
-#### Request body validation
+##### Request body validation
 
 Request body validation is performed out-of-the-box by applying the standard Nest `ValidationPipe` on each POST, PUT or PATCH request. The `model.type` from the `@Crud()` decorator options is used as a DTO that describes validation rules.
 
@@ -2085,7 +2114,7 @@ export class Hero {
 
 > warning **Notice** Full support of separate DTO classes for `create` and `update` actions is one of the main priorities for the next [CRUD](https://github.com/nestjsx/crud) release.
 
-#### Routes options
+##### Routes options
 
 You can disable or enable generation of specific routes by passing the `routes` options property to the `@Crud()` decorator:
 
@@ -2109,6 +2138,9 @@ export class HeroesController {
 
 You can apply any method decorators by passing them to the specific route `decorators` array. This is convenient when you want to add some decorators without overriding base methods.
 
-#### Documentation
+##### Documentation
 
 The examples in this chapter cover only some of the [CRUD](https://github.com/nestjsx/crud) features. You can find complete documentation on the project's [Wiki](https://github.com/nestjsx/crud/wiki/Home) page.
+
+
+ ----------

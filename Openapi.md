@@ -32,7 +32,25 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### Introduction
+## Openapi
+ - <a href="#introduction">Introduction</a>
+ - <a href="#types-and-parameters">Types and Parameters</a>
+ - <a href="#operations">Operations</a>
+ - <a href="#security">Security</a>
+ - <a href="#mapped-types">Mapped Types</a>
+ - <a href="#decorators">Decorators</a>
+ - <a href="#cli-plugin">CLI Plugin</a>
+ - <a href="#other-features">Other features</a>
+ - <a href="#migration-guide">Migration guide</a>
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+### Introduction <a href="https://docs.nestjs.com/openapi/introduction"><img src="https://nestjs.com/img/logo-small.svg" id="introduction" width="20" alt="Nest Logo" /></a>
 
 The [OpenAPI](https://swagger.io/specification/) specification is a language-agnostic definition format used to describe RESTful APIs. Nest provides a dedicated [module](https://github.com/nestjs/swagger) which allows generating such a specification by leveraging decorators.
 
@@ -101,7 +119,7 @@ The `SwaggerModule` automatically reflects all of your endpoints. Note that the 
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/11-swagger).
-### Types and parameters
+### Types and parameters <a href="https://docs.nestjs.com/openapi/types-and-parameters"><img src="https://nestjs.com/img/logo-small.svg" id="types-and-parameters" width="20" alt="Nest Logo" /></a>
 
 The `SwaggerModule` searches for all `@Body()`, `@Query()`, and `@Param()` decorators in route handlers to generate the API document. It also creates corresponding model definitions by taking advantage of reflection. Consider the following code:
 
@@ -391,7 +409,7 @@ pets: Pet[];
 > info **Hint** The `getSchemaPath()` function is imported from `@nestjs/swagger`.
 
 Both `Cat` and `Dog` must be defined as extra models using the `@ApiExtraModels()` decorator (at the class-level).
-### Operations
+### Operations <a href="https://docs.nestjs.com/openapi/operations"><img src="https://nestjs.com/img/logo-small.svg" id="operations" width="20" alt="Nest Logo" /></a>
 
 In OpenAPI terms, paths are endpoints (resources), such as `/users` or `/reports/summary`, that your API exposes, and operations are the HTTP methods used to manipulate these paths, such as `GET`, `POST` or `DELETE`.
 
@@ -536,7 +554,7 @@ To add an Extension to a request use the `@ApiExtension()` decorator. The extens
 ```typescript
 @ApiExtension('x-foo', { hello: 'world' })
 ```
-### Security
+### Security <a href="https://docs.nestjs.com/openapi/security"><img src="https://nestjs.com/img/logo-small.svg" id="security" width="20" alt="Nest Logo" /></a>
 
 To define which security mechanisms should be used for a specific operation, use the `@ApiSecurity()` decorator.
 
@@ -620,7 +638,7 @@ Before you run your application, remember to add the security definition to your
 ```typescript
 const options = new DocumentBuilder().addCookieAuth('optional-session-id');
 ```
-### Mapped types
+### Mapped types <a href="https://docs.nestjs.com/openapi/mapped-types"><img src="https://nestjs.com/img/logo-small.svg" id="mapped-types" width="20" alt="Nest Logo" /></a>
 
 As you build out features like **CRUD** (Create/Read/Update/Delete) it's often useful to construct variants on a base entity type. Nest provides several utility functions that perform type transformations to make this task more convenient.
 
@@ -750,7 +768,7 @@ export class UpdateCatDto extends PartialType(
   OmitType(CreateCatDto, ['name'] as const),
 ) {}
 ```
-### Decorators
+### Decorators <a href="https://docs.nestjs.com/openapi/decorators"><img src="https://nestjs.com/img/logo-small.svg" id="decorators" width="20" alt="Nest Logo" /></a>
 
 All of the available OpenAPI decorators have an `Api` prefix to distinguish them from the core decorators. Below is a full list of the exported decorators along with a designation of the level at which the decorator may be applied.
 
@@ -775,7 +793,8 @@ All of the available OpenAPI decorators have an `Api` prefix to distinguish them
 | `@ApiPropertyOptional()` | Model               |
 | `@ApiHideProperty()`     | Model               |
 | `@ApiExtension()`        | Method              |
-### CLI Plugin
+
+### CLI Plugin <a href="https://docs.nestjs.com/openapi/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin" width="20" alt="Nest Logo" /></a>
 
 TypeScript's metadata reflection system has several limitations which make it impossible to, for instance, determine what properties a class consists of or recognize whether a given property is optional or required. However, some of these constraints can be addressed at compilation time. Nest provides a plugin that enhances the TypeScript compilation process to reduce the amount of boilerplate code required.
 
@@ -899,7 +918,7 @@ getCustomTransformers: (program: any) => ({
   before: [require('@nestjs/swagger/plugin').before({}, program)]
 }),
 ```
-### Other features
+### Other features <a href="https://docs.nestjs.com/openapi/other-features"><img src="https://nestjs.com/img/logo-small.svg" id="other-features" width="20" alt="Nest Logo" /></a>
 
 #### Global prefix
 
@@ -979,7 +998,8 @@ Navigate to `http://localhost:3000/api/cats` to see the Swagger UI for cats:
 In turn, `http://localhost:3000/api/dogs` will expose the Swagger UI for dogs:
 
 <figure><img src="https://github.com/Luxcium/docs.nestjs.com/blob/master/src/assets/swagger-dogs.png" /></figure>
-### Migration guide
+
+### Migration guide <a href="https://docs.nestjs.com/openapi/migration-guide"><img src="https://nestjs.com/img/logo-small.svg" id="migration-guide" width="20" alt="Nest Logo" /></a>
 
 If you're currently using `@nestjs/swagger@3.*`, note the following breaking/API changes in version 4.0.
 
@@ -1017,3 +1037,6 @@ The following methods have been added:
 - `addSecurityRequirements`
 
 <app-banner-shop></app-banner-shop>
+
+
+----------

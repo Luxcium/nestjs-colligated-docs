@@ -32,7 +32,22 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### Overview
+
+## Cli
+ - <a href="#overview">Overview</a>
+ - <a href="#monorepo">Workspaces</a>
+ - <a href="#libraries">Libraries</a>
+ - <a href="#usages">Usage</a>
+ - <a href="#scripts">Scripts</a>
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+### Overview <a href="https://docs.nestjs.com/cli/overview"><img src="https://nestjs.com/img/logo-small.svg" id="overview" width="20" alt="Nest Logo" /></a>
 
 The [Nest CLI](https://github.com/nestjs/nest-cli) is a command-line interface tool that helps you to initialize, develop, and maintain your Nest applications. It assists in multiple ways, including scaffolding the project, serving it in development mode, and building and bundling the application for production distribution. It embodies best-practice architectural patterns to encourage well-structured apps.
 
@@ -129,7 +144,8 @@ See [usage](/cli/usages) for detailed descriptions for each command.
 | `add`      |       | Imports a library that has been packaged as a **nest library**, running its install schematic.        |
 | `update`   | `u`   | Update `@nestjs` dependencies in the `package.json` `"dependencies"` list to their `@latest` version. |
 | `info`     | `i`   | Displays information about installed nest packages and other helpful system info.                     |
-### Workspaces
+
+### Workspaces <a href="https://docs.nestjs.com/cli/monorepo"><img src="https://nestjs.com/img/logo-small.svg" id="monorepo" width="20" alt="Nest Logo" /></a>
 
 Nest has two modes for organizing code:
 
@@ -449,7 +465,7 @@ For example:
 #### Project properties
 
 This element exists only for monorepo-mode structures. You generally should not edit these properties, as they are used by Nest to locate projects and their configuration options within the monorepo.
-### Libraries
+### Libraries <a href="https://docs.nestjs.com/cli/libraries"><img src="https://nestjs.com/img/logo-small.svg" id="libraries" width="20" alt="Nest Logo" /></a>
 
 Many applications need to solve the same general problems, or re-use a modular component in several different contexts. Nest has a few ways of addressing this, but each works at a different level to solve the problem in a way that helps meet different architectural and organizational objectives.
 
@@ -568,7 +584,7 @@ Notice above that we've used a path alias of `@app` in the ES module `import` li
 So, in a nutshell, the combination of the monorepo and library features has made it easy and intuitive to include library modules into applications.
 
 This same mechanism enables building and deploying applications that compose libraries. Once you've imported the `MyLibraryModule`, running `nest build` handles all the module resolution automatically and bundles the app along with any library dependencies, for deployment. The default compiler for a monorepo is **webpack**, so the resulting distribution file is a single file that bundles all of the transpiled JavaScript files into a single file. You can also switch to `tsc` as described <a href="https://docs.nestjs.com/cli/monorepo#global-compiler-options">here</a>.
-### CLI command reference
+### CLI command reference <a href="https://docs.nestjs.com/cli/usages"><img src="https://nestjs.com/img/logo-small.svg" id="usages" width="20" alt="Nest Logo" /></a>
 
 #### nest new
 
@@ -755,7 +771,7 @@ testing version : 6.0.0
 common version : 6.0.0
 core version : 6.0.0
 ```
-### Nest CLI and scripts
+### Nest CLI and scripts <a href="https://docs.nestjs.com/cli/scripts"><img src="https://nestjs.com/img/logo-small.svg" id="scripts" width="20" alt="Nest Logo" /></a>
 
 This section provides additional background on how the `nest` command interacts with compilers and scripts to help DevOps personnel manage the development environment.
 
@@ -833,3 +849,6 @@ You can then replace the `scripts` defined in `package.json` with the following 
 "start:dev": "nest start --watch",
 "start:debug": "nest start --debug --watch",
 ```
+
+
+----------
