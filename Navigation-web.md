@@ -1,5 +1,5 @@
 ## Introduction
-### Overview
+### Overview ✔️
  - <a href="https://docs.nestjs.com/first-steps">First steps</a>
  - <a href="https://docs.nestjs.com/controllers">Controllers</a>
  - <a href="https://docs.nestjs.com/providers">Providers</a>
@@ -11,7 +11,7 @@
  - <a href="https://docs.nestjs.com/interceptors">Interceptors</a>
  - <a href="https://docs.nestjs.com/custom-decorators">Custom decorators</a>
 
-### Fundamentals
+### Fundamentals ✔️
  - <a href="https://docs.nestjs.com/fundamentals/custom-providers">Custom providers</a>
  - <a href="https://docs.nestjs.com/fundamentals/async-providers">Asynchronous providers</a>
  - <a href="https://docs.nestjs.com/fundamentals/dynamic-modules">Dynamic modules</a>
@@ -112,17 +112,17 @@
  - <a href="https://docs.nestjs.com/recipes/hot-reload">Hot reload</a>
  - <a href="https://docs.nestjs.com/recipes/serve-static">Serve static</a>
 
-### Faq
+### Faq ✔️
  - <a href="https://docs.nestjs.com/faq/http-adapter">HTTP adapter</a>
  - <a href="https://docs.nestjs.com/faq/global-prefix">Global path prefix</a>
  - <a href="https://docs.nestjs.com/faq/hybrid-application">Hybrid application</a>
  - <a href="https://docs.nestjs.com/faq/multiple-servers">HTTPS &amp; multiple servers</a>
  - <a href="https://docs.nestjs.com/faq/request-lifecycle">Request lifecycle</a>
 
-### More
+### More ✔️
  - <a href="https://docs.nestjs.com/standalone-applications">Standalone apps</a>
- - <a href="https://github.com/nestjs/nest/tree/master/sample">Examples</a>
  - <a href="https://docs.nestjs.com/migration-guide"> Migration guide </a>
+ - <a href="https://github.com/nestjs/nest/tree/master/sample">Examples</a>
  - <a href="https://docs.nestjs.com/discover/companies">Who is using Nest?</a>
 
  <!--

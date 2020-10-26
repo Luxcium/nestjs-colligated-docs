@@ -5,6 +5,12 @@
  - <a href="https://docs.nestjs.com/discover/companies"><img src="https://nestjs.com/img/logo-small.svg" width="15" alt="Nest Logo" /> Who is using Nest?</a>
 
 
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
 ### Standalone applications <a href="https://docs.nestjs.com/standalone-applications"><img src="https://nestjs.com/img/logo-small.svg" id="standalone-applications" width="20" alt="Nest Logo" /></a>
 
 There are several ways of mounting a Nest application. You can create a web app, a microservice or just a bare Nest **standalone application** (without any network listeners). The Nest standalone application is a wrapper around the Nest **IoC container**, which holds all instantiated classes. We can obtain a reference to any existing instance from within any imported module directly using the standalone application object. Thus, you can take advantage of the Nest framework anywhere, including, for example, scripted **CRON** jobs. You can even build a **CLI** on top of it.
@@ -463,3 +469,5 @@ Nest doesn't have a large company that sits behind and is continuously paying fo
 - or reach me directly: [mail@kamilmysliwiec.com](mailto:mail@kamilmysliwiec.com)
 
 If you fell in love with Nest, or you run a business which is using Nest, consider sponsoring its development to ensure that the project which your product relies on is **actively maintained** and improved. Also, your support could help me to work more on content that benefits whole Nest community, writing either educational blog posts or recording videos.
+
+------
