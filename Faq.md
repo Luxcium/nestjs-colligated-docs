@@ -40,11 +40,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#request-lifecycle">Request lifecycle</a>
 
 
-<a id="http-adapter">
 
-### HTTP adapter
 
- - <a href="https://docs.nestjs.com/faq/http-adapter">HTTP adapter</a>
+### HTTP adapter <a href="https://docs.nestjs.com/faq/http-adapter"><img src="https://nestjs.com/img/logo-small.svg" id="http-adapter" width="16" alt="Nest Logo" /></a>
 
 Occasionally, you may want to access the underlying HTTP server, either within the Nest application context or from the outside.
 
