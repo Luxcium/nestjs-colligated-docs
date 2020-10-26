@@ -1,7 +1,7 @@
 
 ## Overview <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Overview" width="20" alt="arrow narrow up" title="Back to top" /></a>
 
- - <a href="#intro">Introduction</a>
+ - <a href="#intro-ov">Introduction</a>
  - <a href="#first-steps">First steps</a>
  - <a href="#controllers">Controllers</a>
  - <a href="#providers">Providers</a>
@@ -20,7 +20,7 @@
 
 ------
 
-### Introduction <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" id="#intro" width="20" alt="Nest Logo" /></a>
+### Introduction <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" id="intro-ov" width="20" alt="Nest Logo" /></a>
 
 
 Nest (NestJS) is a framework for building efficient, scalable [Node.js](https://nodejs.org/) server-side applications. It uses progressive JavaScript, is built with and fully supports [TypeScript](http://www.typescriptlang.org/) (yet still enables developers to code in pure JavaScript) and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
