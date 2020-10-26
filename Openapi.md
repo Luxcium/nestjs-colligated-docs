@@ -1,5 +1,5 @@
 
-## Openapi
+## Openapi <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Openapi" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#introduction">Introduction</a>
  - <a href="#types-and-parameters">Types and Parameters</a>
  - <a href="#operations">Operations</a>

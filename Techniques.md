@@ -1,5 +1,5 @@
 
-## Techniques
+## Techniques <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Techniques" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#authentication">Authentication</a>
  - <a href="#database">Database</a>
  - <a href="#mongodb-tk">Mongo</a>
