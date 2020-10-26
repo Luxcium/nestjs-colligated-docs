@@ -7,9 +7,9 @@
 
  - This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know that (or you are just learning now) Luxcium is a cute little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*:
 
-**So without further ado let me tell you the truth, the text contained in this document is the work of Kamil Myśliwiec**
+**So without further ado let me tell you the truth, the text contained in this document is the resuld of the hard work of Kamil Myśliwiec**
 
-*Copyright © 2017-2020 MIT by [Kamil Mysliwiec](http://kamilmysliwiec.com)*
+> *Copyright © 2017-2020 MIT by [Kamil Mysliwiec](http://kamilmysliwiec.com)*
 
 
 ## Overview
