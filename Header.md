@@ -1,6 +1,6 @@
 # Nest Colligated Documentation
 
-This document is ´written´ by a proud *Script Kiddy* using the **`cat`** command so all the power and all the merit of this hard work is dedicated to the [Cat Person](https://github.com/kamilmysliwiec)! Tanks to the [MIT License](https://github.com/nestjs/docs.nestjs.com/blob/master/LICENSE) I have been able to ´write´ this document all by myself, without copy-pasting code or scripts from anyone else, (*Like Real Script Kiddies always do*)†. In fact I have used my own script: [`cat-docs.sh`](https://github.com/Luxcium/nestjs-colligated-docs/blob/master/cat-docs.sh) to colligate the documentation.
+This document is ´written´ by a proud *Script Kiddy* using the **`cat`** command so all the power and all the merit of this hard work is dedicated to the [Cat Person](https://github.com/kamilmysliwiec)! Tanks to the [MIT License](https://github.com/nestjs/docs.nestjs.com/blob/master/LICENSE) I have been able to ´write´ this document all by myself, without copy-pasting code or scripts from anyone else, *Like Real Script Kiddies always do†*. In fact I have used my own script: [`cat-docs.sh`](https://github.com/Luxcium/nestjs-colligated-docs/blob/master/cat-docs.sh) to colligate the documentation.
 
 > *†Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos@yabbs (Wed Jun 1 22:30:55 1994)*
 
