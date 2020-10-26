@@ -294,3 +294,5 @@ In general, the request lifecycle looks like the following:
 1. Global interceptor (post-request)
 1. Exception filters (route, then controller, then global)
 1. Server response
+
+----------
