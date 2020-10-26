@@ -70,6 +70,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 
 
 > ✔️ Indicate navigation enhancement within the documentation page and to the official web site.
+
 > <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> Indicate link to the official web site.
 
 
