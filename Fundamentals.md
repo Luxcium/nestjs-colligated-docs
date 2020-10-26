@@ -31,8 +31,27 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
+## Fundamentals
+ - <a href="https://docs.nestjs.com/fundamentals/custom-providers">Custom providers</a>
+ - <a href="https://docs.nestjs.com/fundamentals/async-providers">Asynchronous providers</a>
+ - <a href="https://docs.nestjs.com/fundamentals/dynamic-modules">Dynamic modules</a>
+ - <a href="https://docs.nestjs.com/fundamentals/injection-scopes">Injection scopes</a>
+ - <a href="https://docs.nestjs.com/fundamentals/circular-dependency">Circular dependency</a>
+ - <a href="https://docs.nestjs.com/fundamentals/module-ref">Module reference</a>
+ - <a href="https://docs.nestjs.com/fundamentals/execution-context">Execution context</a>
+ - <a href="https://docs.nestjs.com/fundamentals/lifecycle-events">Lifecycle events</a>
+ - <a href="https://docs.nestjs.com/fundamentals/platform-agnosticism">Platform agnosticism</a>
+ - <a href="https://docs.nestjs.com/fundamentals/testing">Testing</a>
 
-### Custom providers
+
+
+> Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
+
+
+------
+
+
+### Custom providers <a href="https://docs.nestjs.com/fundamentals/custom-providers"><img src="https://nestjs.com/img/logo-small.svg" id="custom-providers" width="20" alt="Nest Logo" /></a>
 
 In earlier chapters, we touched on various aspects of **Dependency Injection (DI)** and how it is used in Nest. One example of this is the [constructor based](https://docs.nestjs.com/providers#dependency-injection) dependency injection used to inject instances (often service providers) into classes. You won't be surprised to learn that Dependency Injection is built in to the Nest core in a fundamental way. So far, we've only explored one main pattern. As your application grows more complex, you may need to take advantage of the full features of the DI system, so let's explore them in more detail.
 
@@ -416,7 +435,7 @@ const connectionFactory = {
 })
 export class AppModule {}
 ```
-### Asynchronous providers
+### Asynchronous providers <a href="https://docs.nestjs.com/fundamentals/async-providers"><img src="https://nestjs.com/img/logo-small.svg" id="async-providers" width="20" alt="Nest Logo" /></a>
 
 At times, the application start should be delayed until one or more **asynchronous tasks** are completed. For example, you may not want to start accepting requests until the connection with the database has been established. You can achieve this using _asynchronous providers_.
 
@@ -441,7 +460,7 @@ Asynchronous providers are injected to other components by their tokens, like an
 #### Example
 
 [The TypeORM recipe](/recipes/sql-typeorm) has a more substantial example of an asynchronous provider.
-### Dynamic modules
+### Dynamic modules <a href="https://docs.nestjs.com/fundamentals/dynamic-modules"><img src="https://nestjs.com/img/logo-small.svg" id="dynamic-modules" width="20" alt="Nest Logo" /></a>
 
 The [Modules chapter](/modules) covers the basics of Nest modules, and includes a brief introduction to [dynamic modules](https://docs.nestjs.com/modules#dynamic-modules). This chapter expands on the subject of dynamic modules. Upon completion, you should have a good grasp of what they are and how and when to use them.
 
@@ -602,7 +621,7 @@ It should now be clear how the pieces tie together. Calling `ConfigModule.regist
 
 Our dynamic module isn't very interesting yet, however, as we haven't introduced any capability to **configure** it as we said we would like to do. Let's address that next.
 
-### Module configuration
+#### Module configuration
 
 The obvious solution for customizing the behavior of the `ConfigModule` is to pass it an `options` object in the static `register()` method, as we guessed above. Let's look once again at our consuming module's `imports` property:
 
@@ -704,10 +723,11 @@ One final note: for simplicity we used a string-based injection token (`'CONFIG_
 export const CONFIG_OPTIONS = 'CONFIG_OPTIONS';
 ```
 
-### Example
+#### Example
 
 A full example of the code in this chapter can be found [here](https://github.com/nestjs/nest/tree/master/sample/25-dynamic-modules).
-### Injection scopes
+
+### Injection scopes <a href="https://docs.nestjs.com/fundamentals/injection-scopes"><img src="https://nestjs.com/img/logo-small.svg" id="injection-scopes" width="20" alt="Nest Logo" /></a>
 
 For people coming from different programming language backgrounds, it might be unexpected to learn that in Nest, almost everything is shared across incoming requests. We have a connection pool to the database, singleton services with global state, etc. Remember that Node.js doesn't follow the request/response Multi-Threaded Stateless Model in which every request is processed by a separate thread. Hence, using singleton instances is fully **safe** for our applications.
 
@@ -815,7 +835,7 @@ You then configure your `context` value (in the `GraphQLModule`) to contain `req
 #### Performance
 
 Using request-scoped providers will have an impact on application performance. While Nest tries to cache as much metadata as possible, it will still have to create an instance of your class on each request. Hence, it will slow down your average response time and overall benchmarking result. Unless a provider must be request-scoped, it is strongly recommended that you use the default singleton scope.
-### Circular dependency
+### Circular dependency <a href="https://docs.nestjs.com/fundamentals/circular-dependency"><img src="https://nestjs.com/img/logo-small.svg" id="circular-dependency" width="20" alt="Nest Logo" /></a>
 
 A circular dependency occurs when two classes depend on each other. For example, class A needs class B, and class B also needs class A. Circular dependencies can arise in Nest between modules and between providers.
 
@@ -886,7 +906,7 @@ In order to resolve circular dependencies between modules, use the same `forward
 })
 export class CommonModule {}
 ```
-### Module reference
+### Module reference <a href="https://docs.nestjs.com/fundamentals/module-ref"><img src="https://nestjs.com/img/logo-small.svg" id="module-ref" width="20" alt="Nest Logo" /></a>
 
 Nest provides the `ModuleRef` class to navigate the internal list of providers and obtain a reference to any provider using its injection token as a lookup key. The `ModuleRef` class also provides a way to dynamically instantiate both static and scoped providers. `ModuleRef` can be injected into a class in the normal way:
 
@@ -1109,7 +1129,8 @@ export class CatsService {
 This technique enables you to conditionally instantiate different classes outside of the framework container.
 
 <app-banner-shop></app-banner-shop>
-### Execution context
+
+### Execution context <a href="https://docs.nestjs.com/fundamentals/execution-context"><img src="https://nestjs.com/img/logo-small.svg" id="execution-context" width="20" alt="Nest Logo" /></a>
 
 Nest provides several utility classes that help make it easy to write applications that function across multiple application contexts (e.g., Nest HTTP server-based, microservices and WebSockets application contexts). These utilities provide information about the current execution context which can be used to build generic [guards](/guards), [filters](/exception-filters), and [interceptors](/interceptors) that can work across a broad set of controllers, methods, and execution contexts.
 
@@ -1393,7 +1414,7 @@ const roles = this.reflector.getAllAndMerge<string[]>('roles', [
 This would result in `roles` containing `['user', 'admin']`.
 
 For both of these merge methods, you pass the metadata key as the first argument, and an array of metadata target contexts (i.e., calls to the `getHandler()` and/or `getClass())` methods) as the second argument.
-### Lifecycle Events
+### Lifecycle Events <a href="https://docs.nestjs.com/fundamentals/lifecycle-events"><img src="https://nestjs.com/img/logo-small.svg" id="lifecycle-events" width="20" alt="Nest Logo" /></a>
 
 A Nest application, as well as every application element, has a lifecycle managed by Nest. Nest provides **lifecycle hooks** that give visibility into key lifecycle events, and the ability to act (run registered code on your `module`, `injectable` or `controller`) when they occur.
 
@@ -1504,7 +1525,7 @@ class UsersService implements OnApplicationShutdown {
   }
 }
 ```
-### Platform agnosticism
+### Platform agnosticism <a href="https://docs.nestjs.com/fundamentals/platform-agnosticism"><img src="https://nestjs.com/img/logo-small.svg" id="platform-agnosticism" width="20" alt="Nest Logo" /></a>
 
 Nest is a platform-agnostic framework. This means you can develop **reusable logical parts** that can be used across different types of applications. For example, most components can be re-used without change across different underlying HTTP server frameworks (e.g., Express and Fastify), and even across different _types_ of applications (e.g., HTTP server frameworks, Microservices with different transport layers, and Web Sockets).
 
@@ -1517,7 +1538,7 @@ Furthermore, Nest comes with a dedicated [GraphQL](/graphql/quick-start) module.
 In addition, the [application context](/application-context) feature helps to create any kind of Node.js application - including things like CRON jobs and CLI apps - on top of Nest.
 
 Nest aspires to be a full-fledged platform for Node.js apps that brings a higher-level of modularity and reusability to your applications. Build once, use everywhere!
-### Testing
+### Testing <a href="https://docs.nestjs.com/fundamentals/testing"><img src="https://nestjs.com/img/logo-small.svg" id="testing" width="20" alt="Nest Logo" /></a>
 
 Automated testing is considered an essential part of any serious software development effort. Automation makes it easy to repeat individual tests or test suites quickly and easily during development. This helps ensure that releases meet quality and performance goals. Automation helps increase coverage and provides a faster feedback loop to developers. Automation both increases the productivity of individual developers and ensures that tests are run at critical development lifecycle junctures, such as source code control check-in, feature integration, and version release.
 
@@ -1842,3 +1863,4 @@ Now we can use the `contextId` to access a single generated DI container sub-tre
 ```typescript
 catsService = await moduleRef.resolve(CatsService, contextId);
 ```
+----------
