@@ -40,7 +40,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#request-lifecycle">Request lifecycle</a>
 
 
-### HTTP adapter <a id="http-adapter">
+<a id="http-adapter">
+
+### HTTP adapter
 
  - <a href="https://docs.nestjs.com/faq/http-adapter">HTTP adapter</a>
 
@@ -92,7 +94,10 @@ The adapter object exposes several useful methods to interact with the HTTP serv
 ```typescript
 const instance = httpAdapter.getInstance();
 ```
-### Global prefix <a id="global-prefix">
+
+<a id="global-prefix">
+
+### Global prefix
 
  - <a href="https://docs.nestjs.com/faq/global-prefix">Global path prefix</a>
 
@@ -102,7 +107,10 @@ To set a prefix for **every route** registered in an HTTP application, use the `
 const app = await NestFactory.create(AppModule);
 app.setGlobalPrefix('v1');
 ```
-### Hybrid application <a id="hybrid-application" >
+
+<a id="hybrid-application" >
+
+### Hybrid application
 
  - <a href="https://docs.nestjs.com/faq/hybrid-application">Hybrid application</a>
 
@@ -152,7 +160,10 @@ const microservice = app.connectMicroservice({
   transport: Transport.TCP
 }, { inheritAppConfig: true });
 ```
-### HTTPS <a id="multiple-servers" >
+
+<a id="multiple-servers" >
+
+### HTTPS
 
 
  - <a href="https://docs.nestjs.com/faq/multiple-servers">HTTPS &amp; multiple servers</a>
@@ -204,7 +215,9 @@ https.createServer(httpsOptions, server).listen(443);
 
 > **Warning** This recipe does not work with [GraphQL Subscriptions](/graphql/subscriptions).
 
-### Request lifecycle <a id="request-lifecycle" >
+<a id="request-lifecycle" >
+
+### Request lifecycle
 
  - <a href="https://docs.nestjs.com/faq/request-lifecycle">Request lifecycle</a>
 
