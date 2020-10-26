@@ -40,10 +40,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#providers">Providers</a>
  - <a href="#modules">Modules</a>
  - <a href="#middleware">Middleware</a>
- - <a href="#exception-filters">Exception filters</a>
- - <a href="#pipes">Pipes</a>
- - <a href="#guards">Guards</a>
- - <a href="#interceptors">Interceptors</a>
+ - <a href="#exception-filters-overview">Exception filters</a>
+ - <a href="#pipes-ov">Pipes</a>
+ - <a href="#guards-ov">Guards</a>
+ - <a href="#interceptors-ov">Interceptors</a>
  - <a href="#custom-decorators">Custom decorators</a>
 
 
@@ -1481,7 +1481,7 @@ const app = await NestFactory.create(AppModule);
 app.use(logger);
 await app.listen(3000);
 ```
-### Exception filters <a href="https://docs.nestjs.com/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters" width="20" alt="Nest Logo" /></a>
+### Exception filters <a href="https://docs.nestjs.com/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters-overview" width="20" alt="Nest Logo" /></a>
 
 Nest comes with a built-in **exceptions layer** which is responsible for processing all unhandled exceptions across an application. When an exception is not handled by your application code, it is caught by this layer, which then automatically sends an appropriate user-friendly response.
 
@@ -1847,7 +1847,7 @@ bootstrap();
 ```
 
 The second method is to use the `APP_FILTER` token <a href="exception-filters#binding-filters">as shown here</a>.
-### Pipes <a href="https://docs.nestjs.com/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes" width="20" alt="Nest Logo" /></a>
+### Pipes <a href="https://docs.nestjs.com/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes-ov" width="20" alt="Nest Logo" /></a>
 
 A pipe is a class annotated with the `@Injectable()` decorator. Pipes should implement the `PipeTransform` interface.
 
@@ -2376,7 +2376,7 @@ async findAll(
 #### The built-in ValidationPipe
 
 As a reminder, you don't have to build a generic validation pipe on your own since the `ValidationPipe` is provided by Nest out-of-the-box. The built-in `ValidationPipe` offers more options than the sample we built in this chapter, which has been kept basic for the sake of illustrating the mechanics of a custom-built pipe. You can find full details, along with lots of examples [here](/techniques/validation).
-### Guards <a href="https://docs.nestjs.com/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards" width="20" alt="Nest Logo" /></a>
+### Guards <a href="https://docs.nestjs.com/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards-ov" width="20" alt="Nest Logo" /></a>
 
 A guard is a class annotated with the `@Injectable()` decorator. Guards should implement the `CanActivate` interface.
 
@@ -2642,7 +2642,7 @@ throw new UnauthorizedException();
 ```
 
 Any exception thrown by a guard will be handled by the [exceptions layer](/exception-filters) (global exceptions filter and any exceptions filters that are applied to the current context).
-### Interceptors <a href="https://docs.nestjs.com/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors" width="20" alt="Nest Logo" /></a>
+### Interceptors <a href="https://docs.nestjs.com/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors-ov" width="20" alt="Nest Logo" /></a>
 
 An interceptor is a class annotated with the `@Injectable()` decorator. Interceptors should implement the `NestInterceptor` interface.
 

@@ -35,14 +35,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Techniques
  - <a href="#authentication">Authentication</a>
  - <a href="#database">Database</a>
- - <a href="#mongodb">Mongo</a>
+ - <a href="#mongodb-tk">Mongo</a>
  - <a href="#configuration">Configuration</a>
  - <a href="#validation">Validation</a>
  - <a href="#caching">Caching</a>
  - <a href="#serialization">Serialization</a>
  - <a href="#task-scheduling">Task scheduling</a>
  - <a href="#compression">Compression</a>
- - <a href="#security">Security</a>
+ - <a href="#security-tk">Security</a>
  - <a href="#queues">Queues</a>
  - <a href="#logger">Logger</a>
  - <a href="#file-upload">File upload</a>
@@ -2289,7 +2289,7 @@ This construction works the same as `useClass` with one critical difference - `S
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/07-sequelize).
 
 
-### Mongo <a href="https://docs.nestjs.com/techniques/mongodb"><img src="https://nestjs.com/img/logo-small.svg" id="mongodb" width="20" alt="Nest Logo" /></a>
+### Mongo <a href="https://docs.nestjs.com/techniques/mongodb"><img src="https://nestjs.com/img/logo-small.svg" id="mongodb-tk" width="20" alt="Nest Logo" /></a>
 
 Nest supports two methods for integrating with the [MongoDB](https://www.mongodb.com/) database. You can either use the built-in [TypeORM](https://github.com/typeorm/typeorm) module described [here](/techniques/database), which has a connector for MongoDB, or use [Mongoose](https://mongoosejs.com), the most popular MongoDB object modeling tool. In this chapter we'll describe the latter, using the dedicated `@nestjs/mongoose` package.
 
@@ -4168,7 +4168,7 @@ app.register(compression, { encodings: ['gzip', 'deflate'] });
 ```
 
 The above tells `fastify-compress` to only use gzip and deflate encodings, preferring gzip if the client supports both.
-### Security <a href="https://docs.nestjs.com/techniques/security"><img src="https://nestjs.com/img/logo-small.svg" id="security" width="20" alt="Nest Logo" /></a>
+### Security <a href="https://docs.nestjs.com/techniques/security"><img src="https://nestjs.com/img/logo-small.svg" id="security-tk" width="20" alt="Nest Logo" /></a>
 
 In this chapter we cover various techniques that help you to increase the security of your applications.
 

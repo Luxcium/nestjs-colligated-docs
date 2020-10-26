@@ -45,7 +45,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#mapped-types">Mapped types</a>
  - <a href="#complexity">Complexity</a>
  - <a href="#extensions">Extensions</a>
- - <a href="#cli-plugin">CLI Plugin</a>
+ - <a href="#cli-plugin-graphql">CLI Plugin</a>
  - <a href="#generating-sdl">Generating SDL</a>
  - <a href="#other-features">Other features</a>
  - <a href="#federation">Federation</a>
@@ -2239,7 +2239,7 @@ export class FieldRolesGuard implements CanActivate {
 In the example above, we've used the [graphql-fields](https://github.com/robrichard/graphql-fields) package that turns the `GraphQLResolveInfo` object into an object that consists of the requested fields. We used this specific library to make the presented example somewhat simpler.
 
 With this guard in place, if the return type of any resolver contains a field annotated with the `@Extensions({{ '{' }} role: Role.ADMIN {{ '}' }}})` decorator, this `role` (`Role.ADMIN`) will be logged in the console **if requested** in the GraphQL query.
-### CLI Plugin <a href="https://docs.nestjs.com/graphql/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin" width="20" alt="Nest Logo" /></a>
+### CLI Plugin <a href="https://docs.nestjs.com/graphql/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin-graphql" width="20" alt="Nest Logo" /></a>
 
 > warning **Warning** This chapter applies only to the code first approach.
 

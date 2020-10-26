@@ -69,7 +69,6 @@ Colligated Documentation |  NestjS Official Docs
 
 
 
-> <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> Indicate link to the official web site.
 
 
 

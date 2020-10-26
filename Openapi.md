@@ -36,12 +36,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#introduction">Introduction</a>
  - <a href="#types-and-parameters">Types and Parameters</a>
  - <a href="#operations">Operations</a>
- - <a href="#security">Security</a>
- - <a href="#mapped-types">Mapped Types</a>
+ - <a href="#security-oapi">Security</a>
+ - <a href="#mapped-types-oapi">Mapped Types</a>
  - <a href="#decorators">Decorators</a>
- - <a href="#cli-plugin">CLI Plugin</a>
- - <a href="#other-features">Other features</a>
- - <a href="#migration-guide">Migration guide</a>
+ - <a href="#cli-plugin-oapi">CLI Plugin</a>
+ - <a href="#other-features-oapi">Other features</a>
+ - <a href="#migration-guide-oapi">Migration guide</a>
 
 
 > Click the logo to get redirected to the official docs <a href="https://docs.nestjs.com/"><img src="https://nestjs.com/img/logo-small.svg" width="25" alt="Nest Logo" /></a>
@@ -554,7 +554,7 @@ To add an Extension to a request use the `@ApiExtension()` decorator. The extens
 ```typescript
 @ApiExtension('x-foo', { hello: 'world' })
 ```
-### Security <a href="https://docs.nestjs.com/openapi/security"><img src="https://nestjs.com/img/logo-small.svg" id="security" width="20" alt="Nest Logo" /></a>
+### Security <a href="https://docs.nestjs.com/openapi/security"><img src="https://nestjs.com/img/logo-small.svg" id="security-oapi" width="20" alt="Nest Logo" /></a>
 
 To define which security mechanisms should be used for a specific operation, use the `@ApiSecurity()` decorator.
 
@@ -638,7 +638,7 @@ Before you run your application, remember to add the security definition to your
 ```typescript
 const options = new DocumentBuilder().addCookieAuth('optional-session-id');
 ```
-### Mapped types <a href="https://docs.nestjs.com/openapi/mapped-types"><img src="https://nestjs.com/img/logo-small.svg" id="mapped-types" width="20" alt="Nest Logo" /></a>
+### Mapped types <a href="https://docs.nestjs.com/openapi/mapped-types"><img src="https://nestjs.com/img/logo-small.svg" id="mapped-types-oapi" width="20" alt="Nest Logo" /></a>
 
 As you build out features like **CRUD** (Create/Read/Update/Delete) it's often useful to construct variants on a base entity type. Nest provides several utility functions that perform type transformations to make this task more convenient.
 
@@ -794,7 +794,7 @@ All of the available OpenAPI decorators have an `Api` prefix to distinguish them
 | `@ApiHideProperty()`     | Model               |
 | `@ApiExtension()`        | Method              |
 
-### CLI Plugin <a href="https://docs.nestjs.com/openapi/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin" width="20" alt="Nest Logo" /></a>
+### CLI Plugin <a href="https://docs.nestjs.com/openapi/cli-plugin"><img src="https://nestjs.com/img/logo-small.svg" id="cli-plugin-oapi" width="20" alt="Nest Logo" /></a>
 
 TypeScript's metadata reflection system has several limitations which make it impossible to, for instance, determine what properties a class consists of or recognize whether a given property is optional or required. However, some of these constraints can be addressed at compilation time. Nest provides a plugin that enhances the TypeScript compilation process to reduce the amount of boilerplate code required.
 
@@ -918,7 +918,7 @@ getCustomTransformers: (program: any) => ({
   before: [require('@nestjs/swagger/plugin').before({}, program)]
 }),
 ```
-### Other features <a href="https://docs.nestjs.com/openapi/other-features"><img src="https://nestjs.com/img/logo-small.svg" id="other-features" width="20" alt="Nest Logo" /></a>
+### Other features <a href="https://docs.nestjs.com/openapi/other-features"><img src="https://nestjs.com/img/logo-small.svg" id="other-features-oapi" width="20" alt="Nest Logo" /></a>
 
 #### Global prefix
 
@@ -999,7 +999,7 @@ In turn, `http://localhost:3000/api/dogs` will expose the Swagger UI for dogs:
 
 <figure><img src="https://github.com/Luxcium/docs.nestjs.com/blob/master/src/assets/swagger-dogs.png" /></figure>
 
-### Migration guide <a href="https://docs.nestjs.com/openapi/migration-guide"><img src="https://nestjs.com/img/logo-small.svg" id="migration-guide" width="20" alt="Nest Logo" /></a>
+### Migration guide <a href="https://docs.nestjs.com/openapi/migration-guide"><img src="https://nestjs.com/img/logo-small.svg" id="migration-guide-oapi" width="20" alt="Nest Logo" /></a>
 
 If you're currently using `@nestjs/swagger@3.*`, note the following breaking/API changes in version 4.0.
 

@@ -40,10 +40,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  - <a href="#rabbitmq">RabbitMQ</a>
  - <a href="#kafka">Kafka</a>
  - <a href="#grpc">gRPC</a>
- - <a href="#exception-filters">Exception filters</a>
- - <a href="#pipes">Pipes</a>
- - <a href="#guards">Guards</a>
- - <a href="#interceptors">Interceptors</a>
+ - <a href="#exception-filters-ms">Exception filters</a>
+ - <a href="#pipes-ms">Pipes</a>
+ - <a href="#guards-ms">Guards</a>
+ - <a href="#interceptors-ms">Interceptors</a>
 
 
 
@@ -1772,7 +1772,7 @@ lotsOfGreetings(requestStream: any, callback: (err: unknown, value: HelloRespons
 ```
 
 Here we used the `callback` function to send the response once processing of the `requestStream` has been completed.
-### Exception filters <a href="https://docs.nestjs.com/microservices/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters" width="20" alt="Nest Logo" /></a>
+### Exception filters <a href="https://docs.nestjs.com/microservices/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters-ms" width="20" alt="Nest Logo" /></a>
 
 The only difference between the HTTP [exception filter](/exception-filters) layer and the corresponding microservices layer is that instead of throwing `HttpException`, you should use `RpcException`.
 
@@ -1868,7 +1868,7 @@ export class AllExceptionsFilter extends BaseRpcExceptionFilter {
 ```
 
 The above implementation is just a shell demonstrating the approach. Your implementation of the extended exception filter would include your tailored **business logic** (e.g., handling various conditions).
-### Pipes <a href="https://docs.nestjs.com/microservices/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes" width="20" alt="Nest Logo" /></a>
+### Pipes <a href="https://docs.nestjs.com/microservices/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes-ms" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between [regular pipes](/pipes) and microservices pipes. The only difference is that instead of throwing `HttpException`, you should use `RpcException`.
 
@@ -1892,7 +1892,7 @@ accumulate(data) {
   return (data || []).reduce((a, b) => a + b);
 }
 ```
-### Guards <a href="https://docs.nestjs.com/microservices/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards" width="20" alt="Nest Logo" /></a>
+### Guards <a href="https://docs.nestjs.com/microservices/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards-ms" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between microservices guards and [regular HTTP application guards](/guards).
 The only difference is that instead of throwing `HttpException`, you should use `RpcException`.
@@ -1917,7 +1917,7 @@ accumulate(data) {
   return (data || []).reduce((a, b) => a + b);
 }
 ```
-### Interceptors <a href="https://docs.nestjs.com/microservices/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors" width="20" alt="Nest Logo" /></a>
+### Interceptors <a href="https://docs.nestjs.com/microservices/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors-ms" width="20" alt="Nest Logo" /></a>
 
 There is no difference between [regular interceptors](/interceptors) and microservices interceptors. The following example uses a manually instantiated method-scoped interceptor. Just as with HTTP based applications, you can also use controller-scoped interceptors (i.e., prefix the controller class with a `@UseInterceptors()` decorator).
 

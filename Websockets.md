@@ -34,10 +34,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Websockets
  - <a href="#gateways">Gateways</a>
- - <a href="#exception-filters">Exception filters</a>
- - <a href="#pipes">Pipes</a>
- - <a href="#guards">Guards</a>
- - <a href="#interceptors">Interceptors</a>
+ - <a href="#exception-filters-ws">Exception filters</a>
+ - <a href="#pipes-ws">Pipes</a>
+ - <a href="#guards-ws">Guards</a>
+ - <a href="#interceptors-ws">Interceptors</a>
  - <a href="#adapter">Adapters</a>
 
 
@@ -268,7 +268,7 @@ Nest will automatically assign the server instance to this property once it is r
 #### Example
 
 A working example is available [here](https://github.com/nestjs/nest/tree/master/sample/02-gateways).
-### Exception filters <a href="https://docs.nestjs.com/websockets/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters" width="20" alt="Nest Logo" /></a>
+### Exception filters <a href="https://docs.nestjs.com/websockets/exception-filters"><img src="https://nestjs.com/img/logo-small.svg" id="exception-filters-ws" width="20" alt="Nest Logo" /></a>
 
 The only difference between the HTTP [exception filter](/exception-filters) layer and the corresponding web sockets layer is that instead of throwing `HttpException`, you should use `WsException`.
 
@@ -330,7 +330,7 @@ export class AllExceptionsFilter extends BaseWsExceptionFilter {
 ```
 
 The above implementation is just a shell demonstrating the approach. Your implementation of the extended exception filter would include your tailored **business logic** (e.g., handling various conditions).
-### Pipes <a href="https://docs.nestjs.com/websockets/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes" width="20" alt="Nest Logo" /></a>
+### Pipes <a href="https://docs.nestjs.com/websockets/pipes"><img src="https://nestjs.com/img/logo-small.svg" id="pipes-ws" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between [regular pipes](/pipes) and microservice pipes. The only difference is that instead of throwing `HttpException`, you should use `WsException`. In addition, all pipes will be only applied to the `data` parameter (because validating or transforming `client` instance is useless).
 
@@ -356,7 +356,7 @@ handleEvent(client, data) {
   return { event, data };
 }
 ```
-### Guards <a href="https://docs.nestjs.com/websockets/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards" width="20" alt="Nest Logo" /></a>
+### Guards <a href="https://docs.nestjs.com/websockets/guards"><img src="https://nestjs.com/img/logo-small.svg" id="guards-ws" width="20" alt="Nest Logo" /></a>
 
 There is no fundamental difference between web sockets guards and [regular HTTP application guards](/guards). The only difference is that instead of throwing `HttpException`, you should use `WsException`.
 
@@ -382,7 +382,7 @@ handleEvent(client, data) {
   return { event, data };
 }
 ```
-### Interceptors <a href="https://docs.nestjs.com/websockets/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors" width="20" alt="Nest Logo" /></a>
+### Interceptors <a href="https://docs.nestjs.com/websockets/interceptors"><img src="https://nestjs.com/img/logo-small.svg" id="interceptors-ws" width="20" alt="Nest Logo" /></a>
 
 There is no difference between [regular interceptors](/interceptors) and web sockets interceptors. The following example uses a manually instantiated method-scoped interceptor. Just as with HTTP based applications, you can also use gateway-scoped interceptors (i.e., prefix the gateway class with a `@UseInterceptors()` decorator).
 
