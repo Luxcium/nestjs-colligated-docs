@@ -1,5 +1,5 @@
 
-## Overview <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Overview" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Overview <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Overview-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
 
  - <a href="#intro-ov">Introduction</a>
  - <a href="#first-steps">First steps</a>

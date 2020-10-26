@@ -1,5 +1,5 @@
 
-## Cli <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Cli" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## CLI <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="CLI-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#overview">Overview</a>
  - <a href="#monorepo">Workspaces</a>
  - <a href="#libraries">Libraries</a>

@@ -1,5 +1,5 @@
 
-## More <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="More" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## More <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="More-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#standalone-applications">Standalone apps</a>
  - <a href="#migration-guide"> Migration guide </a>
  - <a href="https://github.com/nestjs/nest/tree/master/sample"><img src="https://nestjs.com/img/logo-small.svg" width="15" alt="Nest Logo" /> Examples</a>

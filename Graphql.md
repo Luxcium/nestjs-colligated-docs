@@ -1,5 +1,5 @@
 
-## Graphql <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Graphql" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Graphql <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Graphql-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#quick-start">Quick start</a>
  - <a href="#resolvers">Resolvers</a>
  - <a href="#mutations">Mutations</a>

@@ -56,19 +56,20 @@ This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (L
 
 Colligated Documentation |  NestjS Official Docs
 :---|:---
-  [Overview](#Overview) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
-  [Fundamentals](#Fundamentals) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
-  [Techniques](#Techniques) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
-  [Graphql](#Graphql) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
-  [Websockets](#Websockets) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
-  [Microservices](#Microservices) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
+  [Overview](#Overview-section) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
+  [Fundamentals](#Fundamentals-section) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
+  [Techniques](#Techniques-section) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
+  [Graphql](#Graphql-section) |  [Graphql (quick-start)](https://docs.nestjs.com/graphql/quick-start)
+  [Websockets](#Websockets-section) |  [Websockets (gateways)](https://docs.nestjs.com/websockets/gateways)
+  [Microservices](#Microservices-section) |  [Microservices (basics)](https://docs.nestjs.com/microservices/basics)
   [Standalone APPS <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/standalone-applications) |
-  [Cli](#Cli) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
-  [Openapi](#Openapi) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
-  [Recipes](#Recipes) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
-  [Faq](#Faq) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
+  [Cli](#CLI-section) |  [Cli (overview)](https://docs.nestjs.com/cli/overview)
+  [Openapi](#Openapi-section) |  [Openapi (introduction)](https://docs.nestjs.com/openapi/introduction)
+  [Recipes](#Recipes-section) |  [Recipes (sql-typeorm)](https://docs.nestjs.com/recipes/sql-typeorm)
+  [Faq](#FAQ-section) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
   [Migration GUIDE <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/migration-guide) |
   [Discover <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /> ](https://docs.nestjs.com/discover/companies) |
+  [More](#More-section)|
 
 
 **`[-- Script kiddies cut here -- ]`**
@@ -77,7 +78,7 @@ Colligated Documentation |  NestjS Official Docs
 <!-- START SECTION Overview -->
 
 
-## Overview <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Overview" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Overview <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Overview-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
 
  - <a href="#intro-ov">Introduction</a>
  - <a href="#first-steps">First steps</a>
@@ -3250,7 +3251,7 @@ This has the effect of applying all four decorators with a single declaration.
 <!-- START SECTION Fundamentals -->
 
 
-## Fundamentals <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Fundamentals" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Fundamentals <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Fundamentals-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#custom-providers">Custom providers</a>
  - <a href="#async-providers">Asynchronous providers</a>
  - <a href="#dynamic-modules">Dynamic modules</a>
@@ -5088,7 +5089,7 @@ catsService = await moduleRef.resolve(CatsService, contextId);
 <!-- START SECTION Techniques -->
 
 
-## Techniques <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Techniques" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Techniques <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Techniques-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#authentication">Authentication</a>
  - <a href="#database">Database</a>
  - <a href="#mongodb-tk">Mongo</a>
@@ -10508,7 +10509,7 @@ A working example is available [here](https://github.com/nestjs/nest/tree/master
 <!-- START SECTION Graphql -->
 
 
-## Graphql <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Graphql" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Graphql <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Graphql-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#quick-start">Quick start</a>
  - <a href="#resolvers">Resolvers</a>
  - <a href="#mutations">Mutations</a>
@@ -13228,7 +13229,7 @@ Both the Federation and Gateway modules support asynchronous initialization usin
 <!-- START SECTION Websockets -->
 
 
-## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Websockets" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Websockets  <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Websockets-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#gateways">Gateways</a>
  - <a href="#exception-filters-ws">Exception filters</a>
  - <a href="#pipes-ws">Pipes</a>
@@ -13753,7 +13754,7 @@ A working example that uses `WsAdapter` is available [here](https://github.com/n
 <!-- START SECTION Microservices -->
 
 
-## Microservices <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Microservices" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Microservices <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Microservices-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#basics">Overview</a>
  - <a href="#redis">Redis</a>
  - <a href="#mqtt">MQTT</a>
@@ -15664,7 +15665,7 @@ accumulate(data) {
 <!-- START SECTION Cli -->
 
 
-## Cli <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Cli" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## CLI <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="CLI-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#overview">Overview</a>
  - <a href="#monorepo">Workspaces</a>
  - <a href="#libraries">Libraries</a>
@@ -16488,7 +16489,7 @@ You can then replace the `scripts` defined in `package.json` with the following 
 <!-- START SECTION Openapi -->
 
 
-## Openapi <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Openapi" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Openapi <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Openapi-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#introduction">Introduction</a>
  - <a href="#types-and-parameters">Types and Parameters</a>
  - <a href="#operations">Operations</a>
@@ -17502,7 +17503,7 @@ The following methods have been added:
 
 
 
-## Recipes <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Recipes" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Recipes <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Recipes-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#sql-typeorm">TypeORM</a>
  - <a href="#mongodb">Mongoose</a>
  - <a href="#sql-sequelize">Sequelize</a>
@@ -19620,7 +19621,7 @@ The examples in this chapter cover only some of the [CRUD](https://github.com/ne
 
 
 
-## FAQ <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="FAQ" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## FAQ <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="FAQ-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#http-adapter">HTTP adapter</a>
  - <a href="#global-prefix">Global path prefix</a>
  - <a href="#hybrid-application">Hybrid application</a>
@@ -19889,7 +19890,7 @@ In general, the request lifecycle looks like the following:
 <!-- START SECTION More -->
 
 
-## More <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="More" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## More <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="More-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#standalone-applications">Standalone apps</a>
  - <a href="#migration-guide"> Migration guide </a>
  - <a href="https://github.com/nestjs/nest/tree/master/sample"><img src="https://nestjs.com/img/logo-small.svg" width="15" alt="Nest Logo" /> Examples</a>

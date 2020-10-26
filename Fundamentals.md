@@ -1,5 +1,5 @@
 
-## Fundamentals <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Fundamentals" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## Fundamentals <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="Fundamentals-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#custom-providers">Custom providers</a>
  - <a href="#async-providers">Asynchronous providers</a>
  - <a href="#dynamic-modules">Dynamic modules</a>

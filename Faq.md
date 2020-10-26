@@ -1,6 +1,6 @@
 
 
-## FAQ <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="FAQ" width="20" alt="arrow narrow up" title="Back to top" /></a>
+## FAQ <a href="#bookmarks"><img src="misc/arrow-narrow-up.png" id="FAQ-section" width="20" alt="arrow narrow up" title="Back to top" /></a>
  - <a href="#http-adapter">HTTP adapter</a>
  - <a href="#global-prefix">Global path prefix</a>
  - <a href="#hybrid-application">Hybrid application</a>
