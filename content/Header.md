@@ -16,7 +16,7 @@ This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (L
  - Please make sure you have 'Stared🌟' [the original Nest Project](https://github.com/nestjs/nest/stargazers).
  - The information used to compile this documentation comme from [nestjs/docs.nestjs.com/content](https://github.com/nestjs/docs.nestjs.com/tree/58e409ba73974842d5a956cdeccdb89b382eccfc/content) the most recent version is available here: [docs.nestjs.com/.../master/content](https://github.com/nestjs/docs.nestjs.com/tree/master/content)
 
-### Main Sections <a href="README.md#bookmarks"><img src="content/assets/svg/bookmarks.svg"  width="20" alt="bookmarks images" id="bookmarks" /></a>
+### <a href="README.md#bookmarks"><img src="content/assets/svg/bookmarks.svg"  width="20" alt="bookmarks images" id="bookmarks" /></a> Main Sections
 
 Colligated Documentation |  NestjS Official Docs
 :---|:---
