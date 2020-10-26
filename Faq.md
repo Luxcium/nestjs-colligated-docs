@@ -32,7 +32,17 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 
-### HTTP adapter
+## Faq
+ - <a href="#http-adapter">HTTP adapter</a>
+ - <a href="#global-prefix">Global path prefix</a>
+ - <a href="#hybrid-application">Hybrid application</a>
+ - <a href="#multiple-servers">HTTPS &amp; multiple servers</a>
+ - <a href="#request-lifecycle">Request lifecycle</a>
+
+
+### HTTP adapter <a id="http-adapter">
+
+ - <a href="https://docs.nestjs.com/faq/http-adapter">HTTP adapter</a>
 
 Occasionally, you may want to access the underlying HTTP server, either within the Nest application context or from the outside.
 
@@ -82,7 +92,9 @@ The adapter object exposes several useful methods to interact with the HTTP serv
 ```typescript
 const instance = httpAdapter.getInstance();
 ```
-### Global prefix
+### Global prefix <a id="global-prefix">
+
+ - <a href="https://docs.nestjs.com/faq/global-prefix">Global path prefix</a>
 
 To set a prefix for **every route** registered in an HTTP application, use the `setGlobalPrefix()` method of the `INestApplication` instance.
 
@@ -90,7 +102,9 @@ To set a prefix for **every route** registered in an HTTP application, use the `
 const app = await NestFactory.create(AppModule);
 app.setGlobalPrefix('v1');
 ```
-### Hybrid application
+### Hybrid application <a id="hybrid-application" >
+
+ - <a href="https://docs.nestjs.com/faq/hybrid-application">Hybrid application</a>
 
 A hybrid application is one that both listens for HTTP requests, as well as makes use of connected microservices. The `INestApplication` instance can be connected with `INestMicroservice` instances through the `connectMicroservice()` method.
 
@@ -129,6 +143,7 @@ await app.listen(3001);
 
 #### Sharing configuration
 
+
 By default a hybrid application will not inherit global pipes, interceptors, guards and filters configured for the main (HTTP-based) application.
 To inherit these configuration properties from the main application, set the `inheritAppConfig` property in the second argument (an optional options object) of the `connectMicroservice()` call, as follow:
 
@@ -137,7 +152,10 @@ const microservice = app.connectMicroservice({
   transport: Transport.TCP
 }, { inheritAppConfig: true });
 ```
-### HTTPS
+### HTTPS <a id="multiple-servers" >
+
+
+ - <a href="https://docs.nestjs.com/faq/multiple-servers">HTTPS &amp; multiple servers</a>
 
 To create an application that uses the HTTPS protocol, set the `httpsOptions` property in the options object passed to the `create()` method of the `NestFactory` class:
 
@@ -185,7 +203,10 @@ https.createServer(httpsOptions, server).listen(443);
 > info **Hint** The `ExpressAdapter` is imported from the `@nestjs/platform-express` package. The `http` and `https` packages are native Node.js packages.
 
 > **Warning** This recipe does not work with [GraphQL Subscriptions](/graphql/subscriptions).
-### Request lifecycle
+
+### Request lifecycle <a id="request-lifecycle" >
+
+ - <a href="https://docs.nestjs.com/faq/request-lifecycle">Request lifecycle</a>
 
 Nest applications handle requests and produce responses in a sequence we refer to as the **request lifecycle**. With the use of middleware, pipes, guards, and interceptors, it can be challenging to track down where a particular piece of code executes during the request lifecycle, especially as global, controller level, and route level components come into play. In general, a request flows through middleware to guards, then to interceptors, then to pipes and finally back to interceptors on the return path (as the response is generated).
 
