@@ -1,15 +1,16 @@
 
 # Nest Colligated Documentation
 
- - This document is ´written´ by a proud *script kiddy* using the `cat` command so all the power and all the merit of hard work is going to the [Cat Person](https://github.com/kamilmysliwiec)!!! Tanks to the MIT License I have been able to ´write´ all this document by myself without even copy-pasting code or scripts in fact I have used my own script: [`cat-docs.sh`](https://github.com/Luxcium/nestjs-colligated-docs/blob/master/cat-docs.sh)
+ - This document is ´written´ by a proud *script kiddy* using the `cat` command so all the power and all the merit of hard work is for the [Cat Person](https://github.com/kamilmysliwiec)!!! Tanks to the MIT License I have been able to ´write´ all this document by myself without, copy-pasting code or scripts, (*Like Real Script Kiddies always do*). in fact I have used my own script: [`cat-docs.sh`](https://github.com/Luxcium/nestjs-colligated-docs/blob/master/cat-docs.sh)
 
- - This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know (or you are just learning now) Luxcium is a cute little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*:
+> ***Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos@yabbs (Wed Jun 1 22:30:55 1994)***
 
-**So without further ado let me tell you that the text contained in this document is the work of Kamil Myśliwiec**
+ - This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know that (or you are just learning now) Luxcium is a cute little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*:
+
+**So without further ado let me tell you the truth, the text contained in this document is the work of Kamil Myśliwiec**
 
 *Copyright © 2017-2020 MIT by [Kamil Mysliwiec](http://kamilmysliwiec.com)*
 
-> ***Codez kiddies just don't seem to understand that those scripts had to come from somewhere. ― Cosmos(at)yabbs (Wed Jun 1 22:30:55 1994)***
 
 ## Overview
 
