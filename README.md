@@ -52,7 +52,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 ## Main Sections
 
 Colligated Documentation |  NestjS Official Docs
----|---
+:---|:---
   [Overview](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
   [Fundamentals](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
   [Techniques](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
