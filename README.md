@@ -9,8 +9,8 @@ the work of Kamil Myśliwiec Copyright © 2017-2020 under MIT License
 
 (The MIT License)
 
-Copyright © 2017 Kamil Myśliwiec <http://kamilmysliwiec.com> ― Original author
-Copyright © 2020 Benjamin Vincent (Luxcium) ― Colligated Documentation editror
+Copyright © 2017-2020 Kamil Myśliwiec <https://kamilmysliwiec.com> ― Docs Author
+Copyright © 2020 Benjamin Vincent (Luxcium) ― Colligated Documentation Editror
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -53,7 +53,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
 
 *Colligated Documentation* |  **docs.nestjs.com**
 ---|---
-   |
+
   [OVERVIEW](./Overview.md) |  [Overview (first-steps)](https://docs.nestjs.com/first-steps)
   [FUNDAMENTALS](./Fundamentals.md) |  [Fundamentals (custom-providers)](https://docs.nestjs.com/fundamentals/custom-providers)
   [TECHNIQUES](./Techniques.md) |  [Techniques (authentication)](https://docs.nestjs.com/techniques/authentication)
@@ -67,7 +67,7 @@ Please refer to [the original NestJS Documentation](https://docs.nestjs.com/) fo
   [FAQ](./Faq.md) |  [Faq (http-adapter)](https://docs.nestjs.com/faq/http-adapter)
   [MIGRATION GUIDE](./Migration.md) |  [Migration Guide (migration-guide)](https://docs.nestjs.com/migration-guide)
   [DISCOVER](./Discover.md) |  [Discover (companies)](https://docs.nestjs.com/discover/companies)
-   |
+
 
 
 
