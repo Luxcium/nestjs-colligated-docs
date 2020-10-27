@@ -1,0 +1,133 @@
+./
+total 176K
+3,0K  application-context.md
+9,3K  components.md
+ 23K  controllers.md
+7,2K  custom-decorators.md
+2,3K  enterprise.md
+ 15K  exception-filters.md
+ 13K  guards.md
+ 16K  interceptors.md
+3,1K  introduction.md
+9,5K  middlewares.md
+ 11K  migration.md
+ 12K  modules.md
+ 23K  pipes.md
+1,3K  support.md
+
+./cli
+total 56K
+7,3K  libraries.md
+7,6K  overview.md
+6,2K  scripts.md
+ 11K  usages.md
+ 19K  workspaces.md
+
+
+./faq
+total 24K
+ 256  global-prefix.md
+2,0K  http-adapter.md
+1,6K  hybrid-application.md
+1,5K  multiple-servers.md
+5,2K  request-lifecycle.md
+
+./fundamentals
+total 100K
+ 1,2K  async-components.md
+ 2,8K  circular-dependency.md
+  15K  dependency-injection.md
+  16K  dynamic-modules.md
+  12K  execution-context.md
+ 8,1K  lifecycle-events.md
+ 7,4K  module-reference.md
+ 1,4K  platform-agnosticism.md
+ 5,4K  provider-scopes.md
+  16K  unit-testing.md
+
+./graphql
+total 124K
+ 3,8K  cli-plugin.md
+ 3,4K  complexity.md
+ 2,9K  directives.md
+ 2,2K  enums.md
+ 3,6K  extensions.md
+ 8,0K  federation.md
+ 5,5K  guards-interceptors.md
+ 2,7K  interfaces.md
+ 4,7K  mapped-types.md
+ 3,7K  mutations.md
+ 1,8K  plugins.md
+  12K  quick-start.md
+  27K  resolvers-map.md
+ 4,1K  scalars.md
+ 1,7K  schema-generator.md
+ 9,6K  subscriptions.md
+ 3,2K  unions.md
+
+./microservices
+total 96K
+  16K  basics.md
+ 3,3K  exception-filters.md
+  17K  grpc.md
+ 835b  guards.md
+ 707b  interceptors.md
+  14K  kafka.md
+ 4,1K  mqtt.md
+ 5,4K  nats.md
+ 852b  pipes.md
+ 6,5K  rabbitmq.md
+ 3,8K  redis.md
+
+./openapi
+total 44K
+4,4K  cli-plugin.md
+1,3K  decorators.md
+2,7K  introduction.md
+3,8K  mapped-types.md
+1,2K  migration-guide.md
+3,7K  operations.md
+2,6K  other-features.md
+2,1K  security.md
+7,8K  types-and-parameters.md
+
+./recipes
+total 96K
+9,2K  cqrs.md
+8,4K  crud.md
+1,1K  documentation.md
+4,9K  hot-reload.md
+5,5K  mongodb.md
+ 17K  prisma.md
+1,3K  serve-static.md
+4,8K  sql-sequelize.md
+4,9K  sql-typeorm.md
+9,2K  terminus.md
+
+./techniques
+total 240K
+ 43K  authentication.md
+8,0K  caching.md
+1,9K  compression.md
+ 19K  configuration.md
+6,3K  file-upload.md
+3,7K  http-module.md
+ 11K  logger.md
+ 15K  mongo.md
+6,5K  mvc.md
+3,2K  performance.md
+ 21K  queues.md
+5,2K  security.md
+4,4K  serialization.md
+ 44K  sql.md
+ 14K  task-scheduling.md
+ 12K  validation.md
+
+./websockets
+total 36K
+ 5,2K  adapter.md
+ 2,3K  exception-filters.md
+ 8,2K  gateways.md
+ 862b  guards.md
+ 739b  interceptors.md
+1015b  pipes.md

@@ -1,3 +1,37 @@
+<!--
+This document is ´written´ by a proud Script Kiddy
+
+The document itself is under MIT License
+Copyright © 2020 Benjamin Vincent (Luxcium)
+
+The documentation text contained in this document is
+the work of Kamil Myśliwiec Copyright © 2017-2020 under MIT License
+
+(The MIT License)
+
+Copyright © 2017-2020 Kamil Myśliwiec <https://kamilmysliwiec.com> ― Docs Author
+Copyright © 2020 Benjamin Vincent (Luxcium) ― Colligated Documentation Editror
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
 # Nest Colligated Documentation
 
 
@@ -7,7 +41,7 @@ This document is ´written´ by a proud *Script Kiddy* using the **`cat`** comma
 
 ### License
 
-This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know (or your just learning now), [@Luxcium](https://github.com/Luxcium) is a cute and nice little *Script Kiddy* but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*, so without further ado let me tell you the truth, the text contained in this document is the result of the hard work of *[Kamil Myśliwiec](http://kamilmysliwiec.com)*
+This document itself is under MIT License *Copyright © 2020 Benjamin Vincent (Luxcium)*. We all know (or your just learning now), [@Luxcium](https://github.com/Luxcium) is a cute and nice little *Script Kiddy*, but also, we all know that the MIT License require to include the copyright notice and *blah blah blah*, so without further ado let me tell you the truth, the text contained in this document is the result of the hard work of *[Kamil Myśliwiec](http://kamilmysliwiec.com)*
 
 
 ## Conspectus

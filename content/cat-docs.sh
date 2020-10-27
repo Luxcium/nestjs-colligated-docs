@@ -1,5 +1,25 @@
 #!/bin/sh
 
+snDATE=$(date +%y%m%d)
+snDATEu=$(date --utc +%y%m%d)
+snTIME=$(date +%H%M%S%Z)
+snTIMEu=$(date --utc +%H%M%S%Z)
+snEPOCH=$(date +%s)
+snSTMP8=$(sha224hmac <<<$(date +%D%s%N) | cut -c -8 | tr \[a-z\] \[A-Z\])
+snSTMP4a=$(sha224hmac <<<$(date +%A%s%N) | cut -c -4 | tr \[a-z\] \[A-Z\])
+snSTMP4b=$(sha224hmac <<<$(date +%B%s%N) | cut -c -4 | tr \[a-z\] \[A-Z\])
+snSTMP8a="${snSTMP4a}-${snSTMP4b}"
+pTMP_PATH="/tmp/docs.nestjs.com-${snapSTMP8a}"
+pASSETS="${pTMP_PATH}/src/assets"
+pCONTENT="${pTMP_PATH}/content"
+
+git clone https://github.com/nestjs/docs.nestjs.com.git ${pTMP_PATH}
+# gh repo clone nestjs/docs.nestjs.com ${pTMP_PATH}
+
+mv ${pASSETS} ${pCONTENT}
+rm -fr "${pCONTENT}/discover"
+rm -fr "${pCONTENT}/recipes/swagger.md"
+
 FILENAME_="../README.md"
 
 echo "<!--" >${FILENAME_}

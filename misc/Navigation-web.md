@@ -1,5 +1,8 @@
 ## Introduction
-### Overview ✔️
+
+ - <a href="https://docs.nestjs.com/">Introduction</a>
+
+### Overview ✔️ <!-- OV -->
  - <a href="https://docs.nestjs.com/first-steps">First steps</a>
  - <a href="https://docs.nestjs.com/controllers">Controllers</a>
  - <a href="https://docs.nestjs.com/providers">Providers</a>
@@ -11,7 +14,7 @@
  - <a href="https://docs.nestjs.com/interceptors">Interceptors</a>
  - <a href="https://docs.nestjs.com/custom-decorators">Custom decorators</a>
 
-### Fundamentals ✔️
+### Fundamentals ✔️ <!-- FD -->
  - <a href="https://docs.nestjs.com/fundamentals/custom-providers">Custom providers</a>
  - <a href="https://docs.nestjs.com/fundamentals/async-providers">Asynchronous providers</a>
  - <a href="https://docs.nestjs.com/fundamentals/dynamic-modules">Dynamic modules</a>
@@ -23,7 +26,7 @@
  - <a href="https://docs.nestjs.com/fundamentals/platform-agnosticism">Platform agnosticism</a>
  - <a href="https://docs.nestjs.com/fundamentals/testing">Testing</a>
 
-### Techniques ✔️
+### Techniques ✔️ <!-- TK -->
  - <a href="https://docs.nestjs.com/techniques/authentication">Authentication</a>
  - <a href="https://docs.nestjs.com/techniques/database">Database</a>
  - <a href="https://docs.nestjs.com/techniques/mongodb">Mongo</a>
@@ -41,7 +44,7 @@
  - <a href="https://docs.nestjs.com/techniques/mvc">Model-View-Controller</a>
  - <a href="https://docs.nestjs.com/techniques/performance">Performance (Fastify)</a>
 
-### Graphql ✔️
+### Graphql ✔️ <!-- QL -->
  - <a href="https://docs.nestjs.com/graphql/quick-start">Quick start</a>
  - <a href="https://docs.nestjs.com/graphql/resolvers">Resolvers</a>
  - <a href="https://docs.nestjs.com/graphql/mutations">Mutations</a>
@@ -60,7 +63,7 @@
  - <a href="https://docs.nestjs.com/graphql/other-features">Other features</a>
  - <a href="https://docs.nestjs.com/graphql/federation">Federation</a>
 
-### Websockets ✔️
+### Websockets ✔️ <!-- WS -->
  - <a href="https://docs.nestjs.com/websockets/gateways">Gateways</a>
  - <a href="https://docs.nestjs.com/websockets/exception-filters">Exception filters</a>
  - <a href="https://docs.nestjs.com/websockets/pipes">Pipes</a>
@@ -68,7 +71,7 @@
  - <a href="https://docs.nestjs.com/websockets/interceptors">Interceptors</a>
  - <a href="https://docs.nestjs.com/websockets/adapter">Adapters</a>
 
-### Microservices ✔️
+### Microservices ✔️ <!-- MS -->
  - <a href="https://docs.nestjs.com/microservices/basics">Overview</a>
  - <a href="https://docs.nestjs.com/microservices/redis">Redis</a>
  - <a href="https://docs.nestjs.com/microservices/mqtt">MQTT</a>
@@ -81,15 +84,18 @@
  - <a href="https://docs.nestjs.com/microservices/guards">Guards</a>
  - <a href="https://docs.nestjs.com/microservices/interceptors">Interceptors</a>
 
+### Standalone applications <!-- SA -->
 
-### Cli ✔️
+ - <a href="https://docs.nestjs.com/standalone-applications">Standalone Apps</a>
+
+### Cli ✔️ <!-- CLI -->
  - <a href="https://docs.nestjs.com/cli/overview">Overview</a>
  - <a href="https://docs.nestjs.com/cli/monorepo">Workspaces</a>
  - <a href="https://docs.nestjs.com/cli/libraries">Libraries</a>
  - <a href="https://docs.nestjs.com/cli/usages">Usage</a>
  - <a href="https://docs.nestjs.com/cli/scripts">Scripts</a>
 
-### Openapi ✔️
+### Openapi ✔️ <!-- OAPI -->
  - <a href="https://docs.nestjs.com/openapi/introduction">Introduction</a>
  - <a href="https://docs.nestjs.com/openapi/types-and-parameters">Types and Parameters</a>
  - <a href="https://docs.nestjs.com/openapi/operations">Operations</a>
@@ -100,7 +106,7 @@
  - <a href="https://docs.nestjs.com/openapi/other-features">Other features</a>
  - <a href="https://docs.nestjs.com/openapi/migration-guide">Migration guide</a>
 
-### Recipes ✔️
+### Recipes ✔️ <!-- RC -->
  - <a href="https://docs.nestjs.com/recipes/sql-typeorm">TypeORM</a>
  - <a href="https://docs.nestjs.com/recipes/mongodb">Mongoose</a>
  - <a href="https://docs.nestjs.com/recipes/sql-sequelize">Sequelize</a>
@@ -112,18 +118,38 @@
  - <a href="https://docs.nestjs.com/recipes/hot-reload">Hot reload</a>
  - <a href="https://docs.nestjs.com/recipes/serve-static">Serve static</a>
 
-### Faq ✔️
+### FAQ ✔️ <!-- FAQ -->
  - <a href="https://docs.nestjs.com/faq/http-adapter">HTTP adapter</a>
  - <a href="https://docs.nestjs.com/faq/global-prefix">Global path prefix</a>
  - <a href="https://docs.nestjs.com/faq/hybrid-application">Hybrid application</a>
  - <a href="https://docs.nestjs.com/faq/multiple-servers">HTTPS &amp; multiple servers</a>
  - <a href="https://docs.nestjs.com/faq/request-lifecycle">Request lifecycle</a>
 
-### More ✔️
- - <a href="https://docs.nestjs.com/standalone-applications">Standalone apps</a>
+### Migration guide <!-- MG -->
  - <a href="https://docs.nestjs.com/migration-guide"> Migration guide </a>
- - <a href="https://github.com/nestjs/nest/tree/master/sample">Examples</a>
- - <a href="https://docs.nestjs.com/discover/companies">Who is using Nest?</a>
+
+### More ✔️ <!-- MR -->
+ - <a href="https://courses.nestjs.com/"> Official NestJS Courses</a>
+ - <a href="https://docs.nestjs.com/discover/companies"> Who is using Nest?</a>
+ - <a href="https://nestjs.threadless.com/"> T-SHIRTS AND HOODIES</a>
+ - <a href="https://docs.nestjs.com/support"> SUPPORT US</a>
+ - <a href="https://enterprise.nestjs.com/"> GET ENTERPRISE SUPPORT</a>
+
+<!-- OV -->
+<!-- FD -->
+<!-- TK -->
+<!-- QL -->
+<!-- WS -->
+<!-- MS -->
+<!-- SA -->
+<!-- CLI -->
+<!-- OAPI -->
+<!-- RC -->
+<!-- FAQ -->
+<!-- MG -->
+<!-- MR -->
+
+
 
  <!--
  <a href="HHHHHHHH"><img src="https://nestjs.com/img/logo-small.svg" id="DDDDDDDDDDDDDD" width="20" alt="Nest Logo" /></a>
