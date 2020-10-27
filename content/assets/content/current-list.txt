@@ -1,0 +1,140 @@
+.:
+total 176K
+-rw-r--r--. 1 luxcium luxcium 3,0K 27 oct.  08:05 application-context.md
+-rw-r--r--. 1 luxcium luxcium 9,3K 27 oct.  08:05 components.md
+-rw-r--r--. 1 luxcium luxcium  23K 27 oct.  08:05 controllers.md
+-rw-r--r--. 1 luxcium luxcium    0 27 oct.  08:24 current-list.txt
+-rw-r--r--. 1 luxcium luxcium 7,2K 27 oct.  08:05 custom-decorators.md
+-rw-r--r--. 1 luxcium luxcium 2,3K 27 oct.  08:05 enterprise.md
+-rw-r--r--. 1 luxcium luxcium  15K 27 oct.  08:05 exception-filters.md
+-rw-r--r--. 1 luxcium luxcium 6,5K 27 oct.  08:05 first-steps.md
+-rw-r--r--. 1 luxcium luxcium  13K 27 oct.  08:05 guards.md
+-rw-r--r--. 1 luxcium luxcium  16K 27 oct.  08:05 interceptors.md
+-rw-r--r--. 1 luxcium luxcium 3,1K 27 oct.  08:05 introduction.md
+-rw-r--r--. 1 luxcium luxcium 9,5K 27 oct.  08:05 middlewares.md
+-rw-r--r--. 1 luxcium luxcium  11K 27 oct.  08:05 migration.md
+-rw-r--r--. 1 luxcium luxcium  12K 27 oct.  08:05 modules.md
+-rw-r--r--. 1 luxcium luxcium  23K 27 oct.  08:05 pipes.md
+-rw-r--r--. 1 luxcium luxcium 1,3K 27 oct.  08:05 support.md
+
+./cli:
+total 56K
+-rw-r--r--. 1 luxcium luxcium 7,3K 27 oct.  08:05 libraries.md
+-rw-r--r--. 1 luxcium luxcium 7,6K 27 oct.  08:05 overview.md
+-rw-r--r--. 1 luxcium luxcium 6,2K 27 oct.  08:05 scripts.md
+-rw-r--r--. 1 luxcium luxcium  11K 27 oct.  08:05 usages.md
+-rw-r--r--. 1 luxcium luxcium  19K 27 oct.  08:05 workspaces.md
+
+./discover:
+total 12K
+-rw-r--r--. 1 luxcium luxcium 5,9K 27 oct.  08:05 who-uses.json
+-rw-r--r--. 1 luxcium luxcium  386 27 oct.  08:05 who-uses.md
+
+./faq:
+total 24K
+-rw-r--r--. 1 luxcium luxcium  256 27 oct.  08:05 global-prefix.md
+-rw-r--r--. 1 luxcium luxcium 2,0K 27 oct.  08:05 http-adapter.md
+-rw-r--r--. 1 luxcium luxcium 1,6K 27 oct.  08:05 hybrid-application.md
+-rw-r--r--. 1 luxcium luxcium 1,5K 27 oct.  08:05 multiple-servers.md
+-rw-r--r--. 1 luxcium luxcium 5,2K 27 oct.  08:05 request-lifecycle.md
+
+./fundamentals:
+total 100K
+-rw-r--r--. 1 luxcium luxcium 1,2K 27 oct.  08:05 async-components.md
+-rw-r--r--. 1 luxcium luxcium 2,8K 27 oct.  08:05 circular-dependency.md
+-rw-r--r--. 1 luxcium luxcium  15K 27 oct.  08:05 dependency-injection.md
+-rw-r--r--. 1 luxcium luxcium  16K 27 oct.  08:05 dynamic-modules.md
+-rw-r--r--. 1 luxcium luxcium  12K 27 oct.  08:05 execution-context.md
+-rw-r--r--. 1 luxcium luxcium 8,1K 27 oct.  08:05 lifecycle-events.md
+-rw-r--r--. 1 luxcium luxcium 7,4K 27 oct.  08:05 module-reference.md
+-rw-r--r--. 1 luxcium luxcium 1,4K 27 oct.  08:05 platform-agnosticism.md
+-rw-r--r--. 1 luxcium luxcium 5,4K 27 oct.  08:05 provider-scopes.md
+-rw-r--r--. 1 luxcium luxcium  16K 27 oct.  08:05 unit-testing.md
+
+./graphql:
+total 124K
+-rw-r--r--. 1 luxcium luxcium 3,8K 27 oct.  08:05 cli-plugin.md
+-rw-r--r--. 1 luxcium luxcium 3,4K 27 oct.  08:05 complexity.md
+-rw-r--r--. 1 luxcium luxcium 2,9K 27 oct.  08:05 directives.md
+-rw-r--r--. 1 luxcium luxcium 2,2K 27 oct.  08:05 enums.md
+-rw-r--r--. 1 luxcium luxcium 3,6K 27 oct.  08:05 extensions.md
+-rw-r--r--. 1 luxcium luxcium 8,0K 27 oct.  08:05 federation.md
+-rw-r--r--. 1 luxcium luxcium 5,5K 27 oct.  08:05 guards-interceptors.md
+-rw-r--r--. 1 luxcium luxcium 2,7K 27 oct.  08:05 interfaces.md
+-rw-r--r--. 1 luxcium luxcium 4,7K 27 oct.  08:05 mapped-types.md
+-rw-r--r--. 1 luxcium luxcium 3,7K 27 oct.  08:05 mutations.md
+-rw-r--r--. 1 luxcium luxcium 1,8K 27 oct.  08:05 plugins.md
+-rw-r--r--. 1 luxcium luxcium  12K 27 oct.  08:05 quick-start.md
+-rw-r--r--. 1 luxcium luxcium  27K 27 oct.  08:05 resolvers-map.md
+-rw-r--r--. 1 luxcium luxcium 4,1K 27 oct.  08:05 scalars.md
+-rw-r--r--. 1 luxcium luxcium 1,7K 27 oct.  08:05 schema-generator.md
+-rw-r--r--. 1 luxcium luxcium 9,6K 27 oct.  08:05 subscriptions.md
+-rw-r--r--. 1 luxcium luxcium 3,2K 27 oct.  08:05 unions.md
+
+./microservices:
+total 96K
+-rw-r--r--. 1 luxcium luxcium  16K 27 oct.  08:05 basics.md
+-rw-r--r--. 1 luxcium luxcium 3,3K 27 oct.  08:05 exception-filters.md
+-rw-r--r--. 1 luxcium luxcium  17K 27 oct.  08:05 grpc.md
+-rw-r--r--. 1 luxcium luxcium  835 27 oct.  08:05 guards.md
+-rw-r--r--. 1 luxcium luxcium  707 27 oct.  08:05 interceptors.md
+-rw-r--r--. 1 luxcium luxcium  14K 27 oct.  08:05 kafka.md
+-rw-r--r--. 1 luxcium luxcium 4,1K 27 oct.  08:05 mqtt.md
+-rw-r--r--. 1 luxcium luxcium 5,4K 27 oct.  08:05 nats.md
+-rw-r--r--. 1 luxcium luxcium  852 27 oct.  08:05 pipes.md
+-rw-r--r--. 1 luxcium luxcium 6,5K 27 oct.  08:05 rabbitmq.md
+-rw-r--r--. 1 luxcium luxcium 3,8K 27 oct.  08:05 redis.md
+
+./openapi:
+total 44K
+-rw-r--r--. 1 luxcium luxcium 4,4K 27 oct.  08:05 cli-plugin.md
+-rw-r--r--. 1 luxcium luxcium 1,3K 27 oct.  08:05 decorators.md
+-rw-r--r--. 1 luxcium luxcium 2,7K 27 oct.  08:05 introduction.md
+-rw-r--r--. 1 luxcium luxcium 3,8K 27 oct.  08:05 mapped-types.md
+-rw-r--r--. 1 luxcium luxcium 1,2K 27 oct.  08:05 migration-guide.md
+-rw-r--r--. 1 luxcium luxcium 3,7K 27 oct.  08:05 operations.md
+-rw-r--r--. 1 luxcium luxcium 2,6K 27 oct.  08:05 other-features.md
+-rw-r--r--. 1 luxcium luxcium 2,1K 27 oct.  08:05 security.md
+-rw-r--r--. 1 luxcium luxcium 7,8K 27 oct.  08:05 types-and-parameters.md
+
+./recipes:
+total 96K
+-rw-r--r--. 1 luxcium luxcium 9,2K 27 oct.  08:05 cqrs.md
+-rw-r--r--. 1 luxcium luxcium 8,4K 27 oct.  08:05 crud.md
+-rw-r--r--. 1 luxcium luxcium 1,1K 27 oct.  08:05 documentation.md
+-rw-r--r--. 1 luxcium luxcium 4,9K 27 oct.  08:05 hot-reload.md
+-rw-r--r--. 1 luxcium luxcium 5,5K 27 oct.  08:05 mongodb.md
+-rw-r--r--. 1 luxcium luxcium  17K 27 oct.  08:05 prisma.md
+-rw-r--r--. 1 luxcium luxcium 1,3K 27 oct.  08:05 serve-static.md
+-rw-r--r--. 1 luxcium luxcium 4,8K 27 oct.  08:05 sql-sequelize.md
+-rw-r--r--. 1 luxcium luxcium 4,9K 27 oct.  08:05 sql-typeorm.md
+-rw-r--r--. 1 luxcium luxcium    0 27 oct.  08:05 swagger.md
+-rw-r--r--. 1 luxcium luxcium 9,2K 27 oct.  08:05 terminus.md
+
+./techniques:
+total 240K
+-rw-r--r--. 1 luxcium luxcium  43K 27 oct.  08:05 authentication.md
+-rw-r--r--. 1 luxcium luxcium 8,0K 27 oct.  08:05 caching.md
+-rw-r--r--. 1 luxcium luxcium 1,9K 27 oct.  08:05 compression.md
+-rw-r--r--. 1 luxcium luxcium  19K 27 oct.  08:05 configuration.md
+-rw-r--r--. 1 luxcium luxcium 6,3K 27 oct.  08:05 file-upload.md
+-rw-r--r--. 1 luxcium luxcium 3,7K 27 oct.  08:05 http-module.md
+-rw-r--r--. 1 luxcium luxcium  11K 27 oct.  08:05 logger.md
+-rw-r--r--. 1 luxcium luxcium  15K 27 oct.  08:05 mongo.md
+-rw-r--r--. 1 luxcium luxcium 6,5K 27 oct.  08:05 mvc.md
+-rw-r--r--. 1 luxcium luxcium 3,2K 27 oct.  08:05 performance.md
+-rw-r--r--. 1 luxcium luxcium  21K 27 oct.  08:05 queues.md
+-rw-r--r--. 1 luxcium luxcium 5,2K 27 oct.  08:05 security.md
+-rw-r--r--. 1 luxcium luxcium 4,4K 27 oct.  08:05 serialization.md
+-rw-r--r--. 1 luxcium luxcium  44K 27 oct.  08:05 sql.md
+-rw-r--r--. 1 luxcium luxcium  14K 27 oct.  08:05 task-scheduling.md
+-rw-r--r--. 1 luxcium luxcium  12K 27 oct.  08:05 validation.md
+
+./websockets:
+total 36K
+-rw-r--r--. 1 luxcium luxcium 5,2K 27 oct.  08:05 adapter.md
+-rw-r--r--. 1 luxcium luxcium 2,3K 27 oct.  08:05 exception-filters.md
+-rw-r--r--. 1 luxcium luxcium 8,2K 27 oct.  08:05 gateways.md
+-rw-r--r--. 1 luxcium luxcium  862 27 oct.  08:05 guards.md
+-rw-r--r--. 1 luxcium luxcium  739 27 oct.  08:05 interceptors.md
+-rw-r--r--. 1 luxcium luxcium 1015 27 oct.  08:05 pipes.md
