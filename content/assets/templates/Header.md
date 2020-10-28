@@ -71,3 +71,166 @@ Colligated Documentation |  NestjS Official Docs
 
 
 **`[-- Script kiddies cut here -- ]`**
+
+
+### <a href="README.md#bookmarks"></a> Main Sections
+
+
+
+
+------
+<img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" /></br>
+
+
+<img src="../svg/bookmark-off.svg" width="25" alt="bookmark-off
+" id="DDDD" /></br>
+
+
+<img src="../svg/bookmarks.svg" width="25" alt="bookmarks
+" id="DDDD" /></br>
+
+
+<img src="../svg/bookmark.svg" width="25" alt="bookmark
+" id="DDDD" /></br>
+
+<img src="../svg/chevron-left.svg" width="25" alt="chevron-left
+" id="DDDD" />
+<img src="../svg/chevron-right.svg" width="25" alt="chevron-right
+" id="DDDD" /></br>
+
+<img src="../svg/caret-up.svg" width="25" alt="caret-up
+" id="DDDD" />
+<img src="../svg/caret-down.svg" width="25" alt="caret-down
+" id="DDDD" /></br>
+
+
+<img src="../svg/caret-left.svg" width="25" alt="caret-left
+" id="DDDD" />
+<img src="../svg/caret-right.svg" width="25" alt="caret-right
+" id="DDDD" /></br>
+
+
+
+
+
+
+
+
+
+
+
+<img src="../svg/chevron-up.svg" width="25" alt="chevron-up
+" id="DDDD" />
+<img src="../svg/chevron-down.svg" width="25" alt="chevron-down
+" id="DDDD" /></br>
+
+
+
+
+
+
+
+
+
+
+
+<img src="../svg/chevrons-up.svg" width="25" alt="chevrons-up
+" id="DDDD" />
+<img src="../svg/chevrons-down.svg" width="25" alt="chevrons-down
+" id="DDDD" /></br>
+
+
+<img src="../svg/chevrons-left.svg" width="25" alt="chevrons-left
+" id="DDDD" />
+<img src="../svg/chevrons-right.svg" width="25" alt="chevrons-right
+" id="DDDD" /></br>
+
+
+
+
+
+-----
+
+<img src="../svg/chevrons-up-left.svg" width="25" alt="chevrons-up-left
+" id="DDDD" /></br>
+<img src="../svg/chevrons-up-right.svg" width="25" alt="chevrons-up-right
+" id="DDDD" /></br>
+
+
+<img src="../svg/chevrons-down-left.svg" width="25" alt="chevrons-down-left
+" id="DDDD" /></br>
+<img src="../svg/chevrons-down-right.svg" width="25" alt="chevrons-down-right
+" id="DDDD" /></br>
+
+
+----
+
+<img src="../svg/chevron-up-left.svg" width="25" alt="chevron-up-left
+" id="DDDD" /></br>
+<img src="../svg/chevron-up-right.svg" width="25" alt="chevron-up-right
+" id="DDDD" /></br>
+<img src="../svg/chevron-down-left.svg" width="25" alt="chevron-down-left
+" id="DDDD" /></br>
+<img src="../svg/chevron-down-right.svg" width="25" alt="chevron-down-right
+" id="DDDD" /></br>
+
+
+-----
+
+
+<img src="../svg/christmas-tree.svg" width="25" alt="christmas-tree
+" id="DDDD" /></br>
+<img src="../svg/circle-check.svg" width="25" alt="circle-check
+" id="DDDD" /></br>
+<img src="../svg/circle-dashed.svg" width="25" alt="circle-dashed
+" id="DDDD" /></br>
+<img src="../svg/circle-dotted.svg" width="25" alt="circle-dotted
+" id="DDDD" /></br>
+<img src="../svg/circle-minus.svg" width="25" alt="circle-minus
+" id="DDDD" /></br>
+<img src="../svg/circle-plus.svg" width="25" alt="circle-plus
+" id="DDDD" /></br>
+<img src="../svg/circle-square.svg" width="25" alt="circle-square
+" id="DDDD" /></br>
+<img src="../svg/circles.svg" width="25" alt="circles
+" id="DDDD" /></br>
+<img src="../svg/circle.svg" width="25" alt="circle
+" id="DDDD" /></br>
+<img src="../svg/circle-x.svg" width="25" alt="circle-x
+" id="DDDD" /></br>
+<img src="../svg/clear-formatting.svg" width="25" alt="clear-formatting
+" id="DDDD" /></br>
+<img src="../svg/click.svg" width="25" alt="click
+" id="DDDD" /></br>
+<img src="../svg/clipboard-check.svg" width="25" alt="clipboard-check
+" id="DDDD" /></br>
+<img src="../svg/clipboard-list.svg" width="25" alt="clipboard-list
+" id="DDDD" /></br>
+<img src="../svg/clipboard.svg" width="25" alt="clipboard
+" id="DDDD" /></br>
+<img src="../svg/clipboard-x.svg" width="25" alt="clipboard-x
+" id="DDDD" /></br>
+<img src="../svg/clock.svg" width="25" alt="clock
+" id="DDDD" /></br>
+<img src="../svg/cloud-download.svg" width="25" alt="cloud-download
+" id="DDDD" /></br>
+<img src="../svg/cloud-fog.svg" width="25" alt="cloud-fog
+" id="DDDD" /></br>
+<img src="../svg/cloud-off.svg" width="25" alt="cloud-off
+" id="DDDD" /></br>
+<img src="../svg/cloud-rain.svg" width="25" alt="cloud-rain
+" id="DDDD" /></br>
+<img src="../svg/cloud-snow.svg" width="25" alt="cloud-snow
+" id="DDDD" /></br>
+<img src="../svg/chart-line.svg" width="25" alt="chart-line
+" id="DDDD" /></br>
+<img src="../svg/chart-pie.svg" width="25" alt="chart-pie
+" id="DDDD" /></br>
+<img src="../svg/chart-radar.svg" width="25" alt="chart-radar
+" id="DDDD" /></br>
+<img src="../svg/checkbox.svg" width="25" alt="checkbox
+" id="DDDD" /></br>
+<img src="../svg/checks.svg" width="25" alt="checks
+" id="DDDD" /></br>
+<img src="../svg/check.svg" width="25" alt="check
+" id="DDDD" /></br>
