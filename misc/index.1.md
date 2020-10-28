@@ -133,7 +133,10 @@
 
 
 
+### Introduction <!-- INT -->
   introduction.md
+
+### Overview   <!-- OV -->
   first-steps.md
   controllers.md
   components.md
@@ -144,6 +147,9 @@
   guards.md
   interceptors.md
   custom-decorators.md
+
+
+### Fundamentals   <!-- FD -->
   dependency-injection.md
   async-components.md
   dynamic-modules.md
@@ -154,6 +160,10 @@
   lifecycle-events.md
   platform-agnosticism.md
   unit-testing.md
+
+
+
+### Techniques   <!-- TK -->
   authentication.md
   sql.md
   mongo.md
@@ -170,6 +180,10 @@
   http-module.md
   mvc.md
   performance.md
+
+
+
+### Graphql   <!-- QL -->
   quick-start.md
   resolvers-map.md
   mutations.md
@@ -187,12 +201,18 @@
   schema-generator.md
   guards-interceptors.md
   federation.md
+
+
+### Websockets   <!-- WS -->
   gateways.md
   exception-filters.md
   pipes.md
   guards.md
   interceptors.md
   adapter.md
+
+
+### Microservices   <!-- MS -->
   basics.md
   redis.md
   mqtt.md
@@ -204,12 +224,21 @@
   pipes.md
   guards.md
   interceptors.md
+
+
+### Standalone applications <!-- SA -->
   application-context.md
+
+
+### Cli   <!-- CLI -->
   overview.md
   workspaces.md
   libraries.md
   usages.md
   scripts.md
+
+
+### Openapi   <!-- OAPI -->
   introduction.md
   types-and-parameters.md
   operations.md
@@ -219,6 +248,9 @@
   cli-plugin.md
   other-features.md
   migration-guide.md
+
+
+### Recipes   <!-- RC -->
   sql-typeorm.md
   mongodb.md
   sql-sequelize.md
@@ -229,9 +261,15 @@
   documentation.md
   hot-reload.md
   serve-static.md
+
+
+
+### FAQ   <!-- FAQ -->
   http-adapter.md
   global-prefix.md
   hybrid-application.md
   multiple-servers.md
   request-lifecycle.md
+
+### Migration guide <!-- MG -->
   migration.md
