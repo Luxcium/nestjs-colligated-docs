@@ -73,7 +73,7 @@ Colligated Documentation |  NestjS Official Docs
 **`[-- Script kiddies cut here -- ]`**
 
 
-### <a href="README.md#bookmarks"></a> Main Sections
+## <a href="README.md#bookmarks"></a> Main Section
 
 
 **`[-- Script kiddies cut here -- ]`**
@@ -94,7 +94,7 @@ Colligated Documentation |  NestjS Official Docs
 
 
 
-### <img src="https://nestjs.com/img/logo-small.svg"  width="15" alt="Nest Logo" /> SOUS-SECTION <img src="../svg/chevron-up.svg" width="25" alt="chevron-up" id="DDDD" />   <!-- OVB -->
+### <img src="../svg/chevron-left.svg" width="15" alt="chevron-left" id="DDDD" /><img src="../svg/chevron-right.svg" width="15" alt="chevron-right" id="DDDD" />SOUS-SECTION<img src="../svg/chevron-up.svg" width="15" alt="chevron-up" id="DDDD" /> <img src="https://nestjs.com/img/logo-small.svg"  width="20" alt="Nest Logo" />    <!-- OVB -->
 
 
 </br><img src="../svg/chevron-left.svg" width="25" alt="chevron-left" id="DDDD" /><img src="../svg/chevron-right.svg" width="25" alt="chevron-right" id="DDDD" /></br></br>
