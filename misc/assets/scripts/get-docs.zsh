@@ -4,9 +4,13 @@ cd /home/luxcium/.local/src/nestjs-colligated-docs
 source /home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/cat-functions.sh
 
 pTMP_PATH="/tmp/docs.nestjs.com-$(getSTMP8a)"
+pTMP_content_="${pTMP_PATH}/content"
+
 gh repo clone nestjs/docs.nestjs.com ${pTMP_PATH} # && cd ${pTMP_PATH}/content/
 cp -r /home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/ ${pTMP_PATH}/content
 cd ${pTMP_PATH}/content
+mkdir build
+
 pwd
 lf
 

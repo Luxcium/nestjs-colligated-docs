@@ -45,8 +45,8 @@ function getSTMP8a() {
 
 pTMP_PATH="/tmp/docs.nestjs.com-$(getSTMP8a)"
 
-_imgpath="./content/assets/svg"
-_iconpath="./content/assets/svg"
+_imgpath="../svg"
+_iconpath="../svg"
 
 _logosmall="/logo-small.svg"
 
@@ -71,7 +71,9 @@ function imganchortag_() {
 function imagetag_logo_small() {
   _imgid=$(getSTMP8)
   _imgsrc="${_logosmall}"
+  _anchorid="top"
   _imgalt="Nest JS Small Logo"
+  _anchorpage="${long_Url_}${short_Url}"
   imganchortag_
 }
 
@@ -141,7 +143,7 @@ _anchorid_top="$(getSTMP8)"
 _anchorid_previous="$(getSTMP8)"
 _anchorid_next="$(getSTMP8)"
 _imgwidth=${_imgwidth3}
-_sectionText="Sub section text"
+# _sectionText="Sub section text"
 function _create_sub_section() {
   echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
 }
