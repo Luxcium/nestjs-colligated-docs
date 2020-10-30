@@ -9,9 +9,17 @@ snSTMP8=$(sha224hmac <<<$(date +%D%s%N) | cut -c -8 | tr \[a-z\] \[A-Z\])
 snSTMP4a=$(sha224hmac <<<$(date +%A%s%N) | cut -c -4 | tr \[a-z\] \[A-Z\])
 snSTMP4b=$(sha224hmac <<<$(date +%B%s%N) | cut -c -4 | tr \[a-z\] \[A-Z\])
 snapSTMP8a="${snSTMP4a}-${snSTMP4b}"
-pTMP_PATH="/tmp/docs.nestjs.com-${snapSTMP8a}"
 pASSETS="${pTMP_PATH}/src/assets"
 pCONTENT="${pTMP_PATH}/content"
+
+sect1_="# "
+sect2_="## "
+sect3_="### "
+sect4_="#### "
+
+_imgwidth1=30
+_imgwidth2=25
+_imgwidth3=20
 
 function getSTMP8() {
   echo -n Z$(sha224hmac <<<$(date +%D%s%N) | cut -c -8 | tr \[a-z\] \[A-Z\])x
@@ -34,21 +42,8 @@ function getSTMP8a() {
   echo -n "$(getSTMP4)-$(getSTMP4)x"
 
 }
-echo ""
-echo ""
-getSTMP8
-echo ""
-getSTMP8a
-echo ""
-getSTMP4
-echo ""
-getSTMP6
-echo ""
-snapSTMP8a="$(getSTMP8a)"
 
-_width1=15
-_width2=20
-_width3=25
+pTMP_PATH="/tmp/docs.nestjs.com-$(getSTMP8a)"
 
 _imgpath="./content/assets/svg"
 _iconpath="./content/assets/svg"
@@ -125,23 +120,32 @@ function imagetag_chevron_right() {
   imganchortag_
 }
 
-# _anchorid_current=''
-# _anchorid_top=''
-# _anchorid_previous=''
-# _anchorid_next=''
+_anchorid_current="$(getSTMP8)"
+_anchorid_top="$(getSTMP8)"
+_anchorid_previous="$(getSTMP8)"
+_anchorid_next="$(getSTMP8)"
+_imgwidth=${_imgwidth2}
+_sectionText="Section text"
 function _create_section() {
-  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) $(imagetag_chevrons_up) $(imagetag_logo_small)
+  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevrons_up)
 }
 
-_anchorid_current=''
-_anchorid_top=''
-_anchorid_previous=''
-_anchorid_next=''
-_imgwidth=15
+# _create_section
+
+# echo ""
+# echo ""
+# echo ""
+# echo ""
+_anchorid_current="$(getSTMP8)"
+_anchorid_top="$(getSTMP8)"
+_anchorid_previous="$(getSTMP8)"
+_anchorid_next="$(getSTMP8)"
+_imgwidth=${_imgwidth3}
+_sectionText="Sub section text"
 function _create_sub_section() {
-  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) SUB SECTION TEXT $(imagetag_chevron_up) $(imagetag_logo_small)$(getRandomSpan)
+  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
 }
-_create_sub_section
+# _create_sub_section
 # _imgpath
 # _imgsrc
 # _imgwidth
@@ -170,3 +174,15 @@ _create_sub_section
 # imagetag_chevron_left
 # imagetag_chevron_right
 # imagetag_chevron_up
+
+# echo ""
+# echo ""
+# getSTMP8
+# echo ""
+# getSTMP8a
+# echo ""
+# getSTMP4
+# echo ""
+# getSTMP6
+# echo ""
+# snapSTMP8a="$(getSTMP8a)"

@@ -148,7 +148,7 @@
   interceptors.md
   custom-decorators.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/fundamentals
 ### Fundamentals   <!-- FD -->
   dependency-injection.md
   async-components.md
@@ -162,7 +162,7 @@
   unit-testing.md
 
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/techniques
 ### Techniques   <!-- TK -->
   authentication.md
   sql.md
@@ -182,7 +182,7 @@
   performance.md
 
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/graphql
 ### Graphql   <!-- QL -->
   quick-start.md
   resolvers-map.md
@@ -202,7 +202,7 @@
   guards-interceptors.md
   federation.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/websockets
 ### Websockets   <!-- WS -->
   gateways.md
   exception-filters.md
@@ -211,7 +211,7 @@
   interceptors.md
   adapter.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/microservices
 ### Microservices   <!-- MS -->
   basics.md
   redis.md
@@ -225,11 +225,11 @@
   guards.md
   interceptors.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content
 ### Standalone applications <!-- SA -->
   application-context.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/cli
 ### Cli   <!-- CLI -->
   overview.md
   workspaces.md
@@ -237,7 +237,7 @@
   usages.md
   scripts.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/openapi
 ### Openapi   <!-- OAPI -->
   introduction.md
   types-and-parameters.md
@@ -249,7 +249,7 @@
   other-features.md
   migration-guide.md
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/recipes
 ### Recipes   <!-- RC -->
   sql-typeorm.md
   mongodb.md
@@ -263,7 +263,7 @@
   serve-static.md
 
 
-
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content/faq
 ### FAQ   <!-- FAQ -->
   http-adapter.md
   global-prefix.md
@@ -271,5 +271,6 @@
   multiple-servers.md
   request-lifecycle.md
 
+cd /home/luxcium/.local/src/nestjs-colligated-docs/content/assets/content
 ### Migration guide <!-- MG -->
   migration.md

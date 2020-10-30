@@ -1,10 +1,7 @@
 #!/bin/sh
 
 
-sect1_="# "
-sect2_="## "
-sect3_="### "
-sect4_="#### "
+
 
 # _imgpath="_imgpath"
 _imgsrc="_imgsrc"
