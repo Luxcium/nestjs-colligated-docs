@@ -9,7 +9,7 @@ cd ${pTMP_PATH}/content
 mkdir build
 # pTMP_content_="${pTMP_PATH}/content"
 long_Url_="https://docs.nestjs.com/"
-randy001=$(getSTMP8a)
+randy001=some-8FA9-9265x.md
 function setSubSection_() {
   # cat $3
 

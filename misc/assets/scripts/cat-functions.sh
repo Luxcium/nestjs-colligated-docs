@@ -129,7 +129,7 @@ _anchorid_next="$(getSTMP8)"
 _imgwidth=${_imgwidth2}
 _sectionText="Section text"
 function _create_section() {
-  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevrons_up)
+  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_chevrons_up)
 }
 
 # _create_section
