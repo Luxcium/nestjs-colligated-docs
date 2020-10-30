@@ -1,4 +1,9 @@
-### <a href='#ZBD437814x'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZE1E39A14x' /></a><a href='#Z1BAB6CA0x'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='ZB3AF6E8Cx' /></a> SUB SECTION TEXT <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='Z8E8B5257x' /></a> <a href='#Z22F27110x'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='Z1C3C8134x' /></a>
+## <a href='#'><img src='./content/assets/svg/chevrons-left.svg' width='_imgwidth2' alt='Previous section' id='Z1806570Cx' /></a><a href='#'><img src='./content/assets/svg/chevrons-right.svg' width='_imgwidth2' alt='Next section' id='Z78BFFF54x' /></a> Section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='_imgwidth2' alt='Nest JS Small Logo' id='Z7FE2EAC6x' /></a> <a href='#'><img src='./content/assets/svg/chevrons-up.svg' width='_imgwidth2' alt='Go to top' id='Z99B50DE2x' /></a>
+
+
+
+### <a href='#ZF909F62Cx'><img src='./content/assets/svg/chevron-left.svg' width='_imgwidth3' alt='Previous sub-section' id='Z0D38C3B2x' /></a><a href='#ZB874C4F1x'><img src='./content/assets/svg/chevron-right.svg' width='_imgwidth3' alt='Next sub-section' id='ZAA589031x' /></a> Sub section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='_imgwidth3' alt='Nest JS Small Logo' id='ZED789E28x' /></a> <a href='#Z13C417CBx'><img src='./content/assets/svg/chevron-up.svg' width='_imgwidth3' alt='Go to top section' id='Z905D278Bx' /></a>
+
 
 
 <!--
