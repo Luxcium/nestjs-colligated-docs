@@ -1,3 +1,5 @@
+### <a href='#'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZBA71F44Ax' /></a><a href='#'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='Z7692AEB5x' /></a> SUB SECTION TEXT <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='ZF62AC149x' /></a> <a href='#'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='' /></a>
+
 <!--
 This document is ´written´ by a proud Script Kiddy
 
