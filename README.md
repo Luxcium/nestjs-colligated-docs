@@ -1,4 +1,5 @@
-### <a href='#'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZBA71F44Ax' /></a><a href='#'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='Z7692AEB5x' /></a> SUB SECTION TEXT <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='ZF62AC149x' /></a> <a href='#'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='' /></a>
+### <a href='#ZBD437814x'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZE1E39A14x' /></a><a href='#Z1BAB6CA0x'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='ZB3AF6E8Cx' /></a> SUB SECTION TEXT <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='Z8E8B5257x' /></a> <a href='#Z22F27110x'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='Z1C3C8134x' /></a>
+
 
 <!--
 This document is ´written´ by a proud Script Kiddy
