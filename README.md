@@ -1,3 +1,10 @@
+## <a href='#'><img src='./content/assets/svg/chevrons-left.svg' width='25' alt='Previous section' id='Z11CD944Ax' /></a><a href='#'><img src='./content/assets/svg/chevrons-right.svg' width='25' alt='Next section' id='Z2C0BD5CFx' /></a> Section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='25' alt='Nest JS Small Logo' id='ZE80FA41Dx' /></a> <a href='#'><img src='./content/assets/svg/chevrons-up.svg' width='25' alt='Go to top' id='ZCA0A7ED8x' /></a>
+
+
+
+### <a href='#Z408749B5x'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZDB0FE92Bx' /></a><a href='#ZEDECD4CCx'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='ZFB1A07D6x' /></a> Sub section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='ZF2CE5FADx' /></a> <a href='#ZF0F57E6Dx'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='Z671C03DCx' /></a>
+
+
 <!--
 This document is ´written´ by a proud Script Kiddy
 
@@ -35,6 +42,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <!-- START HEADER SECTION -->
 
 # Nest Colligated Documentation
+
+## <a href='#'><img src='./content/assets/svg/chevron-left.svg' width='20px' alt='Previous sub-section' id='ZD3BC71B5x' /></a><a href='#'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='Z7FD3B7E5x' /></a> Sub section text <a href='#'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='' /></a> <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='Z156F7EB7x' /></a><span style='color:#4FCEE7'> . </span>
+
 
 
 This document is ´written´ by a proud *Script Kiddy* using the **`cat`** command so all the power and all the merit of this hard work is dedicated to the [Cat Person](https://github.com/kamilmysliwiec)! Tanks to the [MIT License](https://github.com/nestjs/docs.nestjs.com/blob/master/LICENSE) I have been able to ´write´ this document all by myself, without copy-pasting code or scripts from anyone else, *Like Real Script Kiddies always do†*. In fact I have used my own script: [`cat-docs.sh`](https://github.com/Luxcium/nestjs-colligated-docs/blob/master/content/cat-docs.sh) to colligate the documentation.
