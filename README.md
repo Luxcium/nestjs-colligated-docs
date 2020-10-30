@@ -1,9 +1,8 @@
-## <a href='#'><img src='./content/assets/svg/chevrons-left.svg' width='_imgwidth2' alt='Previous section' id='Z1806570Cx' /></a><a href='#'><img src='./content/assets/svg/chevrons-right.svg' width='_imgwidth2' alt='Next section' id='Z78BFFF54x' /></a> Section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='_imgwidth2' alt='Nest JS Small Logo' id='Z7FE2EAC6x' /></a> <a href='#'><img src='./content/assets/svg/chevrons-up.svg' width='_imgwidth2' alt='Go to top' id='Z99B50DE2x' /></a>
+## <a href='#'><img src='./content/assets/svg/chevrons-left.svg' width='25' alt='Previous section' id='Z11CD944Ax' /></a><a href='#'><img src='./content/assets/svg/chevrons-right.svg' width='25' alt='Next section' id='Z2C0BD5CFx' /></a> Section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='25' alt='Nest JS Small Logo' id='ZE80FA41Dx' /></a> <a href='#'><img src='./content/assets/svg/chevrons-up.svg' width='25' alt='Go to top' id='ZCA0A7ED8x' /></a>
 
 
 
-### <a href='#ZF909F62Cx'><img src='./content/assets/svg/chevron-left.svg' width='_imgwidth3' alt='Previous sub-section' id='Z0D38C3B2x' /></a><a href='#ZB874C4F1x'><img src='./content/assets/svg/chevron-right.svg' width='_imgwidth3' alt='Next sub-section' id='ZAA589031x' /></a> Sub section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='_imgwidth3' alt='Nest JS Small Logo' id='ZED789E28x' /></a> <a href='#Z13C417CBx'><img src='./content/assets/svg/chevron-up.svg' width='_imgwidth3' alt='Go to top section' id='Z905D278Bx' /></a>
-
+### <a href='#Z408749B5x'><img src='./content/assets/svg/chevron-left.svg' width='20' alt='Previous sub-section' id='ZDB0FE92Bx' /></a><a href='#ZEDECD4CCx'><img src='./content/assets/svg/chevron-right.svg' width='20' alt='Next sub-section' id='ZFB1A07D6x' /></a> Sub section text <a href='#'><img src='./content/assets/svg/logo-small.svg' width='20' alt='Nest JS Small Logo' id='ZF2CE5FADx' /></a> <a href='#ZF0F57E6Dx'><img src='./content/assets/svg/chevron-up.svg' width='20' alt='Go to top section' id='Z671C03DCx' /></a>
 
 
 <!--
