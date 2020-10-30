@@ -122,31 +122,8 @@ function imagetag_chevron_right() {
   imganchortag_
 }
 
-_anchorid_current="$(getSTMP8)"
-_anchorid_top="$(getSTMP8)"
-_anchorid_previous="$(getSTMP8)"
-_anchorid_next="$(getSTMP8)"
-_imgwidth=${_imgwidth2}
-_sectionText="Section text"
-function _create_section() {
-  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_chevrons_up)
-}
 
-# _create_section
 
-# echo ""
-# echo ""
-# echo ""
-# echo ""
-_anchorid_current="$(getSTMP8)"
-_anchorid_top="$(getSTMP8)"
-_anchorid_previous="$(getSTMP8)"
-_anchorid_next="$(getSTMP8)"
-_imgwidth=${_imgwidth3}
-# _sectionText="Sub section text"
-function _create_sub_section() {
-  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
-}
 # _create_sub_section
 # _imgpath
 # _imgsrc

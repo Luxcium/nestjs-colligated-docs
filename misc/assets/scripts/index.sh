@@ -10,48 +10,54 @@ mkdir build
 # pTMP_content_="${pTMP_PATH}/content"
 long_Url_="https://docs.nestjs.com/"
 randy001=some-8FA9-9265x.md
-function setSubSection_() {
-  # cat $3
 
-  short_Url="${1}"
-  _sectionText="${2}"
-  _anchorid_current="$(getSTMP8)"
-  _anchorid_top="$(getSTMP8)"
-  _anchorid_previous="$(getSTMP8)"
-  _anchorid_next="$(getSTMP8)"
+function _create_section() {
+  _imgwidth=${_imgwidth2}
+  _anchorid_current="${_anchorid_current}"
+  _anchorid_top="${_anchorid_current}"
+  _anchorid_previous="${_anchorid_current}"
+  _anchorid_next="${_anchorid_current}"
+  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_chevrons_up)
+}
+
+function _create_sub_section() {
   _imgwidth=${_imgwidth3}
-  echo $(_create_sub_section) >>/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/some-${randy001}.md
-  # function _create_sub_section() {
-  #   echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
-  # }
+  _anchorid_current="${_subanchorid_current}"
+  _anchorid_top="${_subanchorid_current}"
+  _anchorid_previous="${_subanchorid_current}"
+  _anchorid_next="${_subanchorid_current}"
+  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
 }
 
 function setSection_() {
-  # cat $3
-
   short_Url="${1}"
   _sectionText="${2}"
-  _anchorid_current="$(getSTMP8)"
-  _anchorid_top="$(getSTMP8)"
-  _anchorid_previous="$(getSTMP8)"
-  _anchorid_next="$(getSTMP8)"
+  _sectionanchorid_top="top"
+  _sectionanchorid_previous="${_sectionanchorid_current}"
+  _sectionanchorid_current="${_sectionanchorid_next}"
+  _sectionanchorid_next="$(getSTMP8)"
   _imgwidth=${_imgwidth3}
   echo $(_create_section) >>/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/some-${randy001}.md
-  # function _create_sub_section() {
-  #   echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
-  # }
 }
-#
+
+function setSubSection_() {
+  short_Url="${1}"
+  _sectionText="${2}"
+  _subanchorid_top="${_sectionanchorid_current}"
+  _subanchorid_previous="${_subanchorid_current}"
+  _subanchorid_current="${_subanchorid_next}"
+  _subanchorid_next="$(getSTMP8)"
+  _imgwidth=${_imgwidth3}
+  echo $(_create_sub_section) >>/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/some-${randy001}.md
+}
+echo "" >/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/some-${randy001}.md
 cd "${pTMP_content_}"
-
 setSection_ "" "Introduction" ""
-
 setSubSection_ "/" "Introduction" "introduction.md"
 
 cd "${pTMP_content_}"
-
 setSection_ "" "Overview" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/first-steps" "First steps" "first-steps.md"
 setSubSection_ "/controllers" "Controllers" "controllers.md"
 setSubSection_ "/providers" "Providers" "components.md"
@@ -65,7 +71,7 @@ setSubSection_ "/custom-decorators" "Custom decorators" "custom-decorators.md"
 
 cd "${pTMP_content_}/fundamentals"
 setSection_ "" "Fundamentals" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/fundamentals/custom-providers" "Custom providers" "dependency-injection.md"
 setSubSection_ "/fundamentals/async-providers" "Asynchronous providers" "async-components.md"
 setSubSection_ "/fundamentals/dynamic-modules" "Dynamic modules" "dynamic-modules.md"
@@ -79,7 +85,7 @@ setSubSection_ "/fundamentals/testing" "Testing" "unit-testing.md"
 
 cd "${pTMP_content_}/techniques"
 setSection_ "" "Techniques" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/techniques/authentication" "Authentication" "authentication.md"
 setSubSection_ "/techniques/database" "Database" "sql.md"
 setSubSection_ "/techniques/mongodb" "Mongo" "mongo.md"
@@ -99,7 +105,7 @@ setSubSection_ "/techniques/performance" "Performance (Fastify)" "performance.md
 
 cd "${pTMP_content_}/graphql"
 setSection_ "" "Graphql" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/graphql/quick-start" "Quick start" "quick-start.md"
 setSubSection_ "/graphql/resolvers" "Resolvers" "resolvers-map.md"
 setSubSection_ "/graphql/mutations" "Mutations" "mutations.md"
@@ -120,7 +126,7 @@ setSubSection_ "/graphql/federation" "Federation" "federation.md"
 
 cd "${pTMP_content_}/websockets"
 setSection_ "" "Websockets" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/websockets/gateways" "Gateways" "gateways.md"
 setSubSection_ "/websockets/exception-filters" "Exception filters" "exception-filters.md"
 setSubSection_ "/websockets/pipes" "Pipes" "pipes.md"
@@ -130,7 +136,7 @@ setSubSection_ "/websockets/adapter" "Adapters" "adapter.md"
 
 cd "${pTMP_content_}/microservices"
 setSection_ "" "Microservices" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/microservices/basics" "Overview" "basics.md"
 setSubSection_ "/microservices/redis" "Redis" "redis.md"
 setSubSection_ "/microservices/mqtt" "MQTT" "mqtt.md"
@@ -145,12 +151,12 @@ setSubSection_ "/microservices/interceptors" "Interceptors" "interceptors.md"
 
 cd "${pTMP_content_}"
 setSection_ "" "Standalone applications" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/standalone-applications" "Standalone Apps" "application-context.md"
 
 cd "${pTMP_content_}/cli"
 setSection_ "" "Cli" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/cli/overview" "Overview" "overview.md"
 setSubSection_ "/cli/monorepo" "Workspaces" "workspaces.md"
 setSubSection_ "/cli/libraries" "Libraries" "libraries.md"
@@ -159,7 +165,7 @@ setSubSection_ "/cli/scripts" "Scripts" "scripts.md"
 
 cd "${pTMP_content_}/openapi"
 setSection_ "" "Openapi" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/openapi/introduction" "Introduction" "introduction.md"
 setSubSection_ "/openapi/types-and-parameters" "Types and Parameters" "types-and-parameters.md"
 setSubSection_ "/openapi/operations" "Operations" "operations.md"
@@ -172,7 +178,7 @@ setSubSection_ "/openapi/migration-guide" "Migration guide" "migration-guide.md"
 
 cd "${pTMP_content_}/recipes"
 setSection_ "" "Recipes" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/recipes/sql-typeorm" "TypeORM" "sql-typeorm.md"
 setSubSection_ "/recipes/mongodb" "Mongoose" "mongodb.md"
 setSubSection_ "/recipes/sql-sequelize" "Sequelize" "sql-sequelize.md"
@@ -186,7 +192,7 @@ setSubSection_ "/recipes/serve-static" "Serve static" "serve-static.md"
 
 cd "${pTMP_content_}/faq"
 setSection_ "" "FAQ" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/faq/http-adapter" "HTTP adapter" "http-adapter.md"
 setSubSection_ "/faq/global-prefix" "Global path prefix" "global-prefix.md"
 setSubSection_ "/faq/hybrid-application" "Hybrid application" "hybrid-application.md"
@@ -195,7 +201,7 @@ setSubSection_ "/faq/request-lifecycle" "Request lifecycle" "request-lifecycle.m
 
 cd "${pTMP_content_}/"
 setSection_ "" "Migration guide" ""
-
+# -------------------------------------------------------------
 setSubSection_ "/migration-guide" "Migration guide " "migration.md"
 
 # cd "${pTMP_content_}"
