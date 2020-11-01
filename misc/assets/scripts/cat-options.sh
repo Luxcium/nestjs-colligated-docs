@@ -274,6 +274,7 @@ function setSection_() {
   _sectionanchorid_next="$(get_sec_next_)"
   _imgwidth=${_imgwidth3}
   echo $(create_section_) >>"${_output_path}"
+  set_nxt_sec_links_
 }
 
 function setSubSection_() {
@@ -285,6 +286,7 @@ function setSubSection_() {
   _subanchorid_next="$(get_sub_next_)"
   _imgwidth=${_imgwidth3}
   echo $(create_sub_section_) >>"${_output_path}"
+  set_nxt_sub_links_
 }
 
 # echo ""
