@@ -1,56 +1,63 @@
 #!/bin/sh
 
-
-function _create_section() {
-  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) $(imagetag_chevrons_up) $(imagetag_logo-small)
+_imgsrc="_imgsrc"
+_imgwidth="20"
+_imgidtype="_imgidtype"
+_long_Url=""
+# _short_Url="README.md"
+_long_Url_site="https://docs.nestjs.com/"
+# _short_Url_site="will-be-calculated"
+function create_section_() {
+  echo -n ${_sect2}$(imagetag_chevrons_left_)$(imagetag_chevrons_right_) ${_sectionText} $(imagetag_chevrons_up_) $(imagetag_logo_small_)
 }
 
-function _create_sub-section() {
-  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) $(imagetag_chevron_up) $(imagetag_logo-small)
+# _imgpath="_imgpath"
+_imgsrc="_imgsrc"
+_imgwidth="15"
+_imgidtype="_imgidtype"
+_long_Url=""
+_long_Url_site="https://docs.nestjs.com/"
+# _short_Url_site="will-be-calculated"
+function create_sub_section_() {
+  echo -n ${_sect3}$(imagetag_chevron_left_)$(imagetag_chevron_right_) ${_sectionText} $(imagetag_chevron_up_) $(imagetag_logo_small_)
 
 }
 
-function imagetag_chevron_up() {
-  _imgsrc="${_icon2up}"
-  _imgid="${_anchorid_current}"
-  _imgalt="Go to top section"
-  _anchorid=${_anchorid_top}
-  imganchortag_
+function create_section_list_item_() {
+
+  echo -n " - "
 }
 
-function imagetag_chevron_left() {
-  _imgid=$(getSTMP8)
-  _imgsrc="${_icon2lft}"
-  _imgalt="Previous sub-section"
-  _anchorid=${_anchorid_previous}
-  imganchortag_
-}
-
-function imagetag_chevron_right() {
-  _imgid=$(getSTMP8)
-  _imgsrc="${_icon2rgh}"
-  _imgalt="Next sub-section"
-  _anchorid=${_anchorid_next}
-  imganchortag_
-}
-
-source /home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/flags-functions.sh
-
-
-function _create_section() {
-  _imgwidth=${_imgwidth2}
-  _anchorid_current="${_anchorid_current}"
-  _anchorid_top="${_anchorid_current}"
-  _anchorid_previous="${_anchorid_current}"
-  _anchorid_next="${_anchorid_current}"
-  echo -n ${sect2_}$(imagetag_chevrons_left)$(imagetag_chevrons_right) ${_sectionText} $(imagetag_chevrons_up)
-}
-
-function _create_sub_section() {
+first_set_
+echo "" >/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/random.md
+function setSection_() {
+  # _short_Url="${1}"
+  _short_Url_site="${1}"
+  _sectionText="${2}"
+  _sectionanchorid_top="$(get_sec_top_)"
+  _sectionanchorid_previous="$(get_sec_previous_)"
+  _anchorid_current="$(get_sec_current_)"
+  _sectionanchorid_next="$(get_sec_next_)"
   _imgwidth=${_imgwidth3}
-  _anchorid_current="${_subanchorid_current}"
-  _anchorid_top="${_subanchorid_current}"
-  _anchorid_previous="${_subanchorid_current}"
-  _anchorid_next="${_subanchorid_current}"
-  echo -n ${sect3_}$(imagetag_chevron_left)$(imagetag_chevron_right) ${_sectionText} $(imagetag_logo_small) $(imagetag_chevron_up)
+  echo $(create_section_) >>"${_output_path_temp_main}"
+  echo "" >>"${_output_path_temp_main}"
+  set_nxt_sec_links_
+}
+
+function setSubSection_() {
+  _short_Url_site="${1}"
+  _sectionText="${2}"
+  _subanchorid_top="$(get_sub_top_)"
+  _subanchorid_previous="$(get_sub_previous_)"
+  _anchorid_current="$(get_sub_current_)"
+  _subanchorid_next="$(get_sub_next_)"
+  _imgwidth=${_imgwidth3}
+  echo "" >>"${_output_path_temp}"
+  echo -n "$(create_sub_section_)" >>"${_output_path_temp}"
+  echo "" >>"${_output_path_temp}"
+  echo "" >>"${_output_path_temp}"
+  cat "./${3}" >>"${_output_path_temp}"
+  echo "" >>"${_output_path_temp}"
+  echo -n "$(somefunctionname_)" >>_output_path_temp_main
+  set_nxt_sub_links_
 }

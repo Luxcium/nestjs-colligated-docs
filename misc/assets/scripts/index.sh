@@ -19,6 +19,7 @@ setSubSection_ "/pipes" "Pipes" "pipes.md"
 setSubSection_ "/guards" "Guards" "guards.md"
 setSubSection_ "/interceptors" "Interceptors" "interceptors.md"
 setSubSection_ "/custom-decorators" "Custom decorators" "custom-decorators.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/fundamentals"
 setSection_ "" "Fundamentals" ""
@@ -33,6 +34,7 @@ setSubSection_ "/fundamentals/execution-context" "Execution context" "execution-
 setSubSection_ "/fundamentals/lifecycle-events" "Lifecycle events" "lifecycle-events.md"
 setSubSection_ "/fundamentals/platform-agnosticism" "Platform agnosticism" "platform-agnosticism.md"
 setSubSection_ "/fundamentals/testing" "Testing" "unit-testing.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/techniques"
 setSection_ "" "Techniques" ""
@@ -53,6 +55,7 @@ setSubSection_ "/techniques/file-upload" "File upload" "file-upload.md"
 setSubSection_ "/techniques/http-module" "HTTP module" "http-module.md"
 setSubSection_ "/techniques/mvc" "Model-View-Controller" "mvc.md"
 setSubSection_ "/techniques/performance" "Performance (Fastify)" "performance.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/graphql"
 setSection_ "" "Graphql" ""
@@ -74,6 +77,7 @@ setSubSection_ "/graphql/cli-plugin" "CLI Plugin" "cli-plugin.md"
 setSubSection_ "/graphql/generating-sdl" "Generating SDL" "schema-generator.md"
 setSubSection_ "/graphql/other-features" "Other features" "guards-interceptors.md"
 setSubSection_ "/graphql/federation" "Federation" "federation.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/websockets"
 setSection_ "" "Websockets" ""
@@ -84,6 +88,7 @@ setSubSection_ "/websockets/pipes" "Pipes" "pipes.md"
 setSubSection_ "/websockets/guards" "Guards" "guards.md"
 setSubSection_ "/websockets/interceptors" "Interceptors" "interceptors.md"
 setSubSection_ "/websockets/adapter" "Adapters" "adapter.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/microservices"
 setSection_ "" "Microservices" ""
@@ -99,11 +104,13 @@ setSubSection_ "/microservices/exception-filters" "Exception filters" "exception
 setSubSection_ "/microservices/pipes" "Pipes" "pipes.md"
 setSubSection_ "/microservices/guards" "Guards" "guards.md"
 setSubSection_ "/microservices/interceptors" "Interceptors" "interceptors.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}"
 setSection_ "" "Standalone applications" ""
 # -------------------------------------------------------------
 setSubSection_ "/standalone-applications" "Standalone Apps" "application-context.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/cli"
 setSection_ "" "Cli" ""
@@ -113,6 +120,7 @@ setSubSection_ "/cli/monorepo" "Workspaces" "workspaces.md"
 setSubSection_ "/cli/libraries" "Libraries" "libraries.md"
 setSubSection_ "/cli/usages" "Usage" "usages.md"
 setSubSection_ "/cli/scripts" "Scripts" "scripts.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/openapi"
 setSection_ "" "Openapi" ""
@@ -126,6 +134,7 @@ setSubSection_ "/openapi/decorators" "Decorators" "decorators.md"
 setSubSection_ "/openapi/cli-plugin" "CLI Plugin" "cli-plugin.md"
 setSubSection_ "/openapi/other-features" "Other features" "other-features.md"
 setSubSection_ "/openapi/migration-guide" "Migration guide" "migration-guide.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/recipes"
 setSection_ "" "Recipes" ""
@@ -140,6 +149,7 @@ setSubSection_ "/recipes/terminus" "Health checks (Terminus)" "terminus.md"
 setSubSection_ "/recipes/documentation" "Documentation" "documentation.md"
 setSubSection_ "/recipes/hot-reload" "Hot reload" "hot-reload.md"
 setSubSection_ "/recipes/serve-static" "Serve static" "serve-static.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/faq"
 setSection_ "" "FAQ" ""
@@ -149,8 +159,10 @@ setSubSection_ "/faq/global-prefix" "Global path prefix" "global-prefix.md"
 setSubSection_ "/faq/hybrid-application" "Hybrid application" "hybrid-application.md"
 setSubSection_ "/faq/multiple-servers" "HTTPS &amp; multiple servers" "multiple-servers.md"
 setSubSection_ "/faq/request-lifecycle" "Request lifecycle" "request-lifecycle.md"
+# write_Section_
 
 builtin cd "${_pTMP_content}/"
 setSection_ "" "Migration guide" ""
 # -------------------------------------------------------------
 setSubSection_ "/migration-guide" "Migration guide " "migration.md"
+# write_Section_
