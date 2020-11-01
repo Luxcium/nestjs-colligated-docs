@@ -233,7 +233,7 @@ function set_nxt_sec_links_() {
 }
 
 function set_nxt_sub_links_() {
-  set_sub_top_ "$(get_sec_current_)"
+  set_sub_top_ "$(get_sec_previous_)"
   set_sub_previous_ "$(get_sub_current_)"
   set_sub_current_ "$(get_sub_next_)"
   set_sub_next_ "$(getSTMP8_)"
