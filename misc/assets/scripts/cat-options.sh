@@ -38,7 +38,10 @@ _pASSETS="${_pTMP_PATH}/src/assets"
 _pCONTENT="${_pTMP_PATH}/content"
 
 _imgpath="./content/assets/svg"
-_FILENAME="../README.md"
+_FILENAME_path="/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts"
+_FILENAME="random.md"
+_output_path="${_FILENAME_path}/${_FILENAME}"
+_short_Url="${_FILENAME}"
 
 _pTMP_content="${_pTMP_PATH}/content"
 
@@ -240,11 +243,11 @@ _imgsrc="_imgsrc"
 _imgwidth="20"
 _imgidtype="_imgidtype"
 _long_Url=""
-_short_Url="README.md"
+# _short_Url="README.md"
 _long_Url_site="https://docs.nestjs.com/"
-_short_Url_site="will-be-calculated"
+# _short_Url_site="will-be-calculated"
 function create_section_() {
-  echo -n ${_sect2}$(imagetag_chevrons_left_)$(imagetag_chevrons_right_)$(imagetag_chevrons_up_) $(imagetag_logo_small_)
+  echo -n ${_sect2}$(imagetag_chevrons_left_)$(imagetag_chevrons_right_) ${_sectionText} $(imagetag_chevrons_up_) $(imagetag_logo_small_)
 }
 
 # _imgpath="_imgpath"
@@ -253,34 +256,35 @@ _imgwidth="15"
 _imgidtype="_imgidtype"
 _long_Url=""
 _long_Url_site="https://docs.nestjs.com/"
-_short_Url_site="will-be-calculated"
+# _short_Url_site="will-be-calculated"
 function create_sub_section_() {
-  echo -n ${_sect3}$(imagetag_chevron_left_)$(imagetag_chevron_right_) $(imagetag_chevron_up_) $(imagetag_logo_small_)
+  echo -n ${_sect3}$(imagetag_chevron_left_)$(imagetag_chevron_right_) ${_sectionText} $(imagetag_chevron_up_) $(imagetag_logo_small_)
 
 }
 
 first_set_
 echo "" >/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/random.md
 function setSection_() {
-  _short_Url="${1}"
+  # _short_Url="${1}"
+  _short_Url_site="${1}"
   _sectionText="${2}"
   _sectionanchorid_top="$(get_sec_top_)"
   _sectionanchorid_previous="$(get_sec_previous_)"
   _anchorid_current="$(get_sec_current_)"
   _sectionanchorid_next="$(get_sec_next_)"
   _imgwidth=${_imgwidth3}
-  echo $(create_section_) >>/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/random.md
+  echo $(create_section_) >>"${_output_path}"
 }
 
 function setSubSection_() {
-  _short_Url="${1}"
+  _short_Url_site="${1}"
   _sectionText="${2}"
   _subanchorid_top="$(get_sub_top_)"
   _subanchorid_previous="$(get_sub_previous_)"
   _anchorid_current="$(get_sub_current_)"
   _subanchorid_next="$(get_sub_next_)"
   _imgwidth=${_imgwidth3}
-  echo $(create_sub_section_) >>/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/random.md
+  echo $(create_sub_section_) >>"${_output_path}"
 }
 
 # echo ""
@@ -311,12 +315,12 @@ function setSubSection_() {
 # imagetag_chevrons_right_
 # echo ""
 # echo ""
-echo ""
-echo ""
-# create_section_
-setSection_ "_short_Url" "_sectionText"
-echo ""
-echo ""
-echo ""
-# create_sub_section_
-setSubSection_ "_short_Url" "_sectionText"
+# echo ""
+# echo ""
+# # create_section_
+# setSection_ "_short_Url" "_sectionText"
+# echo ""
+# echo ""
+# echo ""
+# # create_sub_section_
+# setSubSection_ "_short_Url" "_sectionText"
