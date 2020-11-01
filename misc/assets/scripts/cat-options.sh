@@ -285,7 +285,13 @@ function setSubSection_() {
   _anchorid_current="$(get_sub_current_)"
   _subanchorid_next="$(get_sub_next_)"
   _imgwidth=${_imgwidth3}
-  echo $(create_sub_section_) >>"${_output_path}"
+  echo "" >>"${_output_path}"
+  echo -n $(create_sub_section_) >>"${_output_path}"
+  echo "" >>"${_output_path}"
+  echo "" >>"${_output_path}"
+  cat "./${3}" >>"${_output_path}"
+  echo "" >>"${_output_path}"
+
   set_nxt_sub_links_
 }
 
