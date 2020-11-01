@@ -1,0 +1,10 @@
+Pour obtenir les messages de débogage, veuillez utiliser l'option --debug.
+Ces messages peuvent aider à trouver une solution au problème. Si vous avez
+l'intention d'envoyer un message d'erreur ou de débogage à la liste de
+diffusion des développeurs de gPhoto <gphoto-devel@lists.sourceforge.net>,
+en anglais, veuillez exécuter gphoto2 comme suit :
+
+    env LANG=C gphoto2 --debug --debug-logfile=my-logfile.txt --keep-raw --capture-image-and-download --stdout
+
+Veuillez vous assurer que les arguments sont suffisamment protégés.
+
