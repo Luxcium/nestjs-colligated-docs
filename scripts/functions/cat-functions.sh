@@ -29,7 +29,16 @@ function create_section_list_item_() {
 }
 
 first_set_
-echo "" >/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/random.md
+_test_file_out="${_base_work_path}/random.md"
+_output_file_path="${_test_file_out}"
+_output_path_temp_main="${_test_file_out}"
+_output_path_temp="${_test_file_out}"
+
+echo "" >"${_test_file_out}"
+echo "" >"${_output_file_path}"
+echo "" >"${_output_path_temp_main}"
+echo "" >"${_output_path_temp}"
+
 function setSection_() {
   # _short_Url="${1}"
   _short_Url_site="${1}"

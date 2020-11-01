@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source '/home/luxcium/.local/src/nestjs-colligated-docs/misc/assets/scripts/cat-options.sh'
+source '/home/luxcium/.local/src/nestjs-colligated-docs/scripts/options.sh'
 
 builtin cd "${_pTMP_content}"
 setSection_ "" "Introduction" ""
