@@ -5,63 +5,29 @@ function imagetag_() {
 }
 
 function imganchortag_() {
-  _anchorhash="#${_anchorid}"
+  local _anchorhash="#${_anchorid}"
   echo -n "<a href='${_anchorpage}${_anchorhash}'>$(imagetag_)</a>"
 }
 
+function itemsanchortag_() {
+  local _anchorhash="#${_anchorid}"
+  echo -n "<a href='${_anchorpage}${_anchorhash}'>${_item_value}</a>"
+}
+
+function itemtag_generate_() {
+  local _item_value=""
+  local _anchorid="${_anchorid_current}"
+  local _anchorpage="${_long_Url}${_short_Url}"
+  echo -n "$(itemsanchortag_)"
+}
+
 function imagetag_logo_small_() {
-  _imgid="${_anchorid_current}"
-  _imgsrc="/logo-small.svg"
-  _anchorid="top"
-  _imgalt="Nest JS Small Logo"
-  _anchorpage="${_long_Url_site}${_short_Url_site}"
+  local _imgid="${_anchorid_current}"
+  local _imgsrc="/logo-small.svg"
+  local _anchorid="top"
+  local _imgalt="Nest JS Small Logo"
+  local _anchorpage="${_long_Url_site}${_short_Url_site}"
   echo -n "$(imganchortag_)"
 }
 
-function imagetag_chevron_up_() {
-  _imgsrc="/chevron-up.svg"
-  _imgalt="Go top section"
-  _anchorid="${_subanchorid_top}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
-
-function imagetag_chevron_left_() {
-  _imgsrc="/chevron-left.svg"
-  _imgalt="Go previous sub-section"
-  _anchorid="${_subanchorid_previous}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
-
-function imagetag_chevron_right_() {
-  _imgsrc="/chevron-right.svg"
-  _imgalt="Go next sub-section"
-  _anchorid="${_subanchorid_next}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
-
-function imagetag_chevrons_up_() {
-  _imgsrc="/chevrons-up.svg"
-  _imgalt="Go top"
-  _anchorid="${_sectionanchorid_top}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
-
-function imagetag_chevrons_left_() {
-  _imgsrc="/chevrons-left.svg"
-  _imgalt="Go previous section"
-  _anchorid="${_sectionanchorid_previous}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
-
-function imagetag_chevrons_right_() {
-  _imgsrc="/chevrons-right.svg"
-  _imgalt="Go next section"
-  _anchorid="${_sectionanchorid_next}"
-  _anchorpage="${_long_Url}${_short_Url}"
-  echo -n "$(imganchortag_)"
-}
+source "/home/luxcium/.local/src/nestjs-colligated-docs/scripts/functions/imagetag-chevrons.sh"

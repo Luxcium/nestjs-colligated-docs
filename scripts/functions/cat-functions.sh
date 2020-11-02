@@ -24,15 +24,13 @@ function create_sub_section_() {
 }
 
 function create_section_list_item_() {
-
   echo -n " - "
 }
 
 first_set_
-_test_file_out="${_base_work_path}/random.md"
-_output_file_path="${_test_file_out}"
-_output_path_temp_main="${_test_file_out}"
-_output_path_temp="${_test_file_out}"
+_output_file_path="${_tmp_out_path}/output_file-$(getSTMP4_)"
+_output_path_temp_main="${_tmp_out_path}/output_temp_main-$(getSTMP4_)"
+_output_path_temp="${_tmp_out_path}/output_temp-$(getSTMP4_)"
 
 echo "" >"${_test_file_out}"
 echo "" >"${_output_file_path}"
@@ -67,6 +65,6 @@ function setSubSection_() {
   echo "" >>"${_output_path_temp}"
   cat "./${3}" >>"${_output_path_temp}"
   echo "" >>"${_output_path_temp}"
-  echo -n "$(somefunctionname_)" >>_output_path_temp_main
+  # echo -n "$(somefunctionname_)" >>_output_path_temp_main
   set_nxt_sub_links_
 }

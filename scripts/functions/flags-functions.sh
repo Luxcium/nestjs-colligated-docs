@@ -91,24 +91,24 @@ function get_sub_next_() {
 function first_set_() {
   set_sec_top_ "top"
   set_sec_previous_ "top"
-  set_sec_current_ "$(getSTMP8_)"
-  set_sec_next_ "$(getSTMP8_)"
+  set_sec_current_ "$(getSTMP4_)"
+  set_sec_next_ "$(getSTMP4_)"
   set_sub_top_ "top"
   set_sub_previous_ "top"
-  set_sub_current_ "$(getSTMP8_)"
-  set_sub_next_ "$(getSTMP8_)"
+  set_sub_current_ "$(getSTMP4_)"
+  set_sub_next_ "$(getSTMP4_)"
 }
 
 function set_nxt_sec_links_() {
   set_sec_top_ "$(get_sec_top_)"
   set_sec_previous_ "$(get_sec_current_)"
   set_sec_current_ "$(get_sec_next_)"
-  set_sec_next_ "$(getSTMP8_)"
+  set_sec_next_ "$(getSTMP4_)"
 }
 
 function set_nxt_sub_links_() {
   set_sub_top_ "$(get_sec_previous_)"
   set_sub_previous_ "$(get_sub_current_)"
   set_sub_current_ "$(get_sub_next_)"
-  set_sub_next_ "$(getSTMP8_)"
+  set_sub_next_ "$(getSTMP4_)"
 }

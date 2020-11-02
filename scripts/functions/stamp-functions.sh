@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function getSTMP8_() {
-  echo -n Z$(sha224hmac <<<$(date +%D%s%N) | cut -c -8 | tr \[a-z\] \[A-Z\])x
+  echo -n Z-$(sha224hmac <<<$(date +%D%s%N) | cut -c -8 | tr \[a-z\] \[A-Z\])
 }
 
 function getSTMP4_() {
